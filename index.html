@@ -1,0 +1,1364 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="testy - Professional website">
+    <meta name="generator" content="Website Generator">
+    <meta name="theme-color" content="hsl(110, 70%, 40%)">
+    <title>testy</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;700&display=swap' rel='stylesheet'>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body{font-family:'DM Sans', system-ui, sans-serif;overflow-x:hidden;width:100%;max-width:100%;margin:0;padding:0}
+        h1,h2,h3,h4,h5,h6{font-family:'DM Serif Display', serif}
+        section,header,footer{width:100vw;max-width:100%;overflow-x:hidden}
+        header{background-size:cover;background-position:center;background-repeat:no-repeat;position:relative}
+        [data-animate]{opacity:0;transform:translateY(20px);transition:opacity .6s ease-out,transform .6s ease-out}[data-animate].visible{opacity:1;transform:translateY(0)}
+        .nav-fixed{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:blur(8px);box-shadow:0 1px 3px rgba(0,0,0,.1);transition:all .3s ease;width:100%}
+        ::-webkit-scrollbar{width:8px;height:8px}
+        ::-webkit-scrollbar-track{background:#f1f1f1}
+        ::-webkit-scrollbar-thumb{background:hsl(110, 70%, 40%);border-radius:4px}
+        ::-webkit-scrollbar-thumb:hover{background:hsl(110, 70%, 30%)}
+        body::before{content:'';position:fixed;top:0;left:0;right:0;height:3px;background:hsl(110, 70%, 40%);transform:scaleX(calc(var(--scroll-progress,0%)/100));transform-origin:left;z-index:1000}
+        @media print{[data-animate]{opacity:1;transform:none}}
+    </style>
+    
+    <script>
+        tailwind.config={theme:{extend:{colors:{primary:{"50":"hsl(110, 70%, 95%)","100":"hsl(110, 70%, 90%)","200":"hsl(110, 70%, 80%)","300":"hsl(110, 70%, 70%)","400":"hsl(110, 70%, 60%)","500":"hsl(110, 70%, 50%)","600":"hsl(110, 70%, 40%)","700":"hsl(110, 70%, 30%)","800":"hsl(110, 70%, 20%)","900":"hsl(110, 70%, 10%)"}},fontFamily:{sans:[''DM Sans'','system-ui','sans-serif'],heading:[''DM Serif Display'','serif']}}}}
+    </script>
+</head>
+<body class="antialiased text-gray-800">
+    <main>
+        
+<!-- NAV SECTION -->
+
+
+<!-- HEADER SECTION -->
+<header class="relative bg-gradient-to-br from-purple-600 to-purple-800 text-white overflow-hidden">
+    <div class="absolute inset-0">
+        <img src="https://pixabay.com/get/g97ee097fee23ba25c7f6bc7f2aad7ba9edc3a4a57e161a251cc2f102cc8f037e47748f30ffc0969c2a9958c2cbe89b74d3528d880f5118646aefadb2bd7abd91_640.jpg" alt="Administrative Services Background" class="w-full h-full object-cover object-center opacity-30">
+    </div>
+
+    <div class="relative px-4 py-6 sm:px-6 lg:px-8">
+        <nav class="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
+            <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
+                <div class="flex items-center justify-between w-full md:w-auto">
+                    <a href="#" aria-label="Testy">
+                        <span class="sr-only">Testy</span>
+                        <span class="text-2xl font-bold text-gold-400">Testy</span>
+                    </a>
+                    <div class="-mr-2 flex items-center md:hidden">
+                        <button type="button" class="bg-purple-700 rounded-md p-2 inline-flex items-center justify-center text-white hover:text-gray-50 hover:bg-purple-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <!-- Heroicon name: outline/menu -->
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
+                <a href="#" class="font-medium text-white hover:text-gray-200">About</a>
+                <a href="#" class="font-medium text-white hover:text-gray-200">Services</a>
+                <a href="#" class="font-medium text-white hover:text-gray-200">Pricing</a>
+                <a href="#" class="font-medium text-white hover:text-gray-200">Contact</a>
+                <a href="#" class="font-medium text-white hover:text-gray-200">Login</a>
+            </div>
+        </nav>
+    </div>
+
+    <!--
+      Mobile menu, show/hide based on menu open state.
+
+      Entering: "duration-150 ease-out"
+        From: "opacity-0 scale-95"
+        To: "opacity-100 scale-100"
+      Leaving: "duration-100 ease-in"
+        From: "opacity-100 scale-100"
+        To: "opacity-0 scale-95"
+    -->
+    <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+        <div class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
+            <div class="px-5 pt-4 flex items-center justify-between">
+                <div>
+                    <span class="text-xl font-bold text-purple-700">Testy</span>
+                </div>
+                <div class="-mr-2">
+                    <button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                        <span class="sr-only">Close menu</span>
+                        <!-- Heroicon name: outline/x -->
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">About</a>
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Services</a>
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Pricing</a>
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Contact</a>
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Login</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="relative pt-10 pb-16 px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+            <h1 class="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl" data-animate="fade-in">
+                Streamline Your Business,
+                <br class="xl:hidden">
+                <span class="text-gold-400">Maximize Your Success</span>
+            </h1>
+            <p class="mt-3 max-w-md mx-auto text-base text-gray-200 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl" data-animate="fade-in" data-animate-delay="200">
+                Testy provides comprehensive administrative services, allowing you to focus on what matters most: growing your business.
+            </p>
+            <div class="mt-10 sm:flex sm:justify-center lg:justify-center" data-animate="fade-in" data-animate-delay="400">
+                <div class="rounded-md shadow">
+                    <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-purple-700 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10">
+                        Get Started
+                    </a>
+                </div>
+                <div class="mt-3 sm:mt-0 sm:ml-3">
+                    <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-purple-500 hover:bg-purple-700 md:py-4 md:text-lg md:px-10">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="py-20 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div class="md:order-2" data-animate="fade-left">
+        <img src="https://pixabay.com/get/g94ac1ceb454fd66f09d36af0fd8a97e0ca04c79887c2bcbeb87aba14cc363bf24d1cd25f11a7c2f055aeca51caa41364fe69e3a40eeeda5d5162b1716e077d1e_640.jpg" alt="About Testy Team" class="rounded-xl shadow-lg">
+      </div>
+      <div class="md:order-1" data-animate="fade-right">
+        <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-800 mb-4">About Testy: Your Administrative Partner</h2>
+        <p class="text-gray-600 leading-relaxed mb-6">
+          At Testy, we understand that managing administrative tasks can be a significant drain on your time and resources. That's why we're dedicated to providing comprehensive administrative solutions that allow you to focus on what truly matters: growing your business.
+        </p>
+        <p class="text-gray-600 leading-relaxed mb-6">
+          Founded in 2018, Testy has quickly become a trusted partner for businesses of all sizes. Our team of experienced administrative professionals is committed to delivering exceptional service and tailored solutions to meet your specific needs.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="bg-white rounded-lg shadow-md p-4">
+            <h3 class="text-xl font-semibold text-primary-700 mb-2">Our Mission</h3>
+            <p class="text-gray-600">To empower businesses by providing efficient and reliable administrative support, enabling them to achieve their full potential.</p>
+          </div>
+          <div class="bg-white rounded-lg shadow-md p-4">
+            <h3 class="text-xl font-semibold text-primary-700 mb-2">Our Vision</h3>
+            <p class="text-gray-600">To be the leading provider of administrative services, recognized for our commitment to excellence and client satisfaction.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-12 text-center" data-animate="fade-up">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4">Why Choose Testy?</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <div class="flex items-center justify-center h-12 w-12 rounded-full bg-primary-100 text-primary-700 mb-4 mx-auto">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a3 3 0 00-3-3H7.5a3 3 0 00-3 3v10.5a3 3 0 003 3h8.25a3 3 0 003-3V13.5m-3 0h3m-3 0h-3" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-700 mb-2">Efficiency</h3>
+          <p class="text-gray-600">Streamline your operations and free up valuable time with our efficient administrative solutions.</p>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <div class="flex items-center justify-center h-12 w-12 rounded-full bg-primary-100 text-primary-700 mb-4 mx-auto">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-700 mb-2">Accuracy</h3>
+          <p class="text-gray-600">Ensure accuracy and compliance with our meticulous attention to detail and industry best practices.</p>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <div class="flex items-center justify-center h-12 w-12 rounded-full bg-primary-100 text-primary-700 mb-4 mx-auto">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 22c-5.334 0-8-5.997-8-12 0-6.002 2.667-12 8-12s8 5.998 8 12c0 6.003-2.666 12-8 12z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-700 mb-2">Reliability</h3>
+          <p class="text-gray-600">Count on us to be your reliable administrative partner, providing consistent support and peace of mind.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES SECTION -->
+<section id="services" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl lg:text-5xl font-bold text-purple-800 mb-4" data-animate="fade-in">Our Comprehensive Administrative Services</h2>
+            <p class="text-gray-600 text-lg" data-animate="fade-in" data-animate-delay="200">We provide tailored administrative solutions to streamline your operations and boost productivity.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Service Card 1 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300" data-animate="slide-in-up">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <svg class="w-8 h-8 text-purple-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                        <h3 class="text-xl font-semibold text-gray-800">Bookkeeping & Accounting</h3>
+                    </div>
+                    <p class="text-gray-700">Accurate financial record-keeping, monthly reporting, and tax preparation support. We handle your finances so you can focus on growth.</p>
+                    <ul class="list-disc list-inside mt-4 text-sm text-gray-600">
+                        <li>Invoice Management</li>
+                        <li>Expense Tracking</li>
+                        <li>Financial Reporting</li>
+                        <li>Tax Preparation Assistance</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Service Card 2 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300" data-animate="slide-in-up" data-animate-delay="100">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <svg class="w-8 h-8 text-purple-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                        <h3 class="text-xl font-semibold text-gray-800">Calendar & Schedule Management</h3>
+                    </div>
+                    <p class="text-gray-700">Efficiently manage your appointments, meetings, and deadlines. Stay organized and never miss an important event.</p>
+                    <ul class="list-disc list-inside mt-4 text-sm text-gray-600">
+                        <li>Appointment Scheduling</li>
+                        <li>Meeting Coordination</li>
+                        <li>Deadline Tracking</li>
+                        <li>Travel Arrangements</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Service Card 3 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300" data-animate="slide-in-up" data-animate-delay="200">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <svg class="w-8 h-8 text-purple-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.224 0l7.89-5.26M5 21h14M5 4h14a2 2 0 002-2H3a2 2 0 002 2z"></path></svg>
+                        <h3 class="text-xl font-semibold text-gray-800">Email & Communication Management</h3>
+                    </div>
+                    <p class="text-gray-700">Professional email handling, filtering, and response management. Ensure timely and effective communication with clients and partners.</p>
+                    <ul class="list-disc list-inside mt-4 text-sm text-gray-600">
+                        <li>Inbox Organization</li>
+                        <li>Email Filtering</li>
+                        <li>Response Management</li>
+                        <li>Newsletter Creation & Distribution</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Service Card 4 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300" data-animate="slide-in-up">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <svg class="w-8 h-8 text-purple-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-4 0H3m2 0h2M9 3h6l2 3h-2a1 1 0 00-1 1H8a1 1 0 00-1-1H5l2-3z"></path></svg>
+                        <h3 class="text-xl font-semibold text-gray-800">Document Preparation & Management</h3>
+                    </div>
+                    <p class="text-gray-700">Creation, editing, and organization of documents, presentations, and reports. Streamline your paperwork and improve efficiency.</p>
+                    <ul class="list-disc list-inside mt-4 text-sm text-gray-600">
+                        <li>Document Creation & Editing</li>
+                        <li>Presentation Design</li>
+                        <li>Report Generation</li>
+                        <li>File Organization & Storage</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Service Card 5 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300" data-animate="slide-in-up" data-animate-delay="100">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <svg class="w-8 h-8 text-purple-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 4.75 7.5 4.75a2.25 2.25 0 00-2.25 2.25c0 1.232.584 2.359 1.584 3.012M12 6.253v13m0-13C13.168 5.477 14.754 4.75 16.5 4.75a2.25 2.25 0 012.25 2.25c0 1.232-.584 2.359-1.584 3.012M12 6.253v13m0-13C11.662 6.099 11.096 6.623 10.543 7.176M12 6.253v13m0-13C12.904 6.099 13.47 6.623 14.024 7.176"></path></svg>
+                        <h3 class="text-xl font-semibold text-gray-800">Project Coordination</h3>
+                    </div>
+                    <p class="text-gray-700">Manage project timelines, resources, and communication. Ensure projects are completed on time and within budget.</p>
+                    <ul class="list-disc list-inside mt-4 text-sm text-gray-600">
+                        <li>Task Assignment & Tracking</li>
+                        <li>Resource Allocation</li>
+                        <li>Progress Reporting</li>
+                        <li>Communication Management</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Service Card 6 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300" data-animate="slide-in-up" data-animate-delay="200">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <svg class="w-8 h-8 text-purple-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2m0 0l5 6-6-3.061M15 15l-2 5L9 9l11 4-5 2m0 0v-2.581M15 15l-2 5L9 9l11 4-5 2m0 0V2.25"></path></svg>
+                        <h3 class="text-xl font-semibold text-gray-800">Client Relationship Management</h3>
+                    </div>
+                    <p class="text-gray-700">Build and maintain strong client relationships through proactive communication, personalized service, and timely follow-up.</p>
+                    <ul class="list-disc list-inside mt-4 text-sm text-gray-600">
+                        <li>Client Communication</li>
+                        <li>Feedback Collection</li>
+                        <li>Personalized Service</li>
+                        <li>Follow-up Management</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mt-12 text-center">
+            <a href="#" class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-8 rounded-xl transition-colors duration-300" data-animate="fade-in" data-animate-delay="300">Explore All Services</a>
+        </div>
+    </div>
+</section>
+
+<!-- FEATURES SECTION -->
+<section id="features" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl data-animate">
+                Streamline Your Operations with Our Expert Administrative Services
+            </h2>
+            <p class="mt-4 text-lg text-gray-600 data-animate">
+                Focus on your core business while we handle the administrative tasks. We offer a range of services to
+                optimize your efficiency and reduce costs.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Feature 1 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden data-animate">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <svg class="w-8 h-8 text-purple-600 mr-3" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 17v-2m3 1h-3m3 1v-2M5 21h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2z">
+                            </path>
+                        </svg>
+                        <h3 class="text-xl font-semibold text-gray-800">Virtual Assistant Services</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Our virtual assistants provide comprehensive support, including scheduling, email management,
+                        data entry, and travel arrangements. Reclaim your time and boost your productivity.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden data-animate">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <svg class="w-8 h-8 text-purple-600 mr-3" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5s3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18s-3.332.477-4.5 1.253">
+                            </path>
+                        </svg>
+                        <h3 class="text-xl font-semibold text-gray-800">Bookkeeping & Accounting</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Maintain accurate financial records with our bookkeeping and accounting services. We handle
+                        invoicing, expense tracking, financial reporting, and tax preparation support.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden data-animate">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <svg class="w-8 h-8 text-purple-600 mr-3" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h6m0 0v2m-2 3h2m-2 3H8m-2 3v-2m6 2v-2M10 7H6m6 2H6m6 2H6">
+                            </path>
+                        </svg>
+                        <h3 class="text-xl font-semibold text-gray-800">Payroll Management</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Ensure accurate and timely payroll processing with our comprehensive payroll management
+                        services. We handle employee payments, tax deductions, and compliance reporting.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden data-animate">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <svg class="w-8 h-8 text-purple-600 mr-3" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 3h6m-6 18h6">
+                            </path>
+                        </svg>
+                        <h3 class="text-xl font-semibold text-gray-800">Document Management</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Organize and secure your important documents with our document management solutions. We offer
+                        scanning, indexing, storage, and retrieval services.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Feature 5 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden data-animate">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <svg class="w-8 h-8 text-purple-600 mr-3" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.51l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                            </path>
+                        </svg>
+                        <h3 class="text-xl font-semibold text-gray-800">Customer Support</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Provide exceptional customer service with our dedicated support team. We handle inquiries,
+                        resolve issues, and ensure customer satisfaction.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Feature 6 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden data-animate">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <svg class="w-8 h-8 text-purple-600 mr-3" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4">
+                            </path>
+                        </svg>
+                        <h3 class="text-xl font-semibold text-gray-800">Process Optimization</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        We analyze your existing administrative processes and identify opportunities for improvement.
+                        Our goal is to streamline your workflows and enhance efficiency.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TEAM SECTION -->
+<section id="team" class="bg-gray-50 py-16">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl font-extrabold text-purple-800 mb-4" data-animate="fade-in">Meet Our Expert Team</h2>
+      <p class="text-gray-600 text-lg" data-animate="fade-in" data-animate-delay="200">
+        Our dedicated team of administrative professionals is committed to providing exceptional service and support to help your business thrive.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+      <!-- Team Member 1 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden" data-animate="slide-in-bottom">
+        <img src="/api/placeholder/400/300" alt="Jane Doe" class="w-full h-64 object-cover object-center">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-purple-700 mb-2">Jane Doe</h3>
+          <p class="text-gray-500 mb-2">CEO & Founder</p>
+          <p class="text-gray-600">
+            Jane has over 15 years of experience in administrative management and a passion for helping businesses succeed.
+          </p>
+          <div class="mt-4 flex justify-center space-x-4">
+            <a href="#" class="text-gray-400 hover:text-purple-500"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="text-gray-400 hover:text-purple-500"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Team Member 2 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden" data-animate="slide-in-bottom" data-animate-delay="100">
+        <img src="/api/placeholder/400/300" alt="John Smith" class="w-full h-64 object-cover object-center">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-purple-700 mb-2">John Smith</h3>
+          <p class="text-gray-500 mb-2">Senior Administrator</p>
+          <p class="text-gray-600">
+            John is a highly organized and detail-oriented administrator with expertise in scheduling, communication, and office management.
+          </p>
+          <div class="mt-4 flex justify-center space-x-4">
+            <a href="#" class="text-gray-400 hover:text-purple-500"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="text-gray-400 hover:text-purple-500"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Team Member 3 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden" data-animate="slide-in-bottom" data-animate-delay="200">
+        <img src="/api/placeholder/400/300" alt="Emily Brown" class="w-full h-64 object-cover object-center">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-purple-700 mb-2">Emily Brown</h3>
+          <p class="text-gray-500 mb-2">Virtual Assistant Specialist</p>
+          <p class="text-gray-600">
+            Emily specializes in providing virtual assistant services, including email management, social media support, and customer service.
+          </p>
+          <div class="mt-4 flex justify-center space-x-4">
+            <a href="#" class="text-gray-400 hover:text-purple-500"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="text-gray-400 hover:text-purple-500"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Team Member 4 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden" data-animate="slide-in-bottom" data-animate-delay="300">
+        <img src="/api/placeholder/400/300" alt="David Lee" class="w-full h-64 object-cover object-center">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-purple-700 mb-2">David Lee</h3>
+          <p class="text-gray-500 mb-2">Financial Administrator</p>
+          <p class="text-gray-600">
+            David manages all financial aspects of our clients' businesses, including bookkeeping, invoicing, and expense tracking.
+          </p>
+          <div class="mt-4 flex justify-center space-x-4">
+            <a href="#" class="text-gray-400 hover:text-purple-500"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="text-gray-400 hover:text-purple-500"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO SECTION -->
+<section id="portfolio" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-16" data-animate="fade-in">
+            <h2 class="text-3xl lg:text-5xl font-extrabold text-gray-800 mb-4">Our Expertise in Action</h2>
+            <p class="text-gray-600 text-lg lg:text-xl">
+                Explore a selection of our successful administrative projects and client solutions.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-animate="slide-in-up">
+
+            <!-- Project 1 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://pixabay.com/get/g94ac1ceb454fd66f09d36af0fd8a97e0ca04c79887c2bcbeb87aba14cc363bf24d1cd25f11a7c2f055aeca51caa41364fe69e3a40eeeda5d5162b1716e077d1e_640.jpg" alt="Project 1" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Streamlining Document Management</h3>
+                    <p class="text-gray-600 mb-4">
+                        Implemented a centralized document management system for a large healthcare provider, reducing retrieval time by 60% and improving compliance.
+                    </p>
+                    <a href="#" class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://pixabay.com/get/g97ee097fee23ba25c7f6bc7f2aad7ba9edc3a4a57e161a251cc2f102cc8f037e47748f30ffc0969c2a9958c2cbe89b74d3528d880f5118646aefadb2bd7abd91_640.jpg" alt="Project 2" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Optimizing Office Workflow</h3>
+                    <p class="text-gray-600 mb-4">
+                        Redesigned office workflows for a financial services firm, resulting in a 25% increase in operational efficiency and reduced administrative costs.
+                    </p>
+                    <a href="#" class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://pixabay.com/get/g985c34235a58972958552b36c3c63d57910c128c83e4824dae0e0c90f95b40193e981cc550e48d29e355c21a7331fa5c_640.jpg" alt="Project 3" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Enhancing Communication Systems</h3>
+                    <p class="text-gray-600 mb-4">
+                        Implemented a new communication system for a non-profit organization, improving internal and external communications and increasing stakeholder engagement.
+                    </p>
+                    <a href="#" class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://pixabay.com/get/g8a60daec07e7173027c89d31e9e4d5d4b05ba4f9638a1f0db82b15c14b619de919d4c602b97a4f9f6925dab4d77e3f8d74659e458cd802ed95429d6bdea0a234_640.jpg" alt="Project 4" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Managing Complex Scheduling</h3>
+                    <p class="text-gray-600 mb-4">
+                        Developed a custom scheduling system for a busy legal firm, reducing scheduling conflicts by 40% and improving resource allocation.
+                    </p>
+                    <a href="#" class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://source.unsplash.com/600x400/?office,workspace" alt="Project 5" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Improving Customer Service Processes</h3>
+                    <p class="text-gray-600 mb-4">
+                        Analyzed and improved customer service processes for a retail company, resulting in a 15% increase in customer satisfaction scores.
+                    </p>
+                    <a href="#" class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://source.unsplash.com/600x400/?business,meeting" alt="Project 6" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Organizing Corporate Events</h3>
+                    <p class="text-gray-600 mb-4">
+                        Successfully planned and executed multiple corporate events for a technology company, enhancing brand awareness and employee morale.
+                    </p>
+                    <a href="#" class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIALS SECTION -->
+<section class="py-16 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-extrabold text-center text-purple-800 mb-8" data-animate="fade-in">
+      What Our Clients Say
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Testimonial 1 -->
+      <div class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between" data-animate="slide-in-left">
+        <div>
+          <div class="flex items-center mb-4">
+            <img src="/api/placeholder/60/60" alt="Client Avatar" class="rounded-full mr-4">
+            <div>
+              <h3 class="text-lg font-semibold text-gray-800">Sarah Miller</h3>
+              <p class="text-sm text-gray-500">CEO, Innovate Solutions</p>
+            </div>
+          </div>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            "Testy has been instrumental in streamlining our administrative processes. Their attention to detail and proactive approach have saved us countless hours and improved our overall efficiency. Highly recommended!"
+          </p>
+        </div>
+        <div class="text-yellow-500">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between" data-animate="fade-in">
+        <div>
+          <div class="flex items-center mb-4">
+            <img src="/api/placeholder/60/60" alt="Client Avatar" class="rounded-full mr-4">
+            <div>
+              <h3 class="text-lg font-semibold text-gray-800">John Carter</h3>
+              <p class="text-sm text-gray-500">Finance Director, Global Enterprises</p>
+            </div>
+          </div>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            "We've partnered with Testy for over three years, and their consistent reliability and expertise have made them an invaluable asset to our team. Their reporting is accurate, timely, and always exceeds our expectations."
+          </p>
+        </div>
+        <div class="text-yellow-500">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between" data-animate="slide-in-right">
+        <div>
+          <div class="flex items-center mb-4">
+            <img src="/api/placeholder/60/60" alt="Client Avatar" class="rounded-full mr-4">
+            <div>
+              <h3 class="text-lg font-semibold text-gray-800">Emily Davis</h3>
+              <p class="text-sm text-gray-500">HR Manager, Dynamic Corp</p>
+            </div>
+          </div>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            "Testy's HR support has been a game-changer for our company. They handle all our payroll and benefits administration with professionalism and efficiency, allowing us to focus on our core business activities."
+          </p>
+        </div>
+        <div class="text-yellow-500">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PRICING SECTION -->
+<section id="pricing" class="py-16 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl" data-animate="fade-in">
+        Transparent and Flexible Pricing
+      </h2>
+      <p class="mt-4 text-lg text-gray-600" data-animate="fade-in" data-animate-delay="200">
+        We offer a range of pricing plans to suit your administrative needs and budget.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Basic Plan -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden" data-animate="slide-in-bottom">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Basic Plan</h3>
+          <p class="text-gray-600 mb-4">Perfect for startups and small businesses needing essential administrative support.</p>
+          <div class="flex items-center justify-center mb-4">
+            <span class="text-3xl font-bold text-gray-900">$99</span>
+            <span class="text-gray-600">/month</span>
+          </div>
+          <ul class="list-disc list-inside text-gray-700 mb-6">
+            <li>Up to 10 hours of administrative support</li>
+            <li>Email management</li>
+            <li>Basic scheduling</li>
+            <li>Document filing</li>
+          </ul>
+          <a href="#" class="block w-full text-center py-3 px-4 rounded-lg bg-purple-600 hover:bg-purple-700 text-white font-semibold transition-colors duration-200">
+            Get Started
+          </a>
+        </div>
+      </div>
+
+      <!-- Standard Plan -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden" data-animate="slide-in-bottom" data-animate-delay="200">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Standard Plan</h3>
+          <p class="text-gray-600 mb-4">Ideal for growing businesses requiring more comprehensive administrative assistance.</p>
+          <div class="flex items-center justify-center mb-4">
+            <span class="text-3xl font-bold text-gray-900">$199</span>
+            <span class="text-gray-600">/month</span>
+          </div>
+          <ul class="list-disc list-inside text-gray-700 mb-6">
+            <li>Up to 25 hours of administrative support</li>
+            <li>Advanced email management</li>
+            <li>Calendar management and appointment scheduling</li>
+            <li>Travel arrangements</li>
+            <li>Basic bookkeeping</li>
+          </ul>
+          <a href="#" class="block w-full text-center py-3 px-4 rounded-lg bg-purple-600 hover:bg-purple-700 text-white font-semibold transition-colors duration-200">
+            Get Started
+          </a>
+        </div>
+      </div>
+
+      <!-- Premium Plan -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden" data-animate="slide-in-bottom" data-animate-delay="400">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Premium Plan</h3>
+          <p class="text-gray-600 mb-4">For established businesses needing dedicated and personalized administrative solutions.</p>
+          <div class="flex items-center justify-center mb-4">
+            <span class="text-3xl font-bold text-gray-900">$349</span>
+            <span class="text-gray-600">/month</span>
+          </div>
+          <ul class="list-disc list-inside text-gray-700 mb-6">
+            <li>Up to 50 hours of administrative support</li>
+            <li>Priority email and calendar management</li>
+            <li>Complex travel planning and logistics</li>
+            <li>Full bookkeeping and financial reporting</li>
+            <li>Personalized administrative consulting</li>
+          </ul>
+          <a href="#" class="block w-full text-center py-3 px-4 rounded-lg bg-purple-600 hover:bg-purple-700 text-white font-semibold transition-colors duration-200">
+            Get Started
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="mt-12 text-center">
+      <p class="text-gray-600" data-animate="fade-in" data-animate-delay="600">
+        Need a custom solution? <a href="#contact" class="text-purple-600 hover:text-purple-800 font-medium">Contact us</a> for a personalized quote.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- STATS SECTION -->
+<section class="bg-gray-50 py-16">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-extrabold text-purple-800 sm:text-4xl" data-animate="fade-in">
+        Trusted by Businesses of All Sizes
+      </h2>
+      <p class="mt-4 text-gray-600" data-animate="fade-in" data-animate-delay="200">
+        We empower businesses with efficient administrative solutions, allowing them to focus on growth.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="bg-white rounded-xl shadow-md p-6 text-center" data-animate="slide-in-bottom">
+        <div class="text-5xl font-extrabold text-purple-600 mb-2">
+          150+
+        </div>
+        <p class="text-gray-700 font-medium">
+          Happy Clients
+        </p>
+        <p class="text-sm text-gray-500 mt-2">
+          Serving businesses across various industries.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md p-6 text-center" data-animate="slide-in-bottom" data-animate-delay="100">
+        <div class="text-5xl font-extrabold text-purple-600 mb-2">
+          98%
+        </div>
+        <p class="text-gray-700 font-medium">
+          Client Retention
+        </p>
+        <p class="text-sm text-gray-500 mt-2">
+          Our clients stay with us because we deliver results.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md p-6 text-center" data-animate="slide-in-bottom" data-animate-delay="200">
+        <div class="text-5xl font-extrabold text-purple-600 mb-2">
+          5+
+        </div>
+        <p class="text-gray-700 font-medium">
+          Years of Experience
+        </p>
+        <p class="text-sm text-gray-500 mt-2">
+          Providing expert administrative support since 2018.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md p-6 text-center" data-animate="slide-in-bottom" data-animate-delay="300">
+        <div class="text-5xl font-extrabold text-purple-600 mb-2">
+          24/7
+        </div>
+        <p class="text-gray-700 font-medium">
+          Dedicated Support
+        </p>
+        <p class="text-sm text-gray-500 mt-2">
+          We're always here to help you with your administrative needs.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ SECTION -->
+<section id="faq" class="py-16 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12" data-animate="fade-in">
+      <h2 class="text-3xl font-extrabold text-purple-800 sm:text-4xl">
+        Frequently Asked Questions
+      </h2>
+      <p class="mt-4 text-gray-600">
+        Everything you need to know about our administrative services.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8" data-animate="slide-in-up">
+
+      <!-- FAQ Item 1 -->
+      <div class="bg-white rounded-lg shadow-md p-6">
+        <button class="w-full text-left focus:outline-none" data-faq-toggle="faq1">
+          <div class="flex items-center justify-between">
+            <h3 class="text-lg font-semibold text-purple-700">
+              What administrative services do you offer?
+            </h3>
+            <svg class="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </div>
+        </button>
+        <div id="faq1" class="mt-3 text-gray-500 hidden">
+          We offer a wide range of administrative services, including data entry, document management, scheduling, customer support, and virtual assistant services. We tailor our services to meet the specific needs of each client.
+        </div>
+      </div>
+
+      <!-- FAQ Item 2 -->
+      <div class="bg-white rounded-lg shadow-md p-6">
+        <button class="w-full text-left focus:outline-none" data-faq-toggle="faq2">
+          <div class="flex items-center justify-between">
+            <h3 class="text-lg font-semibold text-purple-700">
+              How much do your administrative services cost?
+            </h3>
+            <svg class="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </div>
+        </button>
+        <div id="faq2" class="mt-3 text-gray-500 hidden">
+          Our pricing varies depending on the specific services required and the volume of work. We offer hourly rates, project-based pricing, and retainer options. Contact us for a free consultation and a customized quote.
+        </div>
+      </div>
+
+      <!-- FAQ Item 3 -->
+      <div class="bg-white rounded-lg shadow-md p-6">
+        <button class="w-full text-left focus:outline-none" data-faq-toggle="faq3">
+          <div class="flex items-center justify-between">
+            <h3 class="text-lg font-semibold text-purple-700">
+              What is your process for onboarding new clients?
+            </h3>
+            <svg class="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </div>
+        </button>
+        <div id="faq3" class="mt-3 text-gray-500 hidden">
+          Our onboarding process begins with a detailed consultation to understand your needs and goals. We then develop a customized service plan, assign a dedicated team member, and provide ongoing support and communication.
+        </div>
+      </div>
+
+      <!-- FAQ Item 4 -->
+      <div class="bg-white rounded-lg shadow-md p-6">
+        <button class="w-full text-left focus:outline-none" data-faq-toggle="faq4">
+          <div class="flex items-center justify-between">
+            <h3 class="text-lg font-semibold text-purple-700">
+              How do you ensure data security and confidentiality?
+            </h3>
+            <svg class="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </div>
+        </button>
+        <div id="faq4" class="mt-3 text-gray-500 hidden">
+          We take data security and confidentiality very seriously. We use secure servers, encryption, and strict access controls to protect your information. Our team members are trained on data privacy best practices and sign confidentiality agreements.
+        </div>
+      </div>
+
+      <!-- FAQ Item 5 -->
+      <div class="bg-white rounded-lg shadow-md p-6">
+        <button class="w-full text-left focus:outline-none" data-faq-toggle="faq5">
+          <div class="flex items-center justify-between">
+            <h3 class="text-lg font-semibold text-purple-700">
+              What are your hours of operation?
+            </h3>
+            <svg class="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </div>
+        </button>
+        <div id="faq5" class="mt-3 text-gray-500 hidden">
+          Our standard hours of operation are Monday through Friday, 9:00 AM to 5:00 PM. However, we can provide extended hours and weekend support based on your specific needs.
+        </div>
+      </div>
+
+       <!-- FAQ Item 6 -->
+       <div class="bg-white rounded-lg shadow-md p-6">
+        <button class="w-full text-left focus:outline-none" data-faq-toggle="faq6">
+          <div class="flex items-center justify-between">
+            <h3 class="text-lg font-semibold text-purple-700">
+              How do I get started?
+            </h3>
+            <svg class="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </div>
+        </button>
+        <div id="faq6" class="mt-3 text-gray-500 hidden">
+          Simply contact us through our website or give us a call to schedule a free consultation. We'll discuss your needs and develop a customized solution to help you achieve your goals.
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  
+</section>
+
+<!-- BLOG SECTION -->
+<section id="blog" class="bg-gray-50 py-16">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-extrabold text-gray-800 text-center mb-8" data-animate="fade-in">
+      Insights and Updates from Testy
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Blog Post 1 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden" data-animate="slide-in-left">
+        <img src="https://pixabay.com/get/g97ee097fee23ba25c7f6bc7f2aad7ba9edc3a4a57e161a251cc2f102cc8f037e47748f30ffc0969c2a9958c2cbe89b74d3528d880f5118646aefadb2bd7abd91_640.jpg" alt="Office Workspace" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">
+            Streamlining Your Workflow: Top 5 Time-Saving Tips
+          </h3>
+          <p class="text-gray-600 mb-4">
+            Discover practical strategies to optimize your administrative tasks and boost productivity. Learn how to leverage technology and effective organization techniques.
+          </p>
+          <a href="#" class="text-purple-600 hover:text-purple-800 font-medium">
+            Read More &rarr;
+          </a>
+        </div>
+      </div>
+
+      <!-- Blog Post 2 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden" data-animate="fade-in">
+        <img src="https://pixabay.com/get/g985c34235a58972958552b36c3c63d57910c128c83e4824dae0e0c90f95b40193e981cc550e48d29e355c21a7331fa5c_640.jpg" alt="Meeting in Progress" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">
+            The Future of Administrative Services: Embracing Automation
+          </h3>
+          <p class="text-gray-600 mb-4">
+            Explore the transformative impact of automation on administrative roles. Understand how AI and machine learning are reshaping the industry and creating new opportunities.
+          </p>
+          <a href="#" class="text-purple-600 hover:text-purple-800 font-medium">
+            Read More &rarr;
+          </a>
+        </div>
+      </div>
+
+      <!-- Blog Post 3 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden" data-animate="slide-in-right">
+        <img src="https://pixabay.com/get/g94ac1ceb454fd66f09d36af0fd8a97e0ca04c79887c2bcbeb87aba14cc363bf24d1cd25f11a7c2f055aeca51caa41364fe69e3a40eeeda5d5162b1716e077d1e_640.jpg" alt="Document Management" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">
+            Effective Document Management: Best Practices for Organization
+          </h3>
+          <p class="text-gray-600 mb-4">
+            Learn how to create a robust document management system that ensures compliance, improves accessibility, and reduces clutter. Implement strategies for both physical and digital records.
+          </p>
+          <a href="#" class="text-purple-600 hover:text-purple-800 font-medium">
+            Read More &rarr;
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center mt-8">
+      <a href="#" class="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-6 rounded-lg shadow-md inline-block">
+        View All Articles
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<!-- Error generating contact section -->
+
+<!-- FOOTER SECTION -->
+<footer class="bg-gray-900 text-gray-300 py-12 lg:py-16">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-lg font-semibold mb-4 text-white">Testy Administrative Services</h3>
+                <p class="text-sm">Your trusted partner for streamlined administrative solutions. We empower businesses to focus on growth by handling the essential but time-consuming tasks.</p>
+                <div class="flex space-x-4 mt-4">
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-semibold mb-4 text-white">Quick Links</h3>
+                <ul class="text-sm">
+                    <li class="mb-2"><a href="#" class="hover:text-gold-500">About Us</a></li>
+                    <li class="mb-2"><a href="#" class="hover:text-gold-500">Our Services</a></li>
+                    <li class="mb-2"><a href="#" class="hover:text-gold-500">Case Studies</a></li>
+                    <li class="mb-2"><a href="#" class="hover:text-gold-500">Contact Us</a></li>
+                    <li class="mb-2"><a href="#" class="hover:text-gold-500">Blog</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-semibold mb-4 text-white">Services</h3>
+                <ul class="text-sm">
+                    <li class="mb-2"><a href="#" class="hover:text-gold-500">Virtual Assistant Services</a></li>
+                    <li class="mb-2"><a href="#" class="hover:text-gold-500">Bookkeeping & Accounting</a></li>
+                    <li class="mb-2"><a href="#" class="hover:text-gold-500">Customer Support</a></li>
+                    <li class="mb-2"><a href="#" class="hover:text-gold-500">Data Entry & Management</a></li>
+                    <li class="mb-2"><a href="#" class="hover:text-gold-500">Project Management</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-semibold mb-4 text-white">Contact Us</h3>
+                <p class="text-sm mb-2">123 Main Street, Suite 400<br>Anytown, CA 91234</p>
+                <p class="text-sm mb-2">Phone: (555) 123-4567</p>
+                <p class="text-sm mb-2">Email: info@testyadmin.com</p>
+
+                <form class="mt-4">
+                    <label for="email" class="block text-sm font-medium text-gray-400">Subscribe to our Newsletter:</label>
+                    <div class="mt-1 flex rounded-md shadow-sm">
+                        <input type="email" name="email" id="email" class="focus:ring-gold-500 focus:border-gold-500 flex-1 block w-full rounded-none rounded-l-md sm:text-sm border-gray-700 bg-gray-800 text-gray-300" placeholder="you@example.com">
+                        <button type="submit" class="relative inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-r-md text-white bg-gold-600 hover:bg-gold-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gold-500">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="mt-8 border-t border-gray-700 pt-8 text-center text-sm">
+            &copy; 2023 Testy Administrative Services. All rights reserved. | <a href="#" class="hover:text-gold-500">Privacy Policy</a> | <a href="#" class="hover:text-gold-500">Terms of Service</a>
+        </div>
+    </div>
+</footer>
+
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded',function(){
+            // Animation system
+            const observer=new IntersectionObserver(entries=>{
+                entries.forEach((entry,i)=>{
+                    if(entry.isIntersecting){
+                        setTimeout(()=>{
+                            entry.target.classList.add('visible');
+                            // Handle staggered children if using that animation style
+                            if(entry.target.getAttribute('data-animate')==='stagger'){
+                                Array.from(entry.target.children).forEach((child,childIndex)=>{
+                                    child.style.setProperty('--child-index',childIndex);
+                                });
+                            }
+                        },i*100);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            },{threshold:0.15,rootMargin:'0px 0px -100px 0px'});
+            
+            document.querySelectorAll('[data-animate]').forEach(el=>observer.observe(el));
+            
+            // Fixed navigation
+            const nav=document.querySelector('nav');
+            if(nav){
+                const handleScroll=()=>{
+                    nav.classList[window.scrollY>100?'add':'remove']('nav-fixed');
+                };
+                window.addEventListener('scroll',handleScroll,{passive:true});
+                handleScroll();
+            }
+            
+            // Smooth scroll
+            document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+                anchor.addEventListener('click',function(e){
+                    e.preventDefault();
+                    const targetId=this.getAttribute('href');
+                    if(targetId==='#')return;
+                    const target=document.querySelector(targetId);
+                    if(target){
+                        const targetPosition=target.getBoundingClientRect().top+window.pageYOffset-(nav?nav.offsetHeight:0)-20;
+                        window.scrollTo({top:targetPosition,behavior:'smooth'});
+                    }
+                });
+            });
+            
+            // Scroll progress indicator
+            const height=Math.max(
+                document.body.scrollHeight,
+                document.body.offsetHeight,
+                document.documentElement.clientHeight,
+                document.documentElement.scrollHeight,
+                document.documentElement.offsetHeight
+            )-window.innerHeight;
+            
+            window.addEventListener('scroll',()=>{
+                document.documentElement.style.setProperty('--scroll-progress',(window.scrollY/height*100)+'%');
+            },{passive:true});
+            
+            // Mobile menu
+            const menuToggle=document.getElementById('mobile-menu-toggle');
+            const mobileMenu=document.getElementById('mobile-menu');
+            if(menuToggle&&mobileMenu){
+                menuToggle.addEventListener('click',()=>{
+                    mobileMenu.classList.toggle('hidden');
+                    document.body.classList.toggle('overflow-hidden');
+                });
+                document.addEventListener('click',e=>{
+                    if(mobileMenu&&!mobileMenu.classList.contains('hidden')&&
+                        menuToggle&&!menuToggle.contains(e.target)&&!mobileMenu.contains(e.target)){
+                        mobileMenu.classList.add('hidden');
+                        document.body.classList.remove('overflow-hidden');
+                    }
+                });
+            }
+            
+            // Accordions
+            document.querySelectorAll('[data-accordion-target]').forEach(btn=>{
+                btn.addEventListener('click',()=>{
+                    const target=document.querySelector(btn.getAttribute('data-accordion-target'));
+                    if(target){
+                        const isExpanded=btn.getAttribute('aria-expanded')==='true';
+                        target.classList.toggle('hidden');
+                        btn.setAttribute('aria-expanded',isExpanded?'false':'true');
+                        const icon=btn.querySelector('.accordion-icon');
+                        if(icon)icon.classList.toggle('rotate-180');
+                    }
+                });
+            });
+            
+            // Form validation (optional enhancement)
+            document.querySelectorAll('form').forEach(form=>{
+                form.addEventListener('submit',function(e){
+                    let valid=true;
+                    const requiredFields=form.querySelectorAll('[required]');
+                    
+                    requiredFields.forEach(field=>{
+                        if(!field.value.trim()){
+                            valid=false;
+                            field.classList.add('border-red-500');
+                            
+                            // Add error message if not already present
+                            let errorMsg=field.parentNode.querySelector('.error-message');
+                            if(!errorMsg){
+                                errorMsg=document.createElement('p');
+                                errorMsg.className='text-red-500 text-sm mt-1 error-message';
+                                errorMsg.textContent='This field is required';
+                                field.parentNode.appendChild(errorMsg);
+                            }
+                        }else{
+                            field.classList.remove('border-red-500');
+                            const errorMsg=field.parentNode.querySelector('.error-message');
+                            if(errorMsg)errorMsg.remove();
+                        }
+                    });
+                    
+                    if(!valid){
+                        e.preventDefault();
+                    }
+                });
+            });
+            
+            // Tabs functionality if present
+            document.querySelectorAll('[data-tabs]').forEach(tabGroup=>{
+                const tabs=tabGroup.querySelectorAll('[data-tab]');
+                const tabContents=document.querySelectorAll('[data-tab-content]');
+                
+                tabs.forEach(tab=>{
+                    tab.addEventListener('click',()=>{
+                        const target=tab.getAttribute('data-tab');
+                        
+                        // Update active tab state
+                        tabs.forEach(t=>t.classList.remove('active-tab','text-primary-600','border-primary-600'));
+                        tab.classList.add('active-tab','text-primary-600','border-primary-600');
+                        
+                        // Show correct content
+                        tabContents.forEach(content=>{
+                            if(content.getAttribute('data-tab-content')===target){
+                                content.classList.remove('hidden');
+                            }else{
+                                content.classList.add('hidden');
+                            }
+                        });
+                    });
+                });
+            });
+            
+            // Carousels
+            document.querySelectorAll('[data-carousel]').forEach(carousel=>{
+                const slides=carousel.querySelectorAll('[data-slide]');
+                const prevBtn=carousel.querySelector('[data-carousel-prev]');
+                const nextBtn=carousel.querySelector('[data-carousel-next]');
+                
+                if(slides.length>0&&prevBtn&&nextBtn){
+                    let current=0,interval=null;
+                    
+                    slides[0].classList.remove('hidden');
+                    
+                    const updateIndicators=()=>{
+                        carousel.querySelectorAll('[data-indicator]').forEach((ind,i)=>{
+                            ind.classList[i===current?'add':'remove']('bg-primary-600');
+                            ind.classList[i!==current?'add':'remove']('bg-gray-300');
+                        });
+                    };
+                    
+                    const showSlide=idx=>{
+                        slides.forEach(s=>s.classList.add('hidden'));
+                        slides[idx].classList.remove('hidden');
+                        updateIndicators();
+                    };
+                    
+                    nextBtn.addEventListener('click',()=>{
+                        current=(current+1)%slides.length;
+                        showSlide(current);
+                    });
+                    
+                    prevBtn.addEventListener('click',()=>{
+                        current=(current-1+slides.length)%slides.length;
+                        showSlide(current);
+                    });
+                    
+                    updateIndicators();
+                    
+                    const startAuto=()=>{
+                        if(carousel.hasAttribute('data-auto')&&!interval){
+                            interval=setInterval(()=>{
+                                current=(current+1)%slides.length;
+                                showSlide(current);
+                            },5000);
+                        }
+                    };
+                    
+                    carousel.addEventListener('mouseenter',()=>{
+                        if(interval){clearInterval(interval);interval=null;}
+                    });
+                    
+                    carousel.addEventListener('mouseleave',startAuto);
+                    
+                    carousel.querySelectorAll('[data-indicator]').forEach((ind,i)=>{
+                        ind.addEventListener('click',()=>{
+                            current=i;
+                            showSlide(current);
+                        });
+                    });
+                    
+                    startAuto();
+                }
+            });
+            
+            // Initialize counters for stats sections if they exist
+            document.querySelectorAll('[data-counter]').forEach(counter=>{
+                const target=parseInt(counter.getAttribute('data-counter')||'0',10);
+                const duration=1500; // Animation duration in ms
+                const step=Math.ceil(target/50); // How much to increment per step
+                let current=0;
+                
+                const updateCounter=()=>{
+                    current+=step;
+                    if(current>target)current=target;
+                    
+                    counter.textContent=current.toString().replace(/B(?=(d{3})+(?!d))/g,',');
+                    
+                    if(current<target){
+                        requestAnimationFrame(updateCounter);
+                    }
+                };
+                
+                // Start counting when element is in view
+                const observer=new IntersectionObserver(entries=>{
+                    entries.forEach(entry=>{
+                        if(entry.isIntersecting){
+                            updateCounter();
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                },{threshold:0.5});
+                
+                observer.observe(counter);
+            });
+        });
+    </script>
+</body>
+</html>

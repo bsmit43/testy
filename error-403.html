@@ -1,0 +1,300 @@
+undefined<html lang="en" class="scroll-smooth"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="testy - Professional website">
+    <meta name="generator" content="Website Generator">
+    <meta name="theme-color" content="hsl(110, 70%, 40%)">
+    <title>testy - Access Forbidden - testy</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&amp;family=DM+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body{font-family:'DM Sans', system-ui, sans-serif;overflow-x:hidden;width:100%;max-width:100%;margin:0;padding:0}
+        h1,h2,h3,h4,h5,h6{font-family:'DM Serif Display', serif}
+        section,header,footer{width:100vw;max-width:100%;overflow-x:hidden}
+        header{background-size:cover;background-position:center;background-repeat:no-repeat;position:relative}
+        [data-animate]{opacity:0;transform:translateY(20px);transition:opacity .6s ease-out,transform .6s ease-out}[data-animate].visible{opacity:1;transform:translateY(0)}
+        .nav-fixed{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:blur(8px);box-shadow:0 1px 3px rgba(0,0,0,.1);transition:all .3s ease;width:100%}
+        ::-webkit-scrollbar{width:8px;height:8px}
+        ::-webkit-scrollbar-track{background:#f1f1f1}
+        ::-webkit-scrollbar-thumb{background:hsl(110, 70%, 40%);border-radius:4px}
+        ::-webkit-scrollbar-thumb:hover{background:hsl(110, 70%, 30%)}
+        body::before{content:'';position:fixed;top:0;left:0;right:0;height:3px;background:hsl(110, 70%, 40%);transform:scaleX(calc(var(--scroll-progress,0%)/100));transform-origin:left;z-index:1000}
+        @media print{[data-animate]{opacity:1;transform:none}}
+    </style>
+    
+    <script>
+        tailwind.config={theme:{extend:{colors:{primary:{"50":"hsl(110, 70%, 95%)","100":"hsl(110, 70%, 90%)","200":"hsl(110, 70%, 80%)","300":"hsl(110, 70%, 70%)","400":"hsl(110, 70%, 60%)","500":"hsl(110, 70%, 50%)","600":"hsl(110, 70%, 40%)","700":"hsl(110, 70%, 30%)","800":"hsl(110, 70%, 20%)","900":"hsl(110, 70%, 10%)"}},fontFamily:{sans:[''DM Sans'','system-ui','sans-serif'],heading:[''DM Serif Display'','serif']}}}}
+    </script>
+</head>
+<body class="antialiased text-gray-800">
+    <main>
+    <div class="py-12 px-4 text-center">
+      <div class="max-w-3xl mx-auto">
+        <h1 class="text-6xl font-bold mb-4 text-gray-800">403</h1>
+        <h2 class="text-2xl font-semibold mb-6">Access Forbidden</h2>
+        <p class="text-lg mb-8">You don't have permission to access this resource.</p>
+        <div class="mb-10">
+          <img src="/api/placeholder/400/300" alt="Access forbidden illustration" class="mx-auto rounded-lg shadow-lg">
+        </div>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <a href="index.html" class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300 shadow-md">
+            Return to Homepage
+          </a>
+          <a href="contact.html" class="px-6 py-3 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300 transition duration-300">
+            Contact Support
+          </a>
+        </div>
+      </div>
+    </div>
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded',function(){
+            // Animation system
+            const observer=new IntersectionObserver(entries=>{
+                entries.forEach((entry,i)=>{
+                    if(entry.isIntersecting){
+                        setTimeout(()=>{
+                            entry.target.classList.add('visible');
+                            // Handle staggered children if using that animation style
+                            if(entry.target.getAttribute('data-animate')==='stagger'){
+                                Array.from(entry.target.children).forEach((child,childIndex)=>{
+                                    child.style.setProperty('--child-index',childIndex);
+                                });
+                            }
+                        },i*100);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            },{threshold:0.15,rootMargin:'0px 0px -100px 0px'});
+            
+            document.querySelectorAll('[data-animate]').forEach(el=>observer.observe(el));
+            
+            // Fixed navigation
+            const nav=document.querySelector('nav');
+            if(nav){
+                const handleScroll=()=>{
+                    nav.classList[window.scrollY>100?'add':'remove']('nav-fixed');
+                };
+                window.addEventListener('scroll',handleScroll,{passive:true});
+                handleScroll();
+            }
+            
+            // Smooth scroll
+            document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+                anchor.addEventListener('click',function(e){
+                    e.preventDefault();
+                    const targetId=this.getAttribute('href');
+                    if(targetId==='#')return;
+                    const target=document.querySelector(targetId);
+                    if(target){
+                        const targetPosition=target.getBoundingClientRect().top+window.pageYOffset-(nav?nav.offsetHeight:0)-20;
+                        window.scrollTo({top:targetPosition,behavior:'smooth'});
+                    }
+                });
+            });
+            
+            // Scroll progress indicator
+            const height=Math.max(
+                document.body.scrollHeight,
+                document.body.offsetHeight,
+                document.documentElement.clientHeight,
+                document.documentElement.scrollHeight,
+                document.documentElement.offsetHeight
+            )-window.innerHeight;
+            
+            window.addEventListener('scroll',()=>{
+                document.documentElement.style.setProperty('--scroll-progress',(window.scrollY/height*100)+'%');
+            },{passive:true});
+            
+            // Mobile menu
+            const menuToggle=document.getElementById('mobile-menu-toggle');
+            const mobileMenu=document.getElementById('mobile-menu');
+            if(menuToggle&&mobileMenu){
+                menuToggle.addEventListener('click',()=>{
+                    mobileMenu.classList.toggle('hidden');
+                    document.body.classList.toggle('overflow-hidden');
+                });
+                document.addEventListener('click',e=>{
+                    if(mobileMenu&&!mobileMenu.classList.contains('hidden')&&
+                        menuToggle&&!menuToggle.contains(e.target)&&!mobileMenu.contains(e.target)){
+                        mobileMenu.classList.add('hidden');
+                        document.body.classList.remove('overflow-hidden');
+                    }
+                });
+            }
+            
+            // Accordions
+            document.querySelectorAll('[data-accordion-target]').forEach(btn=>{
+                btn.addEventListener('click',()=>{
+                    const target=document.querySelector(btn.getAttribute('data-accordion-target'));
+                    if(target){
+                        const isExpanded=btn.getAttribute('aria-expanded')==='true';
+                        target.classList.toggle('hidden');
+                        btn.setAttribute('aria-expanded',isExpanded?'false':'true');
+                        const icon=btn.querySelector('.accordion-icon');
+                        if(icon)icon.classList.toggle('rotate-180');
+                    }
+                });
+            });
+            
+            // Form validation (optional enhancement)
+            document.querySelectorAll('form').forEach(form=>{
+                form.addEventListener('submit',function(e){
+                    let valid=true;
+                    const requiredFields=form.querySelectorAll('[required]');
+                    
+                    requiredFields.forEach(field=>{
+                        if(!field.value.trim()){
+                            valid=false;
+                            field.classList.add('border-red-500');
+                            
+                            // Add error message if not already present
+                            let errorMsg=field.parentNode.querySelector('.error-message');
+                            if(!errorMsg){
+                                errorMsg=document.createElement('p');
+                                errorMsg.className='text-red-500 text-sm mt-1 error-message';
+                                errorMsg.textContent='This field is required';
+                                field.parentNode.appendChild(errorMsg);
+                            }
+                        }else{
+                            field.classList.remove('border-red-500');
+                            const errorMsg=field.parentNode.querySelector('.error-message');
+                            if(errorMsg)errorMsg.remove();
+                        }
+                    });
+                    
+                    if(!valid){
+                        e.preventDefault();
+                    }
+                });
+            });
+            
+            // Tabs functionality if present
+            document.querySelectorAll('[data-tabs]').forEach(tabGroup=>{
+                const tabs=tabGroup.querySelectorAll('[data-tab]');
+                const tabContents=document.querySelectorAll('[data-tab-content]');
+                
+                tabs.forEach(tab=>{
+                    tab.addEventListener('click',()=>{
+                        const target=tab.getAttribute('data-tab');
+                        
+                        // Update active tab state
+                        tabs.forEach(t=>t.classList.remove('active-tab','text-primary-600','border-primary-600'));
+                        tab.classList.add('active-tab','text-primary-600','border-primary-600');
+                        
+                        // Show correct content
+                        tabContents.forEach(content=>{
+                            if(content.getAttribute('data-tab-content')===target){
+                                content.classList.remove('hidden');
+                            }else{
+                                content.classList.add('hidden');
+                            }
+                        });
+                    });
+                });
+            });
+            
+            // Carousels
+            document.querySelectorAll('[data-carousel]').forEach(carousel=>{
+                const slides=carousel.querySelectorAll('[data-slide]');
+                const prevBtn=carousel.querySelector('[data-carousel-prev]');
+                const nextBtn=carousel.querySelector('[data-carousel-next]');
+                
+                if(slides.length>0&&prevBtn&&nextBtn){
+                    let current=0,interval=null;
+                    
+                    slides[0].classList.remove('hidden');
+                    
+                    const updateIndicators=()=>{
+                        carousel.querySelectorAll('[data-indicator]').forEach((ind,i)=>{
+                            ind.classList[i===current?'add':'remove']('bg-primary-600');
+                            ind.classList[i!==current?'add':'remove']('bg-gray-300');
+                        });
+                    };
+                    
+                    const showSlide=idx=>{
+                        slides.forEach(s=>s.classList.add('hidden'));
+                        slides[idx].classList.remove('hidden');
+                        updateIndicators();
+                    };
+                    
+                    nextBtn.addEventListener('click',()=>{
+                        current=(current+1)%slides.length;
+                        showSlide(current);
+                    });
+                    
+                    prevBtn.addEventListener('click',()=>{
+                        current=(current-1+slides.length)%slides.length;
+                        showSlide(current);
+                    });
+                    
+                    updateIndicators();
+                    
+                    const startAuto=()=>{
+                        if(carousel.hasAttribute('data-auto')&&!interval){
+                            interval=setInterval(()=>{
+                                current=(current+1)%slides.length;
+                                showSlide(current);
+                            },5000);
+                        }
+                    };
+                    
+                    carousel.addEventListener('mouseenter',()=>{
+                        if(interval){clearInterval(interval);interval=null;}
+                    });
+                    
+                    carousel.addEventListener('mouseleave',startAuto);
+                    
+                    carousel.querySelectorAll('[data-indicator]').forEach((ind,i)=>{
+                        ind.addEventListener('click',()=>{
+                            current=i;
+                            showSlide(current);
+                        });
+                    });
+                    
+                    startAuto();
+                }
+            });
+            
+            // Initialize counters for stats sections if they exist
+            document.querySelectorAll('[data-counter]').forEach(counter=>{
+                const target=parseInt(counter.getAttribute('data-counter')||'0',10);
+                const duration=1500; // Animation duration in ms
+                const step=Math.ceil(target/50); // How much to increment per step
+                let current=0;
+                
+                const updateCounter=()=>{
+                    current+=step;
+                    if(current>target)current=target;
+                    
+                    counter.textContent=current.toString().replace(/B(?=(d{3})+(?!d))/g,',');
+                    
+                    if(current<target){
+                        requestAnimationFrame(updateCounter);
+                    }
+                };
+                
+                // Start counting when element is in view
+                const observer=new IntersectionObserver(entries=>{
+                    entries.forEach(entry=>{
+                        if(entry.isIntersecting){
+                            updateCounter();
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                },{threshold:0.5});
+                
+                observer.observe(counter);
+            });
+        });
+    </script>
+
+</body></html>
