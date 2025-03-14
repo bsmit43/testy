@@ -3,34 +3,34 @@ undefined<html lang="en" class="scroll-smooth"><head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="testy - Professional website">
     <meta name="generator" content="Website Generator">
-    <meta name="theme-color" content="hsl(110, 70%, 40%)">
+    <meta name="theme-color" content="hsl(254, 72%, 40%)">
     <title>testy - Frequently Asked Questions - testy</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&amp;family=DM+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&amp;family=Open+Sans:wght@300;400;600&amp;display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
-        body{font-family:'DM Sans', system-ui, sans-serif;overflow-x:hidden;width:100%;max-width:100%;margin:0;padding:0}
-        h1,h2,h3,h4,h5,h6{font-family:'DM Serif Display', serif}
+        body{font-family:'Open Sans', system-ui, sans-serif;overflow-x:hidden;width:100%;max-width:100%;margin:0;padding:0}
+        h1,h2,h3,h4,h5,h6{font-family:'Raleway', sans-serif}
         section,header,footer{width:100vw;max-width:100%;overflow-x:hidden}
         header{background-size:cover;background-position:center;background-repeat:no-repeat;position:relative}
-        [data-animate]{opacity:0;transform:translateY(20px);transition:opacity .6s ease-out,transform .6s ease-out}[data-animate].visible{opacity:1;transform:translateY(0)}
+        [data-animate]{opacity:0;transform:scale(.94);transition:opacity .6s ease-out,transform .6s cubic-bezier(.175,.885,.32,1.275)}[data-animate].visible{opacity:1;transform:scale(1)}
         .nav-fixed{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:blur(8px);box-shadow:0 1px 3px rgba(0,0,0,.1);transition:all .3s ease;width:100%}
         ::-webkit-scrollbar{width:8px;height:8px}
         ::-webkit-scrollbar-track{background:#f1f1f1}
-        ::-webkit-scrollbar-thumb{background:hsl(110, 70%, 40%);border-radius:4px}
-        ::-webkit-scrollbar-thumb:hover{background:hsl(110, 70%, 30%)}
-        body::before{content:'';position:fixed;top:0;left:0;right:0;height:3px;background:hsl(110, 70%, 40%);transform:scaleX(calc(var(--scroll-progress,0%)/100));transform-origin:left;z-index:1000}
+        ::-webkit-scrollbar-thumb{background:hsl(254, 72%, 40%);border-radius:4px}
+        ::-webkit-scrollbar-thumb:hover{background:hsl(254, 72%, 30%)}
+        body::before{content:'';position:fixed;top:0;left:0;right:0;height:3px;background:hsl(254, 72%, 40%);transform:scaleX(calc(var(--scroll-progress,0%)/100));transform-origin:left;z-index:1000}
         @media print{[data-animate]{opacity:1;transform:none}}
     </style>
     
     <script>
-        tailwind.config={theme:{extend:{colors:{primary:{"50":"hsl(110, 70%, 95%)","100":"hsl(110, 70%, 90%)","200":"hsl(110, 70%, 80%)","300":"hsl(110, 70%, 70%)","400":"hsl(110, 70%, 60%)","500":"hsl(110, 70%, 50%)","600":"hsl(110, 70%, 40%)","700":"hsl(110, 70%, 30%)","800":"hsl(110, 70%, 20%)","900":"hsl(110, 70%, 10%)"}},fontFamily:{sans:[''DM Sans'','system-ui','sans-serif'],heading:[''DM Serif Display'','serif']}}}}
+        tailwind.config={theme:{extend:{colors:{primary:{"50":"hsl(254, 72%, 95%)","100":"hsl(254, 72%, 90%)","200":"hsl(254, 72%, 80%)","300":"hsl(254, 72%, 70%)","400":"hsl(254, 72%, 60%)","500":"hsl(254, 72%, 50%)","600":"hsl(254, 72%, 40%)","700":"hsl(254, 72%, 30%)","800":"hsl(254, 72%, 20%)","900":"hsl(254, 72%, 10%)"}},fontFamily:{sans:[''Open Sans'','system-ui','sans-serif'],heading:[''Raleway'','sans-serif']}}}}
     </script>
 </head>
 <body class="antialiased text-gray-800">
@@ -43,36 +43,13 @@ undefined<html lang="en" class="scroll-smooth"><head>
     <title>Testy - Frequently Asked Questions</title>
     
     <style>
-        /* Custom Styles to ensure consistency with other pages */
-        .primary-color {
-            color: #7e57c2; /* Deep Purple */
-        }
-
-        .secondary-color {
-            color: #bdbdbd; /* Light Gray */
-        }
-
-        .accent-color {
-            color: #FFD700; /* Gold */
-        }
-
-        .primary-bg {
-            background-color: #7e57c2;
-        }
-
+        /* Custom styles (optional, but recommended for unique elements) */
         .faq-question {
-            cursor: pointer;
-            @apply font-semibold text-lg text-gray-800;
+            @apply font-semibold text-lg text-teal-700;
         }
 
         .faq-answer {
-            @apply mt-2 text-gray-600;
-        }
-
-        /* Add a subtle transition for hover effects */
-        .transition-opacity {
-            transition-property: opacity;
-            transition-duration: 0.2s;
+            @apply mt-2 text-gray-700;
         }
     </style>
 
@@ -80,182 +57,160 @@ undefined<html lang="en" class="scroll-smooth"><head>
 
 
     <!-- Header -->
-    <header class="bg-gradient-to-br from-purple-600 to-purple-800 text-white py-6 shadow-md">
+    <header class="bg-gradient-to-br from-teal-600 to-teal-800 text-white py-6 shadow-md">
         <div class="container mx-auto px-4">
             <div class="flex items-center justify-between">
-                <a href="/index.html" class="text-2xl font-bold">Testy</a>
-                <nav class="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
-            <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
-                <div class="flex items-center justify-between w-full md:w-auto">
-                    <a href="#" aria-label="Testy">
-                        <span class="sr-only">Testy</span>
-                        <span class="text-2xl font-bold text-gold-400">Testy</span>
-                    </a>
-                    <div class="-mr-2 flex items-center md:hidden">
-                        <button type="button" class="bg-purple-700 rounded-md p-2 inline-flex items-center justify-center text-white hover:text-gray-50 hover:bg-purple-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-expanded="false">
-                            <span class="sr-only">Open main menu</span>
-                            <!-- Heroicon name: outline/menu -->
-                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                            </svg>
-                        </button>
-                    </div>
+                <div>
+                    <a href="/index.html" class="text-2xl font-bold">Testy</a>
                 </div>
-            </div>
-            <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
-                <a href="#" class="font-medium text-white hover:text-gray-200">About</a>
-                <a href="#" class="font-medium text-white hover:text-gray-200">Services</a>
-                <a href="#" class="font-medium text-white hover:text-gray-200">Pricing</a>
-                <a href="#" class="font-medium text-white hover:text-gray-200">Contact</a>
-                <a href="#" class="font-medium text-white hover:text-gray-200">Login</a>
-            </div>
-        </nav>
+                <nav class="relative max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6" aria-label="Global">
+      <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
+        <div class="flex items-center justify-between w-full md:w-auto">
+          <a href="#" aria-label="Testy">
+            <span class="sr-only">Testy</span>
+            <img class="h-8 w-auto sm:h-10" src="/api/placeholder/48/48" alt="Testy Logo">
+          </a>
+          <div class="-mr-2 flex items-center md:hidden">
+            <button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-500" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <!-- Heroicon name: outline/menu -->
+              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
+        <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Services</a>
+        <a href="#" class="font-medium text-gray-500 hover:text-gray-900">About Us</a>
+        <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Testimonials</a>
+        <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Contact</a>
+        <a href="#" class="font-medium text-teal-600 hover:text-teal-500">Login</a>
+      </div>
+    </nav>
             </div>
         </div>
     </header>
 
     <!-- Main Content -->
     <main class="container mx-auto py-12 px-4">
-        <section class="mb-12">
-            <h1 class="text-4xl font-bold text-center primary-color mb-8">Frequently Asked Questions</h1>
-            <div class="space-y-6">
+        <h1 class="text-3xl font-bold text-center text-teal-800 mb-8">Frequently Asked Questions</h1>
 
-                <!-- FAQ Item 1 -->
-                <div class="bg-white rounded-lg shadow-md p-6" data-animate="fade-in">
-                    <h2 class="faq-question">What administrative services does Testy offer?</h2>
-                    <div class="faq-answer">Testy offers a wide range of administrative services including virtual
-                        assistance, data entry, customer support, project management, and more. We tailor our services
-                        to meet the specific needs of your business.</div>
-                </div>
+        <div class="space-y-6">
 
-                <!-- FAQ Item 2 -->
-                <div class="bg-white rounded-lg shadow-md p-6" data-animate="fade-in">
-                    <h2 class="faq-question">How does Testy ensure the security of my data?</h2>
-                    <div class="faq-answer">We take data security very seriously. We use industry-standard encryption
-                        protocols, secure servers, and strict access controls to protect your sensitive information.
-                        Our team members are also trained on data privacy best practices.</div>
-                </div>
-
-                <!-- FAQ Item 3 -->
-                <div class="bg-white rounded-lg shadow-md p-6" data-animate="fade-in">
-                    <h2 class="faq-question">What are Testy's pricing plans?</h2>
-                    <div class="faq-answer">Testy offers flexible pricing plans to suit different budgets and
-                        requirements. We have hourly rates, project-based pricing, and monthly retainer options. Contact
-                        us for a customized quote.</div>
-                </div>
-
-                <!-- FAQ Item 4 -->
-                <div class="bg-white rounded-lg shadow-md p-6" data-animate="fade-in">
-                    <h2 class="faq-question">How quickly can Testy start providing services?</h2>
-                    <div class="faq-answer">We can typically start providing services within 24-48 hours of signing an
-                        agreement. Our onboarding process is quick and efficient to minimize any disruption to your
-                        business.</div>
-                </div>
-
-                <!-- FAQ Item 5 -->
-                <div class="bg-white rounded-lg shadow-md p-6" data-animate="fade-in">
-                    <h2 class="faq-question">Can Testy handle specialized administrative tasks?</h2>
-                    <div class="faq-answer">Yes, we have a team of experienced professionals with expertise in various
-                        specialized administrative tasks, such as bookkeeping, legal document preparation, and technical
-                        support.</div>
-                </div>
-
-                <!-- FAQ Item 6 -->
-                <div class="bg-white rounded-lg shadow-md p-6" data-animate="fade-in">
-                    <h2 class="faq-question">How do I communicate with my Testy virtual assistant?</h2>
-                    <div class="faq-answer">We offer multiple communication channels, including email, phone, instant
-                        messaging, and video conferencing. You can choose the method that works best for you.</div>
-                </div>
-
-                <!-- FAQ Item 7 -->
-                <div class="bg-white rounded-lg shadow-md p-6" data-animate="fade-in">
-                    <h2 class="faq-question">What happens if I'm not satisfied with Testy's services?</h2>
-                    <div class="faq-answer">We are committed to providing excellent service. If you are not satisfied,
-                        please let us know, and we will work to resolve the issue promptly. We offer a satisfaction
-                        guarantee.</div>
-                </div>
-
-                <!-- FAQ Item 8 -->
-                <div class="bg-white rounded-lg shadow-md p-6" data-animate="fade-in">
-                    <h2 class="faq-question">Does Testy provide services outside of regular business hours?</h2>
-                    <div class="faq-answer">Yes, we offer flexible service hours to accommodate your needs. We can
-                        provide services during evenings, weekends, and holidays, depending on your requirements.</div>
-                </div>
-
-                <!-- FAQ Item 9 -->
-                <div class="bg-white rounded-lg shadow-md p-6" data-animate="fade-in">
-                    <h2 class="faq-question">What kind of reporting does Testy provide?</h2>
-                    <div class="faq-answer">We provide detailed reports on the tasks we complete, the time spent, and
-                        the results achieved. You can customize the reporting frequency and metrics to track our
-                        performance effectively.</div>
-                </div>
-
-                <!-- FAQ Item 10 -->
-                <div class="bg-white rounded-lg shadow-md p-6" data-animate="fade-in">
-                    <h2 class="faq-question">Can Testy integrate with my existing software and systems?</h2>
-                    <div class="faq-answer">Yes, we are experienced in integrating with a wide range of software and
-                        systems, including CRM, project management, and accounting tools. We can seamlessly integrate
-                        with your existing workflow.</div>
-                </div>
-
+            <!-- FAQ Item 1 -->
+            <div class="bg-white rounded-lg shadow-md p-6" data-animate="fade-in">
+                <h2 class="faq-question">What administrative services do you offer?</h2>
+                <p class="faq-answer">We offer a wide range of administrative services, including data entry, document management, scheduling, customer support, and virtual assistant services.</p>
             </div>
-        </section>
+
+            <!-- FAQ Item 2 -->
+            <div class="bg-white rounded-lg shadow-md p-6" data-animate="fade-in">
+                <h2 class="faq-question">How do you ensure the security of my confidential information?</h2>
+                <p class="faq-answer">We take data security very seriously. We use encrypted systems, secure file sharing protocols, and strict confidentiality agreements with all our employees. We also comply with all relevant data protection regulations.</p>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="bg-white rounded-lg shadow-md p-6" data-animate="fade-in">
+                <h2 class="faq-question">What are your rates for administrative services?</h2>
+                <p class="faq-answer">Our rates vary depending on the specific services required and the volume of work. We offer hourly rates, project-based pricing, and retainer agreements. Contact us for a personalized quote.</p>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="bg-white rounded-lg shadow-md p-6" data-animate="fade-in">
+                <h2 class="faq-question">What is your turnaround time for completing tasks?</h2>
+                <p class="faq-answer">Turnaround time depends on the complexity and scope of the task. We strive to complete all tasks efficiently and within agreed-upon deadlines. We will provide an estimated turnaround time when you request our services.</p>
+            </div>
+
+            <!-- FAQ Item 5 -->
+            <div class="bg-white rounded-lg shadow-md p-6" data-animate="fade-in">
+                <h2 class="faq-question">Do you offer customized administrative solutions?</h2>
+                <p class="faq-answer">Yes, we understand that every business has unique needs. We tailor our administrative solutions to meet your specific requirements and goals. We work closely with you to develop a customized plan that fits your budget and timeline.</p>
+            </div>
+
+            <!-- FAQ Item 6 -->
+            <div class="bg-white rounded-lg shadow-md p-6" data-animate="fade-in">
+                <h2 class="faq-question">What software and tools do you use?</h2>
+                <p class="faq-answer">We are proficient in a variety of software and tools, including Microsoft Office Suite, Google Workspace, CRM systems (e.g., Salesforce, HubSpot), project management tools (e.g., Asana, Trello), and accounting software (e.g., QuickBooks, Xero). We are also adaptable to using other software as needed.</p>
+            </div>
+
+            <!-- FAQ Item 7 -->
+            <div class="bg-white rounded-lg shadow-md p-6" data-animate="fade-in">
+                <h2 class="faq-question">How can I get started with your administrative services?</h2>
+                <p class="faq-answer">Getting started is easy! Simply contact us through our website or by phone to schedule a consultation. We will discuss your needs, answer your questions, and develop a customized solution for your business.</p>
+            </div>
+
+            <!-- FAQ Item 8 -->
+            <div class="bg-white rounded-lg shadow-md p-6" data-animate="fade-in">
+                <h2 class="faq-question">What if I'm not happy with the service provided?</h2>
+                <p class="faq-answer">Your satisfaction is our top priority. If you are not completely satisfied with our services, please let us know. We will work with you to address your concerns and make it right. We offer a satisfaction guarantee on all our services.</p>
+            </div>
+
+             <!-- FAQ Item 9 -->
+             <div class="bg-white rounded-lg shadow-md p-6" data-animate="fade-in">
+                <h2 class="faq-question">Do you offer virtual assistant services?</h2>
+                <p class="faq-answer">Yes, we provide comprehensive virtual assistant services, including managing emails, scheduling appointments, making travel arrangements, and handling other administrative tasks remotely.</p>
+            </div>
+
+             <!-- FAQ Item 10 -->
+             <div class="bg-white rounded-lg shadow-md p-6" data-animate="fade-in">
+                <h2 class="faq-question">Can you help with my social media management?</h2>
+                <p class="faq-answer">While our core focus is on administrative tasks, we can assist with basic social media management, such as scheduling posts, monitoring engagement, and responding to inquiries. For more advanced social media strategies, we can connect you with our trusted partners.</p>
+            </div>
+
+        </div>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-300 py-12 lg:py-16">
+    <footer class="bg-teal-700 text-white py-12 mt-24">
     <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
             <div>
-                <h3 class="text-lg font-semibold mb-4 text-white">Testy Administrative Services</h3>
-                <p class="text-sm">Your trusted partner for streamlined administrative solutions. We empower businesses to focus on growth by handling the essential but time-consuming tasks.</p>
-                <div class="flex space-x-4 mt-4">
-                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                <h3 class="text-xl font-semibold mb-4">Testy Administrative Services</h3>
+                <p class="text-sm">We provide comprehensive administrative support to businesses of all sizes. Let us handle the paperwork so you can focus on growth.</p>
+                <div class="flex mt-4 space-x-4">
+                    <a href="#" class="hover:text-coral-300"><i class="fab fa-facebook-square fa-2x"></i></a>
+                    <a href="#" class="hover:text-coral-300"><i class="fab fa-linkedin fa-2x"></i></a>
+                    <a href="#" class="hover:text-coral-300"><i class="fab fa-twitter-square fa-2x"></i></a>
                 </div>
             </div>
 
             <div>
-                <h3 class="text-lg font-semibold mb-4 text-white">Quick Links</h3>
+                <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
                 <ul class="text-sm">
-                    <li class="mb-2"><a href="#" class="hover:text-gold-500">About Us</a></li>
-                    <li class="mb-2"><a href="#" class="hover:text-gold-500">Our Services</a></li>
-                    <li class="mb-2"><a href="#" class="hover:text-gold-500">Case Studies</a></li>
-                    <li class="mb-2"><a href="#" class="hover:text-gold-500">Contact Us</a></li>
-                    <li class="mb-2"><a href="#" class="hover:text-gold-500">Blog</a></li>
+                    <li class="mb-2"><a href="/index.html" class="hover:text-coral-300">Home</a></li>
+                    <li class="mb-2"><a href="/services.html" class="hover:text-coral-300">Services</a></li>
+                    <li class="mb-2"><a href="/about.html" class="hover:text-coral-300">About Us</a></li>
+                    <li class="mb-2"><a href="/contact.html" class="hover:text-coral-300">Contact Us</a></li>
+                    <li class="mb-2"><a href="/careers.html" class="hover:text-coral-300">Careers</a></li>
                 </ul>
             </div>
 
             <div>
-                <h3 class="text-lg font-semibold mb-4 text-white">Services</h3>
+                <h3 class="text-xl font-semibold mb-4">Our Services</h3>
                 <ul class="text-sm">
-                    <li class="mb-2"><a href="#" class="hover:text-gold-500">Virtual Assistant Services</a></li>
-                    <li class="mb-2"><a href="#" class="hover:text-gold-500">Bookkeeping &amp; Accounting</a></li>
-                    <li class="mb-2"><a href="#" class="hover:text-gold-500">Customer Support</a></li>
-                    <li class="mb-2"><a href="#" class="hover:text-gold-500">Data Entry &amp; Management</a></li>
-                    <li class="mb-2"><a href="#" class="hover:text-gold-500">Project Management</a></li>
+                    <li class="mb-2"><a href="#" class="hover:text-coral-300">Virtual Assistant Services</a></li>
+                    <li class="mb-2"><a href="#" class="hover:text-coral-300">Bookkeeping &amp; Accounting</a></li>
+                    <li class="mb-2"><a href="#" class="hover:text-coral-300">Payroll Management</a></li>
+                    <li class="mb-2"><a href="#" class="hover:text-coral-300">Customer Support</a></li>
+                    <li class="mb-2"><a href="#" class="hover:text-coral-300">Data Entry &amp; Management</a></li>
                 </ul>
             </div>
 
             <div>
-                <h3 class="text-lg font-semibold mb-4 text-white">Contact Us</h3>
-                <p class="text-sm mb-2">123 Main Street, Suite 400<br>Anytown, CA 91234</p>
-                <p class="text-sm mb-2">Phone: (555) 123-4567</p>
-                <p class="text-sm mb-2">Email: info@testyadmin.com</p>
-
-                <form class="mt-4">
-                    <label for="email" class="block text-sm font-medium text-gray-400">Subscribe to our Newsletter:</label>
-                    <div class="mt-1 flex rounded-md shadow-sm">
-                        <input type="email" name="email" id="email" class="focus:ring-gold-500 focus:border-gold-500 flex-1 block w-full rounded-none rounded-l-md sm:text-sm border-gray-700 bg-gray-800 text-gray-300" placeholder="you@example.com">
-                        <button type="submit" class="relative inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-r-md text-white bg-gold-600 hover:bg-gold-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gold-500">Subscribe</button>
-                    </div>
-                </form>
+                <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
+                <p class="text-sm mb-2">123 Main Street, Suite 400</p>
+                <p class="text-sm mb-2">Anytown, CA 91234</p>
+                <p class="text-sm mb-2">Email: <a href="mailto:info@testy.com" class="hover:text-coral-300">info@testy.com</a></p>
+                <p class="text-sm">Phone: (555) 123-4567</p>
             </div>
+
         </div>
-        <div class="mt-8 border-t border-gray-700 pt-8 text-center text-sm">
-            © 2023 Testy Administrative Services. All rights reserved. | <a href="#" class="hover:text-gold-500">Privacy Policy</a> | <a href="#" class="hover:text-gold-500">Terms of Service</a>
+
+        <div class="mt-8 text-center text-sm">
+            © 2023 Testy Administrative Services. All rights reserved.
         </div>
     </div>
 </footer>
