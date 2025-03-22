@@ -3,36 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="testy - Professional website">
+    <meta name="description" content="test - Professional website">
     <meta name="generator" content="Website Generator">
-    <meta name="theme-color" content="hsl(254, 72%, 40%)">
-    <title>testy</title>
+    <meta name="theme-color" content="hsl(241, 75%, 40%)">
+    <title>test</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href='https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap' rel='stylesheet'>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
-        body{font-family:'Open Sans', system-ui, sans-serif;overflow-x:hidden;width:100%;max-width:100%;margin:0;padding:0}
-        h1,h2,h3,h4,h5,h6{font-family:'Raleway', sans-serif}
+        body{font-family:'Manrope', system-ui, sans-serif;overflow-x:hidden;width:100%;max-width:100%;margin:0;padding:0}
+        h1,h2,h3,h4,h5,h6{font-family:'Manrope', sans-serif}
         section,header,footer{width:100vw;max-width:100%;overflow-x:hidden}
         header{background-size:cover;background-position:center;background-repeat:no-repeat;position:relative}
-        [data-animate]{opacity:0;transform:scale(.94);transition:opacity .6s ease-out,transform .6s cubic-bezier(.175,.885,.32,1.275)}[data-animate].visible{opacity:1;transform:scale(1)}
+        [data-animate]{opacity:0;transform:translateY(20px);transition:opacity .6s ease-out,transform .6s ease-out}[data-animate].visible{opacity:1;transform:translateY(0)}
         .nav-fixed{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:blur(8px);box-shadow:0 1px 3px rgba(0,0,0,.1);transition:all .3s ease;width:100%}
         ::-webkit-scrollbar{width:8px;height:8px}
         ::-webkit-scrollbar-track{background:#f1f1f1}
-        ::-webkit-scrollbar-thumb{background:hsl(254, 72%, 40%);border-radius:4px}
-        ::-webkit-scrollbar-thumb:hover{background:hsl(254, 72%, 30%)}
-        body::before{content:'';position:fixed;top:0;left:0;right:0;height:3px;background:hsl(254, 72%, 40%);transform:scaleX(calc(var(--scroll-progress,0%)/100));transform-origin:left;z-index:1000}
+        ::-webkit-scrollbar-thumb{background:hsl(241, 75%, 40%);border-radius:4px}
+        ::-webkit-scrollbar-thumb:hover{background:hsl(241, 75%, 30%)}
+        body::before{content:'';position:fixed;top:0;left:0;right:0;height:3px;background:hsl(241, 75%, 40%);transform:scaleX(calc(var(--scroll-progress,0%)/100));transform-origin:left;z-index:1000}
         @media print{[data-animate]{opacity:1;transform:none}}
     </style>
     
     <script>
-        tailwind.config={theme:{extend:{colors:{primary:{"50":"hsl(254, 72%, 95%)","100":"hsl(254, 72%, 90%)","200":"hsl(254, 72%, 80%)","300":"hsl(254, 72%, 70%)","400":"hsl(254, 72%, 60%)","500":"hsl(254, 72%, 50%)","600":"hsl(254, 72%, 40%)","700":"hsl(254, 72%, 30%)","800":"hsl(254, 72%, 20%)","900":"hsl(254, 72%, 10%)"}},fontFamily:{sans:[''Open Sans'','system-ui','sans-serif'],heading:[''Raleway'','sans-serif']}}}}
+        tailwind.config={theme:{extend:{colors:{primary:{"50":"hsl(241, 75%, 95%)","100":"hsl(241, 75%, 90%)","200":"hsl(241, 75%, 80%)","300":"hsl(241, 75%, 70%)","400":"hsl(241, 75%, 60%)","500":"hsl(241, 75%, 50%)","600":"hsl(241, 75%, 40%)","700":"hsl(241, 75%, 30%)","800":"hsl(241, 75%, 20%)","900":"hsl(241, 75%, 10%)"}},fontFamily:{sans:[''Manrope'','system-ui','sans-serif'],heading:[''Manrope'','sans-serif']}}}}
     </script>
 </head>
 <body class="antialiased text-gray-800">
@@ -42,497 +42,378 @@
 
 
 <!-- HEADER SECTION -->
-<header class="relative bg-white overflow-hidden">
-  <div class="relative pt-6 pb-16 sm:pb-24 lg:pb-32">
-    <nav class="relative max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6" aria-label="Global">
-      <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
-        <div class="flex items-center justify-between w-full md:w-auto">
-          <a href="#" aria-label="Testy">
-            <span class="sr-only">Testy</span>
-            <img class="h-8 w-auto sm:h-10" src="/api/placeholder/48/48" alt="Testy Logo">
-          </a>
-          <div class="-mr-2 flex items-center md:hidden">
-            <button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-500" aria-expanded="false">
-              <span class="sr-only">Open main menu</span>
-              <!-- Heroicon name: outline/menu -->
-              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
-        <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Services</a>
-        <a href="#" class="font-medium text-gray-500 hover:text-gray-900">About Us</a>
-        <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Testimonials</a>
-        <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Contact</a>
-        <a href="#" class="font-medium text-teal-600 hover:text-teal-500">Login</a>
-      </div>
-    </nav>
+<header class="relative bg-gray-900 overflow-hidden">
+  <div class="absolute inset-0">
+   <img class="h-full w-full object-cover object-center" src="https://pixabay.com/get/g7843d08f8ae31a85187d42ae082687c0d736b2dcf1964a938837e0fd4c4993d6f250b4cf70efb5d05b81a7d471a8ff1d6d5e8c1a17f98c5657eb3a338cfe1fea_640.jpg" alt="Mountains" />
+   <div class="absolute inset-0 bg-gradient-to-r from-gray-900 to-red-900 opacity-60"></div>
+  </div>
 
-    <!--
-      Mobile menu, show/hide based on menu open state.
-
-      Entering: "duration-150 ease-out"
-        From: "opacity-0 scale-95"
-        To: "opacity-100 scale-100"
-      Leaving: "duration-100 ease-in"
-        From: "opacity-100 scale-100"
-        To: "opacity-0 scale-95"
-    -->
-    <div class="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
-      <div class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
-        <div class="px-5 pt-4 flex items-center justify-between">
-          <div>
-            <img class="h-8 w-auto" src="/api/placeholder/48/48" alt="Testy Logo">
-          </div>
-          <div class="-mr-2">
-            <button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-500">
-              <span class="sr-only">Close main menu</span>
-              <!-- Heroicon name: outline/x -->
-              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-        </div>
-        <div class="px-2 pt-2 pb-3 space-y-1">
-          <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Services</a>
-          <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">About Us</a>
-          <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Testimonials</a>
-          <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Contact</a>
-        </div>
-        <a href="#" class="block w-full px-5 py-3 text-center font-medium text-teal-600 bg-gray-50 hover:bg-gray-100">
-          Log in
-        </a>
-      </div>
+  <nav class="relative px-6 py-4">
+   <div class="container mx-auto flex items-center justify-between">
+    <div class="flex items-center">
+     <a class="text-xl font-bold text-white hover:text-red-500 transition duration-300" href="/">
+      test
+     </a>
     </div>
+    <div class="hidden lg:flex space-x-6">
+     <a class="text-white hover:text-red-500 transition duration-300" href="#adventures">Adventures</a>
+     <a class="text-white hover:text-red-500 transition duration-300" href="#about">About Us</a>
+     <a class="text-white hover:text-red-500 transition duration-300" href="#testimonials">Testimonials</a>
+     <a class="text-white hover:text-red-500 transition duration-300" href="#contact">Contact</a>
+    </div>
+    <div class="lg:hidden">
+     <button id="mobile-menu-button" class="text-white focus:outline-none focus:text-red-500">
+      <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+     </button>
+    </div>
+   </div>
+  </nav>
 
-    <main class="mt-8 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 lg:mt-20 lg:px-8 xl:mt-28">
-      <div class="sm:text-center lg:text-left">
-        <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-          <span class="block xl:inline">Streamline Your Business</span>
-          <span class="block text-teal-600 xl:inline">With Expert Administration</span>
-        </h1>
-        <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-          Testy provides comprehensive administrative solutions tailored to your business needs. From bookkeeping to virtual assistance, we handle the details so you can focus on growth.
-        </p>
-        <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-          <div class="rounded-md shadow">
-            <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-teal-600 hover:bg-teal-700 md:py-4 md:text-lg md:px-10">
-              Get Started
-            </a>
-          </div>
-          <div class="mt-3 sm:mt-0 sm:ml-3">
-            <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-teal-700 bg-teal-100 hover:bg-teal-200 md:py-4 md:text-lg md:px-10">
-              Learn More
-            </a>
-          </div>
-        </div>
-      </div>
-    </main>
+  <div id="mobile-menu" class="hidden lg:hidden bg-gray-800 py-4 px-6">
+   <a class="block text-white py-2 hover:text-red-500 transition duration-300" href="#adventures">Adventures</a>
+   <a class="block text-white py-2 hover:text-red-500 transition duration-300" href="#about">About Us</a>
+   <a class="block text-white py-2 hover:text-red-500 transition duration-300" href="#testimonials">Testimonials</a>
+   <a class="block text-white py-2 hover:text-red-500 transition duration-300" href="#contact">Contact</a>
   </div>
-  <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-    <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="https://pixabay.com/get/g9d2d844e1aec143f06279738820f357e30cf7a3cbbba5ad4e82fcf95716e06a8b694f90dd035647652682ffe8b45c3f339b000546daf549bf39ae7692cf72670_640.jpg" alt="Office Workspace">
+
+  <div class="relative py-24 px-6 md:px-12 lg:px-24 xl:px-32">
+   <div class="container mx-auto text-center">
+    <h1 class="text-4xl font-extrabold text-white sm:text-5xl lg:text-6xl" data-animate="fade-in-up">
+     Explore the Unexplored with test
+    </h1>
+    <p class="mt-4 text-lg text-gray-200 sm:text-xl lg:text-2xl" data-animate="fade-in-up" data-animate-delay="200">
+     Your gateway to unforgettable adventure experiences.
+    </p>
+    <div class="mt-8 flex justify-center" data-animate="fade-in-up" data-animate-delay="400">
+     <a href="#adventures" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">
+      Discover Adventures
+     </a>
+    </div>
+   </div>
   </div>
-</header>
+
+  
+ </header>
 
 <!-- ABOUT SECTION -->
-<section id="about" class="bg-white py-16 px-6 md:px-12 lg:px-24 xl:px-32 2xl:px-48 overflow-hidden">
-    <div class="container mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-
-            <div class="order-2 md:order-1" data-animate="fade-right">
-                <h2 class="text-3xl lg:text-4xl font-extrabold text-teal-700 mb-6">About Testy: Your Administrative Partner</h2>
-                <p class="text-gray-700 leading-relaxed mb-8">
-                    At Testy, we understand that managing administrative tasks can be time-consuming and complex. We provide comprehensive administrative services tailored to meet the unique needs of your business, allowing you to focus on your core competencies and drive growth.
-                </p>
-                <p class="text-gray-700 leading-relaxed mb-8">
-                    Founded in 2018, Testy has been dedicated to helping businesses streamline their operations and improve efficiency. Our team of experienced administrative professionals is committed to delivering exceptional service and building long-term partnerships with our clients.
-                </p>
-                <div class="flex flex-wrap gap-4">
-                    <a href="#contact" class="inline-block bg-coral-500 hover:bg-coral-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 ease-in-out">Get a Free Consultation</a>
-                    <a href="#services" class="inline-block bg-white text-teal-700 hover:text-teal-900 font-semibold py-3 px-6 rounded-lg transition duration-300 ease-in-out border border-teal-700">Our Services</a>
-                </div>
-            </div>
-
-            <div class="order-1 md:order-2" data-animate="fade-left">
-                <img src="https://pixabay.com/get/g54518756f4e727e9836f5d5d9d30aab3d1ff5cc1358161630a2c615c82d047d866b316dc677427a6ec4fd616670d1c53_640.jpg" alt="Office Environment" class="rounded-xl shadow-lg w-full h-auto object-cover">
-            </div>
-        </div>
-
-        <div class="mt-16 border-t border-gray-200 pt-12">
-            <h3 class="text-2xl font-semibold text-teal-700 mb-6 text-center">Our Core Values</h3>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-
-                <div class="text-center p-6 bg-gray-50 rounded-lg shadow-md" data-animate="fade-up">
-                    <div class="flex items-center justify-center h-16 w-16 mx-auto bg-teal-100 text-teal-700 rounded-full mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512m0 6.375c0 1.476.66 2.823 1.753 3.853A13 13 0 0011.5 15c1.138 0 2.245-.234 3.247-.647a10 10 0 002.5-2.3m0-6.375c0-1.477-.66-2.823-1.753-3.853A13 13 0 0012.5 9c-1.138 0-2.245.234-3.247.647a10 10 0 00-2.5 2.3m0 6.375c0 1.476.66 2.823 1.753 3.853A13 13 0 0011.5 15c1.138 0 2.245-.234 3.247-.647a10 10 0 002.5-2.3m0-6.375c0-1.477-.66-2.823-1.753-3.853A13 13 0 0012.5 9c-1.138 0-2.245.234-3.247.647a10 10 0 00-2.5 2.3" />
-                        </svg>
-                    </div>
-                    <h4 class="text-xl font-semibold text-gray-800 mb-2">Integrity</h4>
-                    <p class="text-gray-600">We uphold the highest ethical standards in all our interactions, ensuring transparency and trust.</p>
-                </div>
-
-                <div class="text-center p-6 bg-gray-50 rounded-lg shadow-md" data-animate="fade-up" data-animation-delay="200">
-                    <div class="flex items-center justify-center h-16 w-16 mx-auto bg-teal-100 text-teal-700 rounded-full mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l7.5-1.5 7.5 1.5m-15 0l7.5 1.5 7.5-1.5M4.5 12.75L6 15.75m15-3l-1.5 3m-15 0l-1.5-3m1.5 3l1.5 3M12 21l-2.25-5.25m2.25 5.25l2.25-5.25m0 0L19.5 12.75m-15 0L4.5 12.75" />
-                        </svg>
-                    </div>
-                    <h4 class="text-xl font-semibold text-gray-800 mb-2">Efficiency</h4>
-                    <p class="text-gray-600">We strive to optimize processes and deliver timely, accurate, and cost-effective solutions.</p>
-                </div>
-
-                <div class="text-center p-6 bg-gray-50 rounded-lg shadow-md" data-animate="fade-up" data-animation-delay="400">
-                    <div class="flex items-center justify-center h-16 w-16 mx-auto bg-teal-100 text-teal-700 rounded-full mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                    </div>
-                    <h4 class="text-xl font-semibold text-gray-800 mb-2">Excellence</h4>
-                    <p class="text-gray-600">We are committed to providing exceptional service and exceeding our clients' expectations.</p>
-                </div>
-
-            </div>
-        </div>
+<section id="about" class="bg-gray-100 py-16 overflow-hidden">
+  <div class="container mx-auto px-4">
+   <div class="lg:flex lg:items-center lg:justify-between">
+    <div class="lg:w-1/2 mb-8 lg:mb-0" data-animate="fade-right">
+     <img src="https://pixabay.com/get/g9a1e0c532b817187a708e29de344e26e07389c619b8f60782793747226676518863bb0768eabce0785827acdb84471462ea846bdc0cd8cba462afed7524ea207_640.jpg" alt="Adventurer rappelling down a cliff" class="rounded-xl shadow-lg w-full object-cover h-96">
     </div>
-</section>
+    <div class="lg:w-1/2 lg:pl-12" data-animate="fade-left">
+     <h2 class="text-3xl font-extrabold text-gray-900 mb-6">About Us</h2>
+     <p class="text-lg text-gray-700 mb-6">
+      At test, we're more than just an adventure tourism company – we're a family of passionate explorers dedicated to crafting unforgettable experiences in the heart of nature. Founded in 2010 by avid mountaineer, John Doe, our mission is to share the thrill of adventure while fostering a deep respect for the environment.
+     </p>
+     <p class="text-lg text-gray-700 mb-6">
+      We specialize in expertly guided tours and expeditions, ranging from exhilarating white-water rafting trips down the Colorado River to challenging treks through the majestic Rocky Mountains. Our team of certified guides boasts years of experience and a commitment to safety, ensuring that every adventure is both thrilling and secure.
+     </p>
+     <p class="text-lg text-gray-700 mb-6">
+      But our commitment extends beyond just providing adrenaline-pumping activities. We believe in responsible tourism, partnering with local communities and adhering to strict environmental guidelines to minimize our impact. When you choose test, you're not just embarking on an adventure; you're contributing to the preservation of the natural world for future generations.
+     </p>
+     <div class="flex items-center mt-8">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-red-600 mr-4">
+       <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM8.547 9.505a1.5 1.5 0 10-2.97-1.517 1.5 1.5 0 002.97 1.517zm9.753 0a1.5 1.5 0 10-2.97-1.517 1.5 1.5 0 002.97 1.517zm-1.5 9.75a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" clip-rule="evenodd" />
+      </svg>
+      <span class="text-gray-700 font-medium">Committed to Sustainable Tourism</span>
+     </div>
+    </div>
+   </div>
+  </div>
+ </section>
 
 <!-- SERVICES SECTION -->
-<section id="services" class="py-16 bg-gray-50">
-    <div class="container mx-auto px-4">
-        <div class="text-center mb-12">
-            <h2 class="text-3xl lg:text-4xl font-extrabold text-teal-700 mb-4" data-animate="fade-in">
-                Our Comprehensive Administrative Services
-            </h2>
-            <p class="text-gray-600 text-lg" data-animate="fade-in" data-animate-delay="200">
-                We provide a wide range of administrative solutions tailored to streamline your operations and
-                boost productivity.
-            </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-            <!-- Service Card 1 -->
-            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
-                data-animate="slide-in-left">
-                <img src="https://pixabay.com/get/g47b13db26b3edced6430d143ab157905f598cdc9492f5752245cb4cf21dad46f84e8b30ccc09b7d01d4e8779d63af7398707ab942bf762562319f2ac8f56b517_640.jpg"
-                    alt="Virtual Assistant Services" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-teal-600 mb-2">Virtual Assistant Services</h3>
-                    <p class="text-gray-700">
-                        Our virtual assistants handle your day-to-day tasks, from scheduling and email management to
-                        travel arrangements and research.
-                    </p>
-                    <ul class="list-disc list-inside mt-4 text-sm text-gray-500">
-                        <li>Calendar Management</li>
-                        <li>Email Correspondence</li>
-                        <li>Travel Planning</li>
-                        <li>Data Entry</li>
-                    </ul>
-                    <a href="#"
-                        class="inline-block mt-4 bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-200">
-                        Learn More
-                    </a>
-                </div>
-            </div>
-
-            <!-- Service Card 2 -->
-            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
-                data-animate="slide-in-up">
-                <img src="https://pixabay.com/get/g54518756f4e727e9836f5d5d9d30aab3d1ff5cc1358161630a2c615c82d047d866b316dc677427a6ec4fd616670d1c53_640.jpg"
-                    alt="Bookkeeping and Accounting" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-teal-600 mb-2">Bookkeeping and Accounting</h3>
-                    <p class="text-gray-700">
-                        We provide accurate and reliable bookkeeping services, including financial reporting,
-                        reconciliation, and tax preparation assistance.
-                    </p>
-                    <ul class="list-disc list-inside mt-4 text-sm text-gray-500">
-                        <li>Invoice Management</li>
-                        <li>Expense Tracking</li>
-                        <li>Financial Reporting</li>
-                        <li>Tax Preparation Support</li>
-                    </ul>
-                    <a href="#"
-                        class="inline-block mt-4 bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-200">
-                        Learn More
-                    </a>
-                </div>
-            </div>
-
-            <!-- Service Card 3 -->
-            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
-                data-animate="slide-in-right">
-                <img src="https://pixabay.com/get/g647c56e8386d3d6dd724b3edb3cfca4973536b80e5ca925d88a568411402b1db48b41f07552b46a49426e0760fe9c15441d2aa84426b8e123fe8c6c1548d67af_640.jpg"
-                    alt="HR and Payroll Services" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-teal-600 mb-2">HR and Payroll Services</h3>
-                    <p class="text-gray-700">
-                        Manage your human resources effectively with our payroll processing, employee onboarding, and
-                        compliance assistance.
-                    </p>
-                    <ul class="list-disc list-inside mt-4 text-sm text-gray-500">
-                        <li>Payroll Processing</li>
-                        <li>Employee Onboarding</li>
-                        <li>Compliance Management</li>
-                        <li>Benefits Administration</li>
-                    </ul>
-                    <a href="#"
-                        class="inline-block mt-4 bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-200">
-                        Learn More
-                    </a>
-                </div>
-            </div>
-
-            <!-- Service Card 4 -->
-            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
-                data-animate="slide-in-left">
-                <img src="https://pixabay.com/get/g9d2d844e1aec143f06279738820f357e30cf7a3cbbba5ad4e82fcf95716e06a8b694f90dd035647652682ffe8b45c3f339b000546daf549bf39ae7692cf72670_640.jpg"
-                    alt="Project Management Support" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-teal-600 mb-2">Project Management Support</h3>
-                    <p class="text-gray-700">
-                        From planning and execution to monitoring and reporting, we provide comprehensive project
-                        management support to ensure your projects are completed on time and within budget.
-                    </p>
-                    <ul class="list-disc list-inside mt-4 text-sm text-gray-500">
-                        <li>Project Planning</li>
-                        <li>Task Management</li>
-                        <li>Progress Tracking</li>
-                        <li>Reporting and Analysis</li>
-                    </ul>
-                    <a href="#"
-                        class="inline-block mt-4 bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-200">
-                        Learn More
-                    </a>
-                </div>
-            </div>
-
-            <!-- Service Card 5 -->
-            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
-                data-animate="slide-in-bottom">
-                <img src="https://images.unsplash.com/photo-1583508915404-3724f9f287f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YWRtaW5pc3RyYXRpdmUlMjBzdXBwb3J0fGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60"
-                    alt="Customer Service and Support" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-teal-600 mb-2">Customer Service and Support</h3>
-                    <p class="text-gray-700">
-                        Enhance your customer relationships with our professional customer service and support solutions,
-                        including help desk services, ticketing systems, and customer feedback management.
-                    </p>
-                    <ul class="list-disc list-inside mt-4 text-sm text-gray-500">
-                        <li>Help Desk Support</li>
-                        <li>Ticketing System Management</li>
-                        <li>Customer Feedback Collection</li>
-                        <li>Live Chat Support</li>
-                    </ul>
-                    <a href="#"
-                        class="inline-block mt-4 bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-200">
-                        Learn More
-                    </a>
-                </div>
-            </div>
-
-            <!-- Service Card 6 -->
-            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
-                data-animate="slide-in-right">
-                <img src="https://images.unsplash.com/photo-1507842214779-05979c137c4b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fG9mZmljZSUyMG1hbmFnZW1lbnR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60"
-                    alt="Office Management and Organization" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-teal-600 mb-2">Office Management and Organization</h3>
-                    <p class="text-gray-700">
-                        Keep your office running smoothly with our comprehensive office management services, including
-                        supply management, vendor coordination, and facility maintenance.
-                    </p>
-                    <ul class="list-disc list-inside mt-4 text-sm text-gray-500">
-                        <li>Supply Procurement</li>
-                        <li>Vendor Coordination</li>
-                        <li>Facility Maintenance</li>
-                        <li>Document Management</li>
-                    </ul>
-                    <a href="#"
-                        class="inline-block mt-4 bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-200">
-                        Learn More
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- FEATURES SECTION -->
-<section id="features" class="py-16 bg-gray-50">
+<section id="services" class="py-16 bg-gray-100">
   <div class="container mx-auto px-4">
     <div class="text-center mb-12">
-      <h2 class="text-3xl font-extrabold text-teal-700 sm:text-4xl" data-animate="fade-in">
-        Streamline Your Operations with Testy's Features
-      </h2>
+      <h2 class="text-3xl font-extrabold text-gray-800 sm:text-4xl" data-animate="fade-in">Our Adventure Services</h2>
       <p class="mt-4 text-lg text-gray-600" data-animate="fade-in" data-animate-delay="200">
-        Focus on your core business while we handle the administrative tasks with our comprehensive suite of features.
+        Explore the world with us. We offer a range of thrilling and unforgettable adventure experiences.
       </p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-      <!-- Feature 1: Document Management -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300" data-animate="slide-in-left">
+      <!-- Service Card 1: Mountain Climbing -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300" data-animate="slide-in-up">
+        <img src="https://pixabay.com/get/g8bd8bd399c28f91d9ca40f26bc505a26873fde9d138905acd1ba758a8d93224e55596714a05e3546fb5e0d132494f8d569c8c2affb77721923b188698726f56f_640.jpg" alt="Mountain Climbing" class="w-full h-64 object-cover">
         <div class="p-6">
-          <div class="flex items-center mb-4">
-            <svg class="w-8 h-8 text-teal-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 001 1h14a1 1 0 001-1V4a1 1 0 00-1-1H5a1 1 0 00-1 1v1zM4 13a1 1 0 001 1h6a1 1 0 001-1V12a1 1 0 00-1-1H5a1 1 0 00-1 1v1zM4 21a1 1 0 001 1h6a1 1 0 001-1V20a1 1 0 00-1-1H5a1 1 0 00-1 1v1z"></path>
-            </svg>
-            <h3 class="text-xl font-semibold text-gray-800">Document Management</h3>
-          </div>
-          <p class="text-gray-600">
-            Securely store, organize, and access your important documents from anywhere. Our system supports version control, access permissions, and easy search functionality.
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Mountain Climbing</h3>
+          <p class="text-gray-600 mb-4">
+            Conquer majestic peaks with our expert guides. We provide all the necessary equipment and training for a safe and exhilarating climb.
           </p>
+          <ul class="list-disc list-inside text-sm text-gray-500 mb-4">
+            <li>Guided climbs for all skill levels</li>
+            <li>Equipment rental available</li>
+            <li>Safety briefings and training</li>
+          </ul>
+          <a href="#" class="inline-block bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-200">
+            Learn More
+          </a>
         </div>
       </div>
 
-      <!-- Feature 2: Invoicing & Billing -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300" data-animate="fade-in">
+      <!-- Service Card 2: White Water Rafting -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300" data-animate="slide-in-up" data-animate-delay="100">
+        <img src="https://pixabay.com/get/g9a1e0c532b817187a708e29de344e26e07389c619b8f60782793747226676518863bb0768eabce0785827acdb84471462ea846bdc0cd8cba462afed7524ea207_640.jpg" alt="White Water Rafting" class="w-full h-64 object-cover">
         <div class="p-6">
-          <div class="flex items-center mb-4">
-            <svg class="w-8 h-8 text-teal-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 1v-3m3 1v-2M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-            </svg>
-            <h3 class="text-xl font-semibold text-gray-800">Invoicing & Billing</h3>
-          </div>
-          <p class="text-gray-600">
-            Create professional invoices, track payments, and automate billing cycles.  Send reminders and manage overdue accounts with ease.  Integrates seamlessly with popular accounting software.
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">White Water Rafting</h3>
+          <p class="text-gray-600 mb-4">
+            Experience the thrill of navigating rushing rapids. Our experienced raft guides will ensure a safe and unforgettable adventure.
           </p>
+          <ul class="list-disc list-inside text-sm text-gray-500 mb-4">
+            <li>Various river grades available</li>
+            <li>Safety equipment provided</li>
+            <li>Professional raft guides</li>
+          </ul>
+          <a href="#" class="inline-block bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-200">
+            Learn More
+          </a>
         </div>
       </div>
 
-      <!-- Feature 3: Scheduling & Calendar Management -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300" data-animate="slide-in-right">
+      <!-- Service Card 3: Jungle Trekking -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300" data-animate="slide-in-up" data-animate-delay="200">
+        <img src="https://pixabay.com/get/g7843d08f8ae31a85187d42ae082687c0d736b2dcf1964a938837e0fd4c4993d6f250b4cf70efb5d05b81a7d471a8ff1d6d5e8c1a17f98c5657eb3a338cfe1fea_640.jpg" alt="Jungle Trekking" class="w-full h-64 object-cover">
         <div class="p-6">
-          <div class="flex items-center mb-4">
-            <svg class="w-8 h-8 text-teal-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-            </svg>
-            <h3 class="text-xl font-semibold text-gray-800">Scheduling & Calendar Management</h3>
-          </div>
-          <p class="text-gray-600">
-            Manage appointments, meetings, and deadlines with our intuitive calendar system.  Share calendars with your team, set reminders, and avoid scheduling conflicts.
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Jungle Trekking</h3>
+          <p class="text-gray-600 mb-4">
+            Immerse yourself in the lush rainforest. Discover exotic wildlife and breathtaking landscapes on our guided jungle treks.
           </p>
+          <ul class="list-disc list-inside text-sm text-gray-500 mb-4">
+            <li>Experienced local guides</li>
+            <li>Diverse flora and fauna</li>
+            <li>Sustainable tourism practices</li>
+          </ul>
+          <a href="#" class="inline-block bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-200">
+            Learn More
+          </a>
         </div>
       </div>
 
-      <!-- Feature 4: Reporting & Analytics -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300" data-animate="slide-in-left">
+      <!-- Service Card 4: Scuba Diving -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300" data-animate="slide-in-up">
+        <img src="https://pixabay.com/get/g5e1f609de2cb7ee9627d7934f9d60d741d404a33024e123be5e2cce3afe0fe2578483cf194dbf0da7ffeda7d64e74510e6cf414db51126876f8f6f48e83f0d60_640.jpg" alt="Scuba Diving" class="w-full h-64 object-cover">
         <div class="p-6">
-          <div class="flex items-center mb-4">
-            <svg class="w-8 h-8 text-teal-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m-8 4h8m-8 4h8m-7-7h1m-7 7h1m5-10v-3m-10 10v-3m2-10h4a2 2 0 012 2v10a2 2 0 01-2 2h-4m-6-12a2 2 0 012-2h4a2 2 0 012 2v10a2 2 0 01-2 2h-4m-6-12a2 2 0 012-2h4a2 2 0 012 2v10a2 2 0 01-2 2h-4"></path>
-            </svg>
-            <h3 class="text-xl font-semibold text-gray-800">Reporting & Analytics</h3>
-          </div>
-          <p class="text-gray-600">
-            Gain valuable insights into your business performance with our comprehensive reporting and analytics tools. Track key metrics, identify trends, and make data-driven decisions.
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Scuba Diving</h3>
+          <p class="text-gray-600 mb-4">
+            Explore the underwater world with our certified dive instructors. Discover vibrant coral reefs and fascinating marine life.
           </p>
+          <ul class="list-disc list-inside text-sm text-gray-500 mb-4">
+            <li>PADI certified instructors</li>
+            <li>Equipment rental available</li>
+            <li>Beginner to advanced courses</li>
+          </ul>
+          <a href="#" class="inline-block bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-200">
+            Learn More
+          </a>
         </div>
       </div>
 
-      <!-- Feature 5: Virtual Assistant Services -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300" data-animate="fade-in">
+      <!-- Service Card 5: Paragliding -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300" data-animate="slide-in-up" data-animate-delay="100">
+        <img src="https://images.unsplash.com/photo-1546959221-8904c25699a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHBhcmFnbGlkaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60" alt="Paragliding" class="w-full h-64 object-cover">
         <div class="p-6">
-          <div class="flex items-center mb-4">
-            <svg class="w-8 h-8 text-teal-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
-            </svg>
-            <h3 class="text-xl font-semibold text-gray-800">Virtual Assistant Services</h3>
-          </div>
-          <p class="text-gray-600">
-            Delegate tasks to our experienced virtual assistants and free up your time. We can handle everything from email management to travel arrangements.
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Paragliding</h3>
+          <p class="text-gray-600 mb-4">
+            Soar through the skies and experience breathtaking views with our tandem paragliding flights. No experience necessary!
           </p>
+          <ul class="list-disc list-inside text-sm text-gray-500 mb-4">
+            <li>Tandem flights with certified pilots</li>
+            <li>Stunning aerial views</li>
+            <li>Safety equipment provided</li>
+          </ul>
+          <a href="#" class="inline-block bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-200">
+            Learn More
+          </a>
         </div>
       </div>
 
-      <!-- Feature 6: HR & Payroll Support -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300" data-animate="slide-in-right">
+      <!-- Service Card 6: Rock Climbing -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300" data-animate="slide-in-up" data-animate-delay="200">
+        <img src="https://images.unsplash.com/photo-1519682337058-5ef9f0949f07?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHJvY2slMjBjbGltYmluZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="Rock Climbing" class="w-full h-64 object-cover">
         <div class="p-6">
-          <div class="flex items-center mb-4">
-            <svg class="w-8 h-8 text-teal-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
-            </svg>
-            <h3 class="text-xl font-semibold text-gray-800">HR & Payroll Support</h3>
-          </div>
-          <p class="text-gray-600">
-            Simplify your HR processes with our comprehensive support services. We can assist with payroll processing, employee onboarding, and compliance management.
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Rock Climbing</h3>
+          <p class="text-gray-600 mb-4">
+            Challenge yourself with our guided rock climbing adventures. We offer routes for all skill levels, from beginner to expert.
           </p>
+          <ul class="list-disc list-inside text-sm text-gray-500 mb-4">
+            <li>Guided climbs for all skill levels</li>
+            <li>Equipment rental available</li>
+            <li>Safety briefings and training</li>
+          </ul>
+          <a href="#" class="inline-block bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-200">
+            Learn More
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES SECTION -->
+<section id="features" class="py-16 bg-gray-100">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-extrabold text-gray-800 sm:text-4xl lg:text-5xl" data-animate="fade-in">
+        Unleash Your Inner Explorer with Test
+      </h2>
+      <p class="mt-4 text-lg text-gray-600" data-animate="fade-in" data-animate-delay="200">
+        Experience the thrill of adventure with our expertly curated tours and activities.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Feature 1 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden" data-animate="slide-in-bottom">
+        <img src="https://pixabay.com/get/g7843d08f8ae31a85187d42ae082687c0d736b2dcf1964a938837e0fd4c4993d6f250b4cf70efb5d05b81a7d471a8ff1d6d5e8c1a17f98c5657eb3a338cfe1fea_640.jpg" alt="Rock Climbing Adventure" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Rock Climbing Expeditions</h3>
+          <p class="text-gray-600 mb-4">
+            Challenge yourself with our guided rock climbing adventures. From beginner-friendly climbs to advanced ascents, we have something for every skill level.
+          </p>
+          <ul class="list-disc list-inside text-gray-600">
+            <li>Expertly trained guides</li>
+            <li>State-of-the-art equipment</li>
+            <li>Breathtaking views</li>
+          </ul>
+          <a href="#" class="mt-4 inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition duration-200">
+            Book Now
+          </a>
         </div>
       </div>
 
+      <!-- Feature 2 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden" data-animate="slide-in-bottom" data-animate-delay="200">
+        <img src="https://pixabay.com/get/g9a1e0c532b817187a708e29de344e26e07389c619b8f60782793747226676518863bb0768eabce0785827acdb84471462ea846bdc0cd8cba462afed7524ea207_640.jpg" alt="White Water Rafting" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">White Water Rafting Thrills</h3>
+          <p class="text-gray-600 mb-4">
+            Experience the adrenaline rush of navigating raging rapids. Our white water rafting tours are perfect for thrill-seekers.
+          </p>
+          <ul class="list-disc list-inside text-gray-600">
+            <li>Safety-certified rafts</li>
+            <li>Experienced river guides</li>
+            <li>Unforgettable memories</li>
+          </ul>
+          <a href="#" class="mt-4 inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition duration-200">
+            Book Now
+          </a>
+        </div>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden" data-animate="slide-in-bottom" data-animate-delay="400">
+        <img src="https://pixabay.com/get/g8bd8bd399c28f91d9ca40f26bc505a26873fde9d138905acd1ba758a8d93224e55596714a05e3546fb5e0d132494f8d569c8c2affb77721923b188698726f56f_640.jpg" alt="Mountain Hiking Adventures" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Scenic Mountain Hiking</h3>
+          <p class="text-gray-600 mb-4">
+            Explore breathtaking landscapes on our guided mountain hiking tours. Discover hidden trails and panoramic views.
+          </p>
+          <ul class="list-disc list-inside text-gray-600">
+            <li>Customizable trail options</li>
+            <li>Knowledgeable local guides</li>
+            <li>Stunning natural beauty</li>
+          </ul>
+          <a href="#" class="mt-4 inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition duration-200">
+            Book Now
+          </a>
+        </div>
+      </div>
+
+      <!-- Feature 4 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden md:col-span-2 lg:col-span-1" data-animate="slide-in-bottom">
+        <img src="https://pixabay.com/get/g5e1f609de2cb7ee9627d7934f9d60d741d404a33024e123be5e2cce3afe0fe2578483cf194dbf0da7ffeda7d64e74510e6cf414db51126876f8f6f48e83f0d60_640.jpg" alt="Ziplining Through the Canopy" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Ziplining Through the Canopy</h3>
+          <p class="text-gray-600 mb-4">
+            Soar through the treetops on our exhilarating zipline courses. Experience the rainforest from a whole new perspective.
+          </p>
+          <ul class="list-disc list-inside text-gray-600">
+            <li>Multiple zipline courses</li>
+            <li>Certified safety instructors</li>
+            <li>Unforgettable views</li>
+          </ul>
+          <a href="#" class="mt-4 inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition duration-200">
+            Book Now
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- TEAM SECTION -->
-<section id="team" class="py-16 bg-gray-50">
+<section id="team" class="py-16 bg-gray-100">
   <div class="container mx-auto px-4">
-    <div class="text-center mb-12">
-      <h2 class="text-3xl font-extrabold text-teal-700 mb-4" data-animate="fade-in">Our Expert Team</h2>
-      <p class="text-gray-600 text-lg" data-animate="fade-in" data-animate-delay="200">Meet the dedicated professionals who drive Testy's success.</p>
-    </div>
+    <h2 class="text-3xl font-bold text-gray-800 text-center mb-8" data-animate="fade-in">Meet Our Expert Team</h2>
+    <p class="text-gray-600 text-center mb-12" data-animate="fade-in" data-animate-delay="200">
+      Our team is passionate about adventure and dedicated to providing you with unforgettable experiences.
+    </p>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 
       <!-- Team Member 1 -->
       <div class="bg-white rounded-lg shadow-md overflow-hidden" data-animate="slide-in-bottom">
-        <img src="https://api.placeholder.com/200/200" alt="Jane Doe" class="w-full h-48 object-cover object-center">
+        <img src="https://api.placeholder.co/400x300" alt="Team Member 1" class="w-full h-64 object-cover">
         <div class="p-4">
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">Jane Doe</h3>
-          <p class="text-gray-500">CEO & Founder</p>
-          <p class="text-gray-700 mt-2">Jane has over 15 years of experience in administrative management and business development.  She's passionate about helping businesses thrive.</p>
+          <h3 class="text-xl font-semibold text-gray-800">Alex Johnson</h3>
+          <p class="text-gray-500">Lead Guide & Mountaineer</p>
+          <p class="text-gray-700 mt-2">Alex has been leading expeditions for over 10 years and is a certified mountain guide. He ensures your safety and provides expert knowledge of the terrain.</p>
           <div class="mt-4 flex justify-center space-x-4">
-            <a href="#" class="text-teal-500 hover:text-teal-700"><i class="fab fa-linkedin"></i></a>
-            <a href="#" class="text-teal-500 hover:text-teal-700"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-red-500 hover:text-red-700"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-red-500 hover:text-red-700"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-red-500 hover:text-red-700"><i class="fab fa-linkedin-in"></i></a>
           </div>
         </div>
       </div>
 
       <!-- Team Member 2 -->
       <div class="bg-white rounded-lg shadow-md overflow-hidden" data-animate="slide-in-bottom" data-animate-delay="100">
-        <img src="https://api.placeholder.com/200/200" alt="John Smith" class="w-full h-48 object-cover object-center">
+        <img src="https://api.placeholder.co/400x300" alt="Team Member 2" class="w-full h-64 object-cover">
         <div class="p-4">
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">John Smith</h3>
-          <p class="text-gray-500">Head of Operations</p>
-          <p class="text-gray-700 mt-2">John oversees all operational aspects of Testy, ensuring efficiency and seamless service delivery.  He is a certified project manager.</p>
+          <h3 class="text-xl font-semibold text-gray-800">Sarah Chen</h3>
+          <p class="text-gray-500">Adventure Planner & Logistics</p>
+          <p class="text-gray-700 mt-2">Sarah is our expert planner, ensuring all your adventure details are meticulously organized. From permits to transportation, she's got you covered.</p>
           <div class="mt-4 flex justify-center space-x-4">
-            <a href="#" class="text-teal-500 hover:text-teal-700"><i class="fab fa-linkedin"></i></a>
-            <a href="#" class="text-teal-500 hover:text-teal-700"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-red-500 hover:text-red-700"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-red-500 hover:text-red-700"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-red-500 hover:text-red-700"><i class="fab fa-linkedin-in"></i></a>
           </div>
         </div>
       </div>
 
       <!-- Team Member 3 -->
       <div class="bg-white rounded-lg shadow-md overflow-hidden" data-animate="slide-in-bottom" data-animate-delay="200">
-        <img src="https://api.placeholder.com/200/200" alt="Emily Brown" class="w-full h-48 object-cover object-center">
+        <img src="https://api.placeholder.co/400x300" alt="Team Member 3" class="w-full h-64 object-cover">
         <div class="p-4">
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">Emily Brown</h3>
-          <p class="text-gray-500">Client Relations Manager</p>
-          <p class="text-gray-700 mt-2">Emily is dedicated to building strong relationships with our clients and ensuring their satisfaction. She has a background in customer service and communications.</p>
+          <h3 class="text-xl font-semibold text-gray-800">David Lee</h3>
+          <p class="text-gray-500">Rock Climbing Instructor</p>
+          <p class="text-gray-700 mt-2">David is a certified rock climbing instructor with years of experience. He provides safe and exciting climbing experiences for all skill levels.</p>
           <div class="mt-4 flex justify-center space-x-4">
-            <a href="#" class="text-teal-500 hover:text-teal-700"><i class="fab fa-linkedin"></i></a>
-            <a href="#" class="text-teal-500 hover:text-teal-700"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-red-500 hover:text-red-700"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-red-500 hover:text-red-700"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-red-500 hover:text-red-700"><i class="fab fa-linkedin-in"></i></a>
           </div>
         </div>
       </div>
 
       <!-- Team Member 4 -->
       <div class="bg-white rounded-lg shadow-md overflow-hidden" data-animate="slide-in-bottom" data-animate-delay="300">
-        <img src="https://api.placeholder.com/200/200" alt="David Lee" class="w-full h-48 object-cover object-center">
+        <img src="https://api.placeholder.co/400x300" alt="Team Member 4" class="w-full h-64 object-cover">
         <div class="p-4">
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">David Lee</h3>
-          <p class="text-gray-500">Financial Analyst</p>
-          <p class="text-gray-700 mt-2">David provides expert financial analysis and reporting to help our clients make informed decisions.  He is a certified public accountant (CPA).</p>
+          <h3 class="text-xl font-semibold text-gray-800">Emily Wilson</h3>
+          <p class="text-gray-500">Wilderness First Responder</p>
+          <p class="text-gray-700 mt-2">Emily is a certified Wilderness First Responder and ensures the safety and well-being of all our participants. Her expertise is invaluable on every adventure.</p>
           <div class="mt-4 flex justify-center space-x-4">
-            <a href="#" class="text-teal-500 hover:text-teal-700"><i class="fab fa-linkedin"></i></a>
-            <a href="#" class="text-teal-500 hover:text-teal-700"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-red-500 hover:text-red-700"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-red-500 hover:text-red-700"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-red-500 hover:text-red-700"><i class="fab fa-linkedin-in"></i></a>
           </div>
         </div>
       </div>
@@ -542,197 +423,269 @@
 </section>
 
 <!-- PORTFOLIO SECTION -->
-<section id="portfolio" class="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
-    <div class="max-w-7xl mx-auto">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl font-extrabold text-teal-700 sm:text-4xl" data-animate="fade-in">Our Expertise in Action</h2>
-            <p class="mt-4 text-lg text-gray-500" data-animate="fade-in" data-animate-delay="200">
-                We've helped countless businesses streamline their operations and achieve their goals. Here's a glimpse into our successful projects.
-            </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-            <!-- Portfolio Item 1 -->
-            <div class="bg-white rounded-xl shadow-md overflow-hidden" data-animate="slide-in-bottom">
-                <img class="w-full h-48 object-cover" src="https://pixabay.com/get/g9d2d844e1aec143f06279738820f357e30cf7a3cbbba5ad4e82fcf95716e06a8b694f90dd035647652682ffe8b45c3f339b000546daf549bf39ae7692cf72670_640.jpg" alt="Financial Reporting Project">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-teal-600 mb-2">Financial Reporting Optimization</h3>
-                    <p class="text-gray-600">
-                        We streamlined financial reporting processes for a large retail chain, resulting in a 30% reduction in reporting time and improved accuracy.
-                    </p>
-                    <div class="mt-4">
-                        <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-teal-100 text-teal-800">
-                            Financial Analysis
-                        </span>
-                        <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-teal-100 text-teal-800 ml-2">
-                            Process Improvement
-                        </span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Portfolio Item 2 -->
-            <div class="bg-white rounded-xl shadow-md overflow-hidden" data-animate="slide-in-bottom" data-animate-delay="100">
-                <img class="w-full h-48 object-cover" src="https://pixabay.com/get/g54518756f4e727e9836f5d5d9d30aab3d1ff5cc1358161630a2c615c82d047d866b316dc677427a6ec4fd616670d1c53_640.jpg" alt="HR Management System Implementation">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-teal-600 mb-2">HR Management System Implementation</h3>
-                    <p class="text-gray-600">
-                        Successfully implemented a new HR management system for a growing tech startup, improving employee onboarding and performance tracking.
-                    </p>
-                    <div class="mt-4">
-                        <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-teal-100 text-teal-800">
-                            HR Consulting
-                        </span>
-                        <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-teal-100 text-teal-800 ml-2">
-                            System Integration
-                        </span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Portfolio Item 3 -->
-            <div class="bg-white rounded-xl shadow-md overflow-hidden" data-animate="slide-in-bottom" data-animate-delay="200">
-                <img class="w-full h-48 object-cover" src="https://pixabay.com/get/g647c56e8386d3d6dd724b3edb3cfca4973536b80e5ca925d88a568411402b1db48b41f07552b46a49426e0760fe9c15441d2aa84426b8e123fe8c6c1548d67af_640.jpg" alt="Document Management Solution">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-teal-600 mb-2">Document Management Solution</h3>
-                    <p class="text-gray-600">
-                        Developed and implemented a comprehensive document management solution for a legal firm, enhancing security and improving document retrieval efficiency.
-                    </p>
-                    <div class="mt-4">
-                        <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-teal-100 text-teal-800">
-                            Data Management
-                        </span>
-                        <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-teal-100 text-teal-800 ml-2">
-                            Security
-                        </span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Portfolio Item 4 -->
-            <div class="bg-white rounded-xl shadow-md overflow-hidden" data-animate="slide-in-bottom">
-                <img class="w-full h-48 object-cover" src="https://pixabay.com/get/g47b13db26b3edced6430d143ab157905f598cdc9492f5752245cb4cf21dad46f84e8b30ccc09b7d01d4e8779d63af7398707ab942bf762562319f2ac8f56b517_640.jpg" alt="Customer Relationship Management (CRM) Implementation">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-teal-600 mb-2">Customer Relationship Management (CRM) Implementation</h3>
-                    <p class="text-gray-600">
-                        Implemented a new CRM system for a SaaS company, resulting in a 15% increase in sales conversion rates.
-                    </p>
-                    <div class="mt-4">
-                        <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-teal-100 text-teal-800">
-                            CRM Consulting
-                        </span>
-                        <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-teal-100 text-teal-800 ml-2">
-                            Sales Optimization
-                        </span>
-                    </div>
-                </div>
-            </div>
-
-             <!-- Portfolio Item 5 -->
-             <div class="bg-white rounded-xl shadow-md overflow-hidden" data-animate="slide-in-bottom" data-animate-delay="100">
-                <img class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80" alt="Office Relocation Project">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-teal-600 mb-2">Office Relocation Project</h3>
-                    <p class="text-gray-600">
-                        Managed a complete office relocation for a 200-employee company, ensuring minimal disruption to business operations.
-                    </p>
-                    <div class="mt-4">
-                        <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-teal-100 text-teal-800">
-                            Project Management
-                        </span>
-                        <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-teal-100 text-teal-800 ml-2">
-                            Logistics
-                        </span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Portfolio Item 6 -->
-            <div class="bg-white rounded-xl shadow-md overflow-hidden" data-animate="slide-in-bottom" data-animate-delay="200">
-                <img class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="Compliance Audit Preparation">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-teal-600 mb-2">Compliance Audit Preparation</h3>
-                    <p class="text-gray-600">
-                        Prepared a manufacturing company for a major compliance audit, resulting in a successful audit outcome with no major findings.
-                    </p>
-                    <div class="mt-4">
-                        <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-teal-100 text-teal-800">
-                            Audit Support
-                        </span>
-                        <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-teal-100 text-teal-800 ml-2">
-                            Risk Management
-                        </span>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+<section id="portfolio" class="py-16 bg-gray-100">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-extrabold text-gray-800 mb-4" data-animate="fade-in">
+        Our Adventures
+      </h2>
+      <p class="text-lg text-gray-600" data-animate="fade-in" data-animate-delay="200">
+        Explore some of our most thrilling and unforgettable adventures.
+      </p>
     </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Adventure 1 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden" data-animate="slide-in-bottom">
+        <img src="https://pixabay.com/get/g7843d08f8ae31a85187d42ae082687c0d736b2dcf1964a938837e0fd4c4993d6f250b4cf70efb5d05b81a7d471a8ff1d6d5e8c1a17f98c5657eb3a338cfe1fea_640.jpg" alt="Whitewater Rafting" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">
+            Whitewater Rafting on the Colorado River
+          </h3>
+          <p class="text-gray-600 mb-4">
+            Experience the thrill of navigating the rapids on the mighty Colorado River. Our expert guides will ensure a safe and exhilarating adventure.
+          </p>
+          <a href="#" class="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition duration-200">
+            Learn More
+          </a>
+        </div>
+      </div>
+
+      <!-- Adventure 2 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden" data-animate="slide-in-bottom" data-animate-delay="100">
+        <img src="https://pixabay.com/get/g9a1e0c532b817187a708e29de344e26e07389c619b8f60782793747226676518863bb0768eabce0785827acdb84471462ea846bdc0cd8cba462afed7524ea207_640.jpg" alt="Mountain Hiking" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">
+            Summiting Mount Everest Base Camp Trek
+          </h3>
+          <p class="text-gray-600 mb-4">
+            Embark on an unforgettable journey to the base of the world's highest peak. Witness breathtaking views and experience the Sherpa culture.
+          </p>
+          <a href="#" class="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition duration-200">
+            Learn More
+          </a>
+        </div>
+      </div>
+
+      <!-- Adventure 3 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden" data-animate="slide-in-bottom" data-animate-delay="200">
+        <img src="https://pixabay.com/get/g8bd8bd399c28f91d9ca40f26bc505a26873fde9d138905acd1ba758a8d93224e55596714a05e3546fb5e0d132494f8d569c8c2affb77721923b188698726f56f_640.jpg" alt="Rock Climbing" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">
+            Rock Climbing in Yosemite National Park
+          </h3>
+          <p class="text-gray-600 mb-4">
+            Challenge yourself with a rock climbing adventure in the iconic Yosemite Valley. Our certified instructors will guide you through every step.
+          </p>
+          <a href="#" class="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition duration-200">
+            Learn More
+          </a>
+        </div>
+      </div>
+
+      <!-- Adventure 4 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden" data-animate="slide-in-bottom">
+        <img src="https://pixabay.com/get/g5e1f609de2cb7ee9627d7934f9d60d741d404a33024e123be5e2cce3afe0fe2578483cf194dbf0da7ffeda7d64e74510e6cf414db51126876f8f6f48e83f0d60_640.jpg" alt="Kayaking" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">
+            Sea Kayaking in the Fjords of Norway
+          </h3>
+          <p class="text-gray-600 mb-4">
+            Paddle through the stunning fjords of Norway and witness breathtaking landscapes. Our guided tours offer a unique perspective of this natural wonder.
+          </p>
+          <a href="#" class="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition duration-200">
+            Learn More
+          </a>
+        </div>
+      </div>
+
+      <!-- Adventure 5 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden" data-animate="slide-in-bottom" data-animate-delay="100">
+        <img src="https://images.unsplash.com/photo-1501785888020-7ca268d42c1c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Ziplining" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">
+            Ziplining Through the Rainforest Canopy
+          </h3>
+          <p class="text-gray-600 mb-4">
+            Soar through the lush rainforest canopy on an exhilarating zipline adventure. Experience the rainforest from a unique perspective.
+          </p>
+          <a href="#" class="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition duration-200">
+            Learn More
+          </a>
+        </div>
+      </div>
+
+      <!-- Adventure 6 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden" data-animate="slide-in-bottom" data-animate-delay="200">
+        <img src="https://images.unsplash.com/photo-1534531279159-77836e60813b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Safari" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">
+            African Safari Adventure
+          </h3>
+          <p class="text-gray-600 mb-4">
+            Embark on an unforgettable safari adventure in the heart of Africa. Witness the Big Five and experience the beauty of the African savanna.
+          </p>
+          <a href="#" class="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition duration-200">
+            Learn More
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center mt-8" data-animate="fade-in" data-animate-delay="300">
+      <a href="#" class="inline-block bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold py-3 px-6 rounded-lg transition duration-200">
+        View All Adventures
+      </a>
+    </div>
+  </div>
 </section>
 
 <!-- TESTIMONIALS SECTION -->
-<section id="testimonials" class="py-16 bg-teal-50">
-    <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-extrabold text-gray-800 text-center mb-8" data-animate="fade-in">
-            What Our Clients Say
+<section id="testimonials" class="bg-gray-100 py-16 px-4 md:px-8 lg:px-16 xl:px-32 overflow-hidden">
+    <div class="container mx-auto">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 text-center mb-8" data-animate="fade-in">
+            What Our Adventurers Say
         </h2>
+
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
             <!-- Testimonial 1 -->
             <div class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between" data-animate="slide-in-left">
                 <div>
-                    <div class="text-gray-600 italic mb-4">
-                        "Testy has been instrumental in streamlining our administrative processes. Their attention to detail and proactive approach have saved us countless hours and improved our overall efficiency. Highly recommended!"
-                    </div>
-                    <div class="flex items-center">
-                        <img src="https://api.placeholder.com/50/50" alt="Client 1" class="rounded-full mr-3">
+                    <div class="flex items-center mb-4">
+                        <img src="https://api.placeholder.co/40x40" alt="Sarah Johnson" class="rounded-full mr-4">
                         <div>
                             <p class="font-semibold text-gray-700">Sarah Johnson</p>
-                            <p class="text-sm text-gray-500">CEO, Innovate Solutions</p>
+                            <p class="text-sm text-gray-500">Experienced Hiker</p>
                         </div>
                     </div>
+                    <p class="text-gray-600 mb-4">
+                        "The guided trek through the Andes was absolutely breathtaking! The guides were knowledgeable and supportive, and the scenery was unforgettable. I highly recommend test to anyone looking for an authentic adventure."
+                    </p>
                 </div>
-                <div class="mt-4">
-                    <svg class="w-6 h-6 text-teal-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3l.71-.71L12 2z"/></svg>
+                <div class="text-yellow-500">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
                 </div>
             </div>
 
             <!-- Testimonial 2 -->
             <div class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between" data-animate="fade-in">
                 <div>
-                    <div class="text-gray-600 italic mb-4">
-                        "We were struggling to keep up with our bookkeeping and payroll. Testy stepped in and provided expert support, ensuring accuracy and compliance. Their team is responsive, professional, and a pleasure to work with."
-                    </div>
-                    <div class="flex items-center">
-                        <img src="https://api.placeholder.com/50/50" alt="Client 2" class="rounded-full mr-3">
+                    <div class="flex items-center mb-4">
+                        <img src="https://api.placeholder.co/40x40" alt="David Lee" class="rounded-full mr-4">
                         <div>
-                            <p class="font-semibold text-gray-700">Michael Davis</p>
-                            <p class="text-sm text-gray-500">Finance Manager, Global Enterprises</p>
+                            <p class="font-semibold text-gray-700">David Lee</p>
+                            <p class="text-sm text-gray-500">Kayaking Enthusiast</p>
                         </div>
                     </div>
+                    <p class="text-gray-600 mb-4">
+                        "The kayaking tour was incredible! The equipment was top-notch, and the instructors made me feel safe and confident on the water. The wildlife sightings were a definite highlight. I'll definitely be back for another adventure!"
+                    </p>
                 </div>
-                <div class="mt-4">
-                    <svg class="w-6 h-6 text-teal-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3l.71-.71L12 2z"/></svg>
+                <div class="text-yellow-500">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
                 </div>
             </div>
 
             <!-- Testimonial 3 -->
             <div class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between" data-animate="slide-in-right">
                 <div>
-                    <div class="text-gray-600 italic mb-4">
-                        "Testy has been an invaluable partner in managing our HR functions. From onboarding new employees to handling benefits administration, they've consistently delivered exceptional service and support. I highly recommend them to any business looking for reliable administrative assistance."
-                    </div>
-                    <div class="flex items-center">
-                        <img src="https://api.placeholder.com/50/50" alt="Client 3" class="rounded-full mr-3">
+                    <div class="flex items-center mb-4">
+                        <img src="https://api.placeholder.co/40x40" alt="Emily Carter" class="rounded-full mr-4">
                         <div>
                             <p class="font-semibold text-gray-700">Emily Carter</p>
-                            <p class="text-sm text-gray-500">HR Director, Apex Corporation</p>
+                            <p class="text-sm text-gray-500">Adventure Seeker</p>
                         </div>
                     </div>
+                    <p class="text-gray-600 mb-4">
+                        "I had an amazing time rock climbing with test! The instructors were patient and encouraging, and the views from the top were absolutely stunning. It was a challenging but rewarding experience that I'll never forget."
+                    </p>
                 </div>
-                <div class="mt-4">
-                    <svg class="w-6 h-6 text-teal-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3l.71-.71L12 2z"/></svg>
+                <div class="text-yellow-500">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+
+             <!-- Testimonial 4 -->
+             <div class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between" data-animate="slide-in-left">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="https://api.placeholder.co/40x40" alt="John Smith" class="rounded-full mr-4">
+                        <div>
+                            <p class="font-semibold text-gray-700">John Smith</p>
+                            <p class="text-sm text-gray-500">Family Adventurer</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        "We took our family on the white water rafting trip and it was a blast! The guides were excellent with the kids, and we all had a fantastic time. test made it easy to book and plan our adventure. Highly recommended for families!"
+                    </p>
+                </div>
+                <div class="text-yellow-500">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+
+            <!-- Testimonial 5 -->
+            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between" data-animate="fade-in">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="https://api.placeholder.co/40x40" alt="Jessica Brown" class="rounded-full mr-4">
+                        <div>
+                            <p class="font-semibold text-gray-700">Jessica Brown</p>
+                            <p class="text-sm text-gray-500">Solo Traveler</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        "As a solo traveler, I was a bit nervous about joining a group tour, but test made me feel so welcome and comfortable. The canyoning experience was incredible, and I met some amazing people along the way. I'll definitely book with them again!"
+                    </p>
+                </div>
+                <div class="text-yellow-500">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <!-- Testimonial 6 -->
+            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between" data-animate="slide-in-right">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="https://api.placeholder.co/40x40" alt="Michael Davis" class="rounded-full mr-4">
+                        <div>
+                            <p class="font-semibold text-gray-700">Michael Davis</p>
+                            <p class="text-sm text-gray-500">Nature Photographer</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        "The photography tour through the rainforest was a dream come true! The guides knew all the best spots for capturing stunning images, and they were incredibly knowledgeable about the local flora and fauna. I came away with some truly amazing shots."
+                    </p>
+                </div>
+                <div class="text-yellow-500">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
                 </div>
             </div>
 
@@ -741,446 +694,468 @@
 </section>
 
 <!-- PRICING SECTION -->
-<section id="pricing" class="py-20 bg-gray-50">
+<section id="pricing" class="bg-gray-100 py-16 overflow-hidden">
   <div class="container mx-auto px-4">
-    <div class="text-center mb-16">
-      <h2 class="text-3xl lg:text-5xl font-bold text-teal-700 mb-4" data-animate="fade-down">
-        Transparent Pricing for Streamlined Administration
+   <div class="text-center mb-16" data-animate="fade-in">
+    <h2 class="text-3xl lg:text-5xl font-extrabold text-gray-800 mb-4">
+     Adventure Awaits: Choose Your Path
+    </h2>
+    <p class="text-gray-600 text-lg">
+     Find the perfect adventure package to match your thrill level and budget.
+     All packages include expert guides, safety equipment, and unforgettable
+     memories.
+    </p>
+   </div>
+
+   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- Package 1 -->
+    <div
+     class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300"
+     data-animate="slide-in-left"
+    >
+     <div class="p-6">
+      <h3 class="text-2xl font-semibold text-gray-800 mb-2">
+       Weekend Warrior Package
+      </h3>
+      <p class="text-gray-600 mb-4">
+       Perfect for a quick adrenaline rush. Explore local trails and conquer
+       challenging terrain.
+      </p>
+      <div class="flex items-center mb-4">
+       <span class="text-4xl font-bold text-red-600">$299</span>
+       <span class="text-gray-500">/person</span>
+      </div>
+      <ul class="list-disc list-inside text-gray-700 mb-6">
+       <li>2 Days/1 Night</li>
+       <li>Guided Hiking Tour</li>
+       <li>Rock Climbing Session</li>
+       <li>Campfire Dinner</li>
+       <li>Basic Camping Gear Included</li>
+      </ul>
+      <a
+       href="#"
+       class="block w-full text-center bg-red-600 hover:bg-red-700 text-white font-bold py-3 rounded-lg transition-colors duration-300"
+       >Book Now</a
+      >
+     </div>
+    </div>
+
+    <!-- Package 2 -->
+    <div
+     class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300"
+     data-animate="fade-in"
+    >
+     <div class="p-6">
+      <h3 class="text-2xl font-semibold text-gray-800 mb-2">
+       Mountain Majesty Expedition
+      </h3>
+      <p class="text-gray-600 mb-4">
+       Embark on a challenging multi-day trek through breathtaking mountain
+       scenery.
+      </p>
+      <div class="flex items-center mb-4">
+       <span class="text-4xl font-bold text-red-600">$599</span>
+       <span class="text-gray-500">/person</span>
+      </div>
+      <ul class="list-disc list-inside text-gray-700 mb-6">
+       <li>4 Days/3 Nights</li>
+       <li>Expert Mountain Guide</li>
+       <li>Advanced Hiking Trails</li>
+       <li>Stunning Summit Views</li>
+       <li>All Meals Included</li>
+      </ul>
+      <a
+       href="#"
+       class="block w-full text-center bg-red-600 hover:bg-red-700 text-white font-bold py-3 rounded-lg transition-colors duration-300"
+       >Book Now</a
+      >
+     </div>
+    </div>
+
+    <!-- Package 3 -->
+    <div
+     class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300"
+     data-animate="slide-in-right"
+    >
+     <div class="p-6">
+      <h3 class="text-2xl font-semibold text-gray-800 mb-2">
+       River Rafting Adventure
+      </h3>
+      <p class="text-gray-600 mb-4">
+       Experience the thrill of white-water rafting on a wild and scenic river.
+      </p>
+      <div class="flex items-center mb-4">
+       <span class="text-4xl font-bold text-red-600">$399</span>
+       <span class="text-gray-500">/person</span>
+      </div>
+      <ul class="list-disc list-inside text-gray-700 mb-6">
+       <li>1 Day Rafting Trip</li>
+       <li>Professional Rafting Guide</li>
+       <li>All Rafting Equipment Provided</li>
+       <li>Riverside Lunch</li>
+       <li>Transportation to/from River</li>
+      </ul>
+      <a
+       href="#"
+       class="block w-full text-center bg-red-600 hover:bg-red-700 text-white font-bold py-3 rounded-lg transition-colors duration-300"
+       >Book Now</a
+      >
+     </div>
+    </div>
+   </div>
+
+   <div class="mt-12 text-center" data-animate="fade-in">
+    <p class="text-gray-600">
+     Looking for a custom adventure?
+     <a href="#" class="text-red-600 hover:text-red-700 font-medium"
+      >Contact us</a
+     >
+     to create a personalized experience.
+    </p>
+   </div>
+  </div>
+ </section>
+
+<!-- STATS SECTION -->
+<section class="py-16 bg-gray-100 overflow-hidden">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-extrabold text-gray-800 sm:text-4xl" data-animate="fade-in">
+        Our Impact, By the Numbers
       </h2>
-      <p class="text-gray-600 text-lg" data-animate="fade-up">
-        Choose the plan that best fits your business needs. No hidden fees, no surprises.
+      <p class="mt-4 text-lg text-gray-600" data-animate="fade-in" data-animate-delay="200">
+        We're passionate about adventure and dedicated to providing exceptional experiences. Here's a glimpse of what we've accomplished.
       </p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-      <!-- Basic Plan -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300" data-animate="slide-left">
-        <div class="p-6">
-          <h3 class="text-2xl font-semibold text-teal-600 mb-2">Basic</h3>
-          <div class="flex items-center justify-center mb-4">
-            <span class="text-gray-500 text-sm">$</span>
-            <span class="text-5xl font-bold text-teal-700">49</span>
-            <span class="text-gray-500 text-sm">/month</span>
-          </div>
-          <p class="text-gray-700 mb-4">
-            Perfect for small businesses just starting out.
-          </p>
-          <ul class="list-disc list-inside text-gray-600 mb-6">
-            <li>Basic Bookkeeping</li>
-            <li>Invoice Management</li>
-            <li>Expense Tracking</li>
-            <li>Up to 50 Transactions/Month</li>
-            <li>Email Support</li>
-          </ul>
-          <a href="#" class="block w-full text-center py-3 px-4 bg-teal-500 hover:bg-teal-700 text-white font-semibold rounded-lg transition-colors duration-300">
-            Get Started
-          </a>
-        </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="bg-white rounded-lg shadow-md p-6 text-center" data-animate="slide-in-left">
+        <div class="text-5xl font-bold text-red-600 mb-2">1200+</div>
+        <p class="text-gray-700 uppercase tracking-wider font-semibold">
+          Happy Adventurers
+        </p>
+        <p class="text-sm text-gray-500 mt-2">
+          People who've explored the world with us.
+        </p>
       </div>
 
-      <!-- Standard Plan -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300" data-animate="fade-in">
-        <div class="p-6">
-          <h3 class="text-2xl font-semibold text-teal-600 mb-2">Standard</h3>
-          <div class="flex items-center justify-center mb-4">
-            <span class="text-gray-500 text-sm">$</span>
-            <span class="text-5xl font-bold text-teal-700">99</span>
-            <span class="text-gray-500 text-sm">/month</span>
-          </div>
-          <p class="text-gray-700 mb-4">
-            Growing businesses that need more robust support.
-          </p>
-          <ul class="list-disc list-inside text-gray-600 mb-6">
-            <li>Everything in Basic, plus:</li>
-            <li>Advanced Reporting</li>
-            <li>Payroll Processing (up to 5 employees)</li>
-            <li>Up to 250 Transactions/Month</li>
-            <li>Phone & Email Support</li>
-          </ul>
-          <a href="#" class="block w-full text-center py-3 px-4 bg-teal-500 hover:bg-teal-700 text-white font-semibold rounded-lg transition-colors duration-300">
-            Get Started
-          </a>
-        </div>
+      <div class="bg-white rounded-lg shadow-md p-6 text-center" data-animate="slide-in-right">
+        <div class="text-5xl font-bold text-red-600 mb-2">75+</div>
+        <p class="text-gray-700 uppercase tracking-wider font-semibold">
+          Unique Adventures
+        </p>
+        <p class="text-sm text-gray-500 mt-2">
+          From mountain treks to river rafting, we offer a wide range of experiences.
+        </p>
       </div>
 
-      <!-- Premium Plan -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300" data-animate="slide-right">
-        <div class="p-6">
-          <h3 class="text-2xl font-semibold text-teal-600 mb-2">Premium</h3>
-          <div class="flex items-center justify-center mb-4">
-            <span class="text-gray-500 text-sm">$</span>
-            <span class="text-5xl font-bold text-teal-700">199</span>
-            <span class="text-gray-500 text-sm">/month</span>
-          </div>
-          <p class="text-gray-700 mb-4">
-            For established businesses with complex administrative needs.
-          </p>
-          <ul class="list-disc list-inside text-gray-600 mb-6">
-            <li>Everything in Standard, plus:</li>
-            <li>Customized Reporting</li>
-            <li>Payroll Processing (up to 20 employees)</li>
-            <li>Unlimited Transactions</li>
-            <li>Dedicated Account Manager</li>
-            <li>Priority Support</li>
-          </ul>
-          <a href="#" class="block w-full text-center py-3 px-4 bg-teal-500 hover:bg-teal-700 text-white font-semibold rounded-lg transition-colors duration-300">
-            Get Started
-          </a>
-        </div>
+      <div class="bg-white rounded-lg shadow-md p-6 text-center" data-animate="slide-in-left">
+        <div class="text-5xl font-bold text-red-600 mb-2">4.8</div>
+        <p class="text-gray-700 uppercase tracking-wider font-semibold">
+          Average Rating
+        </p>
+        <p class="text-sm text-gray-500 mt-2">
+          Based on customer reviews and feedback.
+        </p>
       </div>
 
+      <div class="bg-white rounded-lg shadow-md p-6 text-center" data-animate="slide-in-right">
+        <div class="text-5xl font-bold text-red-600 mb-2">15</div>
+        <p class="text-gray-700 uppercase tracking-wider font-semibold">
+          Years of Experience
+        </p>
+        <p class="text-sm text-gray-500 mt-2">
+          Providing unforgettable adventure experiences.
+        </p>
+      </div>
     </div>
-
-    <div class="mt-12 text-center">
-      <p class="text-gray-600">
-        Need a custom solution? <a href="#contact" class="text-teal-500 hover:text-teal-700 font-medium">Contact us</a> for a personalized quote.
-      </p>
-    </div>
-
   </div>
 </section>
 
-<!-- STATS SECTION -->
-<section class="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
-    <div class="max-w-6xl mx-auto text-center">
-        <h2 class="text-3xl font-extrabold text-teal-700 sm:text-4xl" data-animate="fade-in">
-            Proven Results, Exceptional Service
-        </h2>
-        <p class="mt-4 text-lg text-gray-500" data-animate="fade-in" data-animate-delay="200">
-            We empower your business with efficient administrative solutions, allowing you to focus on what matters most.
-        </p>
-        <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow duration-300" data-animate="slide-in-left">
-                <div class="flex items-center justify-center h-16 w-16 mx-auto rounded-full bg-teal-100 text-teal-700">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512m0 13.5h3.007a8.96 8.96 0 005.964-1.462c.305 0 .606-.03 9-.03m-9.75 0H15m0-13.5a8.967 8.967 0 016 3.75c1.052 0 2.062.18 3 .512m0 13.5-3.007-1.002c.305 0 .606-.03 9-.03" />
-                    </svg>
-                </div>
-                <p class="mt-4 text-4xl font-bold text-teal-700 text-center">
-                    98%
-                </p>
-                <p class="mt-2 text-gray-500 text-center">
-                    Client Retention Rate
-                </p>
-            </div>
-
-            <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow duration-300" data-animate="fade-in">
-                <div class="flex items-center justify-center h-16 w-16 mx-auto rounded-full bg-teal-100 text-teal-700">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 5.25a3 3 0 013 3m3 0a6 6 0 01-7.029 5.912c-.563-.097-1.159.026-1.563.43A9.344 9.344 0 005.25 9m9.75-3a9 9 0 00-9 9m15 3h-1.5m-13.5 0H9m-4.5 0H3m12 3H7.5" />
-                    </svg>
-                </div>
-                <p class="mt-4 text-4xl font-bold text-teal-700 text-center">
-                    40%
-                </p>
-                <p class="mt-2 text-gray-500 text-center">
-                    Increase in Efficiency
-                </p>
-            </div>
-
-            <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow duration-300" data-animate="slide-in-right">
-                <div class="flex items-center justify-center h-16 w-16 mx-auto rounded-full bg-teal-100 text-teal-700">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-4.037m-1.598 7.188a9.004 9.004 0 01-8.717-4.037m.75-7.5-4.5 1.5m4.5 7.575l-4.5-1.5M15 5.25a3 3 0 013 3m-3 3a3 3 0 100-6M12 21a9.004 9.004 0 01-8.716-4.037m1.598 7.188a9.004 9.004 0 008.717-4.037m.75-7.5-4.5 1.5m4.5 7.575l-4.5-1.5m6 6.75a3 3 0 100-6m0 6a3 3 0 100-6" />
-                    </svg>
-
-                </div>
-                <p class="mt-4 text-4xl font-bold text-teal-700 text-center">
-                    20+
-                </p>
-                <p class="mt-2 text-gray-500 text-center">
-                    Years of Experience
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- FAQ SECTION -->
-<section id="faq" class="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
-    <div class="max-w-5xl mx-auto">
-        <h2 class="text-3xl font-extrabold text-teal-700 sm:text-4xl text-center mb-8" data-animate="fade-in">
+<section id="faq" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-extrabold text-gray-800 text-center mb-8" data-animate="fade-in">
             Frequently Asked Questions
         </h2>
-        <p class="mt-4 text-gray-600 text-center mb-12" data-animate="fade-in" data-animate-delay="200">
-            Have questions? We've got answers. Browse our frequently asked questions below to find what you're looking for.
-        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-        <div class="space-y-4" data-animate="fade-up" data-animate-delay="400">
-
-            <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                <button type="button" class="w-full flex items-center justify-between px-6 py-4 text-left font-medium text-gray-800 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2" aria-expanded="false" aria-c data-faq-button>
-                    <span>What administrative services do you offer?</span>
-                    <svg class="h-5 w-5 transform transition-transform" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                    </svg>
-                </button>
-                <div id="faq-1-content" class="px-6 py-4 text-gray-600 hidden" role="region" aria-labelledby="faq-1-heading">
-                    We offer a wide range of administrative services, including virtual assistant support, data entry, calendar management, email management, travel arrangements, document preparation, and more.  We tailor our services to meet your specific business needs.
-                </div>
+            <!-- FAQ Item 1 -->
+            <div class="bg-white rounded-lg shadow-md p-6" data-animate="slide-in-left">
+                <h3 class="text-xl font-semibold text-gray-700 mb-2">
+                    What types of adventures do you offer?
+                </h3>
+                <p class="text-gray-600">
+                    We offer a wide range of adventures, including hiking, rock climbing, white water rafting,
+                    mountain biking, and guided nature tours. We cater to all skill levels, from beginners to
+                    experienced adventurers.
+                </p>
             </div>
 
-            <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                <button type="button" class="w-full flex items-center justify-between px-6 py-4 text-left font-medium text-gray-800 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2" aria-expanded="false" aria-c data-faq-button>
-                    <span>How do you ensure the security of my confidential information?</span>
-                    <svg class="h-5 w-5 transform transition-transform" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                    </svg>
-                </button>
-                <div id="faq-2-content" class="px-6 py-4 text-gray-600 hidden" role="region" aria-labelledby="faq-2-heading">
-                    We take data security very seriously. We use secure, encrypted communication channels, password management best practices, and strictly adhere to confidentiality agreements. Our team is trained on data protection protocols to ensure your information is always safe.
-                </div>
+            <!-- FAQ Item 2 -->
+            <div class="bg-white rounded-lg shadow-md p-6" data-animate="slide-in-right">
+                <h3 class="text-xl font-semibold text-gray-700 mb-2">
+                    What is included in the price of a trip?
+                </h3>
+                <p class="text-gray-600">
+                    The price of a trip typically includes all necessary equipment, professional guides,
+                    transportation to and from the activity location, and in some cases, meals. Specific inclusions
+                    will be detailed in the trip description.
+                </p>
             </div>
 
-            <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                <button type="button" class="w-full flex items-center justify-between px-6 py-4 text-left font-medium text-gray-800 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2" aria-expanded="false" aria-c data-faq-button>
-                    <span>What are your rates and payment terms?</span>
-                    <svg class="h-5 w-5 transform transition-transform" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                    </svg>
-                </button>
-                <div id="faq-3-content" class="px-6 py-4 text-gray-600 hidden" role="region" aria-labelledby="faq-3-heading">
-                    Our rates vary depending on the specific services required and the volume of work. We offer both hourly and project-based pricing.  We will provide you with a detailed quote after discussing your needs.  Payment terms are typically net 30, and we accept various payment methods, including bank transfers and credit cards.
-                </div>
+            <!-- FAQ Item 3 -->
+            <div class="bg-white rounded-lg shadow-md p-6" data-animate="slide-in-left">
+                <h3 class="text-xl font-semibold text-gray-700 mb-2">
+                    What should I bring on my adventure?
+                </h3>
+                <p class="text-gray-600">
+                    We recommend bringing comfortable hiking shoes, weather-appropriate clothing (layers are best),
+                    sunscreen, a hat, sunglasses, a water bottle, and a small backpack. A detailed packing list will
+                    be provided for each specific trip.
+                </p>
             </div>
 
-            <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                <button type="button" class="w-full flex items-center justify-between px-6 py-4 text-left font-medium text-gray-800 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2" aria-expanded="false" aria-c data-faq-button>
-                    <span>How do I get started with your services?</span>
-                    <svg class="h-5 w-5 transform transition-transform" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                    </svg>
-                </button>
-                <div id="faq-4-content" class="px-6 py-4 text-gray-600 hidden" role="region" aria-labelledby="faq-4-heading">
-                    Getting started is easy! Simply contact us through our website or by phone to schedule a consultation. We'll discuss your needs, answer your questions, and create a customized plan to help you streamline your administrative tasks.
-                </div>
+            <!-- FAQ Item 4 -->
+            <div class="bg-white rounded-lg shadow-md p-6" data-animate="slide-in-right">
+                <h3 class="text-xl font-semibold text-gray-700 mb-2">
+                    Are your guides certified and experienced?
+                </h3>
+                <p class="text-gray-600">
+                    Yes, all of our guides are highly trained, certified, and experienced in their respective fields.
+                    They are passionate about adventure and dedicated to ensuring your safety and enjoyment.
+                </p>
             </div>
 
-            <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                <button type="button" class="w-full flex items-center justify-between px-6 py-4 text-left font-medium text-gray-800 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2" aria-expanded="false" aria-c data-faq-button>
-                    <span>What is your typical turnaround time for tasks?</span>
-                    <svg class="h-5 w-5 transform transition-transform" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                </svg>
-                </button>
-                <div id="faq-5-content" class="px-6 py-4 text-gray-600 hidden" role="region" aria-labelledby="faq-5-heading">
-                    Turnaround times depend on the complexity and scope of the task. We strive to complete most tasks within 24-48 hours. We will always provide you with an estimated completion time when you assign us a task. Urgent requests can often be accommodated with faster turnaround times.
-                </div>
+            <!-- FAQ Item 5 -->
+            <div class="bg-white rounded-lg shadow-md p-6" data-animate="slide-in-left">
+                <h3 class="text-xl font-semibold text-gray-700 mb-2">
+                    What is your cancellation policy?
+                </h3>
+                <p class="text-gray-600">
+                    Our cancellation policy varies depending on the trip. Generally, cancellations made more than 30
+                    days prior to the trip date will receive a full refund. Cancellations made within 30 days may be
+                    subject to a partial refund or credit towards a future trip. Please refer to the specific trip
+                    details for our cancellation policy.
+                </p>
+            </div>
+
+            <!-- FAQ Item 6 -->
+            <div class="bg-white rounded-lg shadow-md p-6" data-animate="slide-in-right">
+                <h3 class="text-xl font-semibold text-gray-700 mb-2">
+                    Do you offer group discounts?
+                </h3>
+                <p class="text-gray-600">
+                    Yes, we offer discounts for groups of 6 or more people. Please contact us for more information
+                    and to discuss your group's needs.
+                </p>
+            </div>
+
+             <!-- FAQ Item 7 -->
+             <div class="bg-white rounded-lg shadow-md p-6" data-animate="slide-in-left">
+                <h3 class="text-xl font-semibold text-gray-700 mb-2">
+                    Is travel insurance required?
+                </h3>
+                <p class="text-gray-600">
+                    While not strictly required, we highly recommend purchasing travel insurance to protect yourself against unforeseen circumstances such as trip cancellations, medical emergencies, or lost luggage.
+                </p>
+            </div>
+
+            <!-- FAQ Item 8 -->
+            <div class="bg-white rounded-lg shadow-md p-6" data-animate="slide-in-right">
+                <h3 class="text-xl font-semibold text-gray-700 mb-2">
+                    How do I book an adventure?
+                </h3>
+                <p class="text-gray-600">
+                    You can book an adventure directly through our website or by contacting our customer service team.  We are happy to assist you in choosing the perfect adventure for your needs and skill level.
+                </p>
             </div>
 
         </div>
     </div>
-
-    
 </section>
 
 <!-- BLOG SECTION -->
-<section id="blog" class="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
-    <div class="max-w-7xl mx-auto">
-        <div class="text-center mb-12">
-            <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl" data-animate="fade-in">
-                Latest Insights & Resources
-            </h2>
-            <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl">
-                Stay informed with our expert insights, industry news, and helpful resources for efficient administrative management.
-            </p>
-        </div>
+<section class="bg-gray-100 py-16">
+  <div class="container mx-auto px-4">
+   <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center" data-animate="fade-in">Latest Adventures & Insights</h2>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            <!-- Blog Post 1 -->
-            <div class="bg-white rounded-lg shadow-md overflow-hidden" data-animate="slide-up">
-                <img class="h-48 w-full object-cover" src="https://pixabay.com/get/g647c56e8386d3d6dd724b3edb3cfca4973536b80e5ca925d88a568411402b1db48b41f07552b46a49426e0760fe9c15441d2aa84426b8e123fe8c6c1548d67af_640.jpg" alt="Office Desk">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">
-                        Streamlining Your Workflow: Top 5 Productivity Tips
-                    </h3>
-                    <p class="text-gray-600 mb-4">
-                        Discover practical strategies to optimize your administrative processes and boost overall productivity.
-                    </p>
-                    <a href="#" class="text-teal-600 hover:text-teal-800 font-medium">
-                        Read More &rarr;
-                    </a>
-                </div>
-            </div>
-
-            <!-- Blog Post 2 -->
-            <div class="bg-white rounded-lg shadow-md overflow-hidden" data-animate="slide-up">
-                <img class="h-48 w-full object-cover" src="https://pixabay.com/get/g9d2d844e1aec143f06279738820f357e30cf7a3cbbba5ad4e82fcf95716e06a8b694f90dd035647652682ffe8b45c3f339b000546daf549bf39ae7692cf72670_640.jpg" alt="Team Meeting">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">
-                        Effective Communication Strategies for Administrative Teams
-                    </h3>
-                    <p class="text-gray-600 mb-4">
-                        Learn how to foster clear and efficient communication within your administrative team for better collaboration.
-                    </p>
-                    <a href="#" class="text-teal-600 hover:text-teal-800 font-medium">
-                        Read More &rarr;
-                    </a>
-                </div>
-            </div>
-
-            <!-- Blog Post 3 -->
-            <div class="bg-white rounded-lg shadow-md overflow-hidden" data-animate="slide-up">
-                <img class="h-48 w-full object-cover" src="https://pixabay.com/get/g54518756f4e727e9836f5d5d9d30aab3d1ff5cc1358161630a2c615c82d047d866b316dc677427a6ec4fd616670d1c53_640.jpg" alt="Document Management">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">
-                        The Ultimate Guide to Document Management Systems
-                    </h3>
-                    <p class="text-gray-600 mb-4">
-                        Explore the benefits of document management systems and how they can revolutionize your administrative processes.
-                    </p>
-                    <a href="#" class="text-teal-600 hover:text-teal-800 font-medium">
-                        Read More &rarr;
-                    </a>
-                </div>
-            </div>
-
-            <!-- Blog Post 4 -->
-            <div class="bg-white rounded-lg shadow-md overflow-hidden hidden lg:block" data-animate="slide-up">
-                <img class="h-48 w-full object-cover" src="https://pixabay.com/get/g47b13db26b3edced6430d143ab157905f598cdc9492f5752245cb4cf21dad46f84e8b30ccc09b7d01d4e8779d63af7398707ab942bf762562319f2ac8f56b517_640.jpg" alt="Remote Work">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">
-                        Managing Remote Administrative Teams: Best Practices
-                    </h3>
-                    <p class="text-gray-600 mb-4">
-                        Discover strategies for leading and supporting remote administrative teams effectively.
-                    </p>
-                    <a href="#" class="text-teal-600 hover:text-teal-800 font-medium">
-                        Read More &rarr;
-                    </a>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="mt-8 text-center">
-            <a href="#" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-teal-600 hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500">
-                View All Articles
-                <svg class="-mr-1 ml-3 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-                </svg>
-            </a>
-        </div>
+    <!-- Blog Post 1 -->
+    <div class="bg-white rounded-lg shadow-md overflow-hidden" data-animate="slide-in-left">
+     <img src="https://pixabay.com/get/g7843d08f8ae31a85187d42ae082687c0d736b2dcf1964a938837e0fd4c4993d6f250b4cf70efb5d05b81a7d471a8ff1d6d5e8c1a17f98c5657eb3a338cfe1fea_640.jpg" alt="Hiking Adventure" class="w-full h-48 object-cover">
+     <div class="p-6">
+      <h3 class="text-xl font-semibold text-gray-800 mb-2">Conquering Mount Cinder: A Trek to Remember</h3>
+      <p class="text-gray-600 mb-4">Join our team as we recount our thrilling ascent of Mount Cinder. Discover breathtaking views, challenging terrains, and the camaraderie that made it all worthwhile.</p>
+      <div class="flex items-center justify-between">
+       <span class="text-sm text-gray-500">October 26, 2023</span>
+       <a href="#" class="text-red-600 hover:text-red-800 font-medium">Read More</a>
+      </div>
+     </div>
     </div>
-</section>
+
+    <!-- Blog Post 2 -->
+    <div class="bg-white rounded-lg shadow-md overflow-hidden" data-animate="slide-in-up">
+     <img src="https://pixabay.com/get/g9a1e0c532b817187a708e29de344e26e07389c619b8f60782793747226676518863bb0768eabce0785827acdb84471462ea846bdc0cd8cba462afed7524ea207_640.jpg" alt="River Rafting Expedition" class="w-full h-48 object-cover">
+     <div class="p-6">
+      <h3 class="text-xl font-semibold text-gray-800 mb-2">Navigating the Rapids: Our Wild River Rafting Trip</h3>
+      <p class="text-gray-600 mb-4">Experience the adrenaline rush of white-water rafting with our expert guides. Learn about the river's ecosystem and the importance of conservation while having an unforgettable adventure.</p>
+      <div class="flex items-center justify-between">
+       <span class="text-sm text-gray-500">November 15, 2023</span>
+       <a href="#" class="text-red-600 hover:text-red-800 font-medium">Read More</a>
+      </div>
+     </div>
+    </div>
+
+    <!-- Blog Post 3 -->
+    <div class="bg-white rounded-lg shadow-md overflow-hidden" data-animate="slide-in-right">
+     <img src="https://pixabay.com/get/g8bd8bd399c28f91d9ca40f26bc505a26873fde9d138905acd1ba758a8d93224e55596714a05e3546fb5e0d132494f8d569c8c2affb77721923b188698726f56f_640.jpg" alt="Rock Climbing Challenge" class="w-full h-48 object-cover">
+     <div class="p-6">
+      <h3 class="text-xl font-semibold text-gray-800 mb-2">Scaling New Heights: Rock Climbing Adventures for All Levels</h3>
+      <p class="text-gray-600 mb-4">Discover the thrill of rock climbing with our certified instructors. From beginner-friendly routes to challenging ascents, we have something for every adventurer.</p>
+      <div class="flex items-center justify-between">
+       <span class="text-sm text-gray-500">December 5, 2023</span>
+       <a href="#" class="text-red-600 hover:text-red-800 font-medium">Read More</a>
+      </div>
+     </div>
+    </div>
+
+   </div>
+
+   <div class="text-center mt-8" data-animate="fade-in">
+    <a href="#" class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg inline-block">View All Blog Posts</a>
+   </div>
+
+  </div>
+ </section>
 
 <!-- CONTACT SECTION -->
-<section id="contact" class="bg-gray-50 py-20 px-8 lg:px-24 xl:px-32 2xl:px-48 w-full">
-    <div class="container mx-auto">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl lg:text-4xl font-extrabold text-teal-700 mb-4" data-animate="fade-in">
-                Get in Touch
-            </h2>
-            <p class="text-gray-600 text-lg" data-animate="fade-in" data-animate-delay="200">
-                We're here to help your business thrive. Contact us today to discuss your administrative needs.
-            </p>
-        </div>
+<section id="contact" class="bg-gray-100 py-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
+  <div class="max-w-6xl mx-auto relative">
+   <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-red-100 to-transparent opacity-25 pointer-events-none"></div>
+   <div class="text-center mb-12">
+    <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl" data-animate="fade-in">
+     Contact Us
+    </h2>
+    <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl" data-animate="fade-in" data-animate-delay="200">
+     Ready to start your adventure? Get in touch with our team today!
+    </p>
+   </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <!-- Contact Form -->
-            <div class="bg-white shadow-lg rounded-xl p-8" data-animate="slide-in-left">
-                <h3 class="text-xl font-semibold text-teal-600 mb-4">Send us a Message</h3>
-                <form action="#" method="POST">
-                    <div class="mb-4">
-                        <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Your Name</label>
-                        <input type="text" id="name" name="name" class="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Enter your name">
-                    </div>
-                    <div class="mb-4">
-                        <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Your Email</label>
-                        <input type="email" id="email" name="email" class="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Enter your email">
-                    </div>
-                    <div class="mb-4">
-                        <label for="phone" class="block text-gray-700 text-sm font-bold mb-2">Your Phone Number</label>
-                        <input type="tel" id="phone" name="phone" class="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Enter your phone number">
-                    </div>
-                    <div class="mb-6">
-                        <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message</label>
-                        <textarea id="message" name="message" rows="4" class="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Enter your message"></textarea>
-                    </div>
-                    <button type="submit" class="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline">
-                        Send Message
-                    </button>
-                </form>
-            </div>
-
-            <!-- Contact Information -->
-            <div class="bg-white shadow-lg rounded-xl p-8" data-animate="slide-in-right">
-                <h3 class="text-xl font-semibold text-teal-600 mb-4">Contact Information</h3>
-                <div class="mb-4">
-                    <p class="text-gray-700 font-bold">Address:</p>
-                    <p class="text-gray-600">123 Main Street, Suite 400<br>Anytown, CA 91234</p>
-                </div>
-                <div class="mb-4">
-                    <p class="text-gray-700 font-bold">Phone:</p>
-                    <p class="text-gray-600"><a href="tel:+15551234567" class="text-teal-500 hover:text-teal-700">(555) 123-4567</a></p>
-                </div>
-                <div class="mb-4">
-                    <p class="text-gray-700 font-bold">Email:</p>
-                    <p class="text-gray-600"><a href="mailto:info@testy.com" class="text-teal-500 hover:text-teal-700">info@testy.com</a></p>
-                </div>
-                <div>
-                    <p class="text-gray-700 font-bold">Business Hours:</p>
-                    <p class="text-gray-600">Monday - Friday: 9:00 AM - 5:00 PM</p>
-                </div>
-            </div>
-        </div>
+   <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div class="bg-white shadow-lg rounded-xl p-6 sm:p-8" data-animate="slide-in-left">
+     <h3 class="text-lg font-semibold text-gray-800 mb-4">Contact Information</h3>
+     <div class="space-y-4">
+      <div>
+       <p class="text-gray-600"><strong>Address:</strong></p>
+       <p class="text-gray-700">123 Adventure Street, Mountain View, CA 94043</p>
+      </div>
+      <div>
+       <p class="text-gray-600"><strong>Phone:</strong></p>
+       <p class="text-gray-700"><a href="tel:+15551234567" class="text-red-500 hover:text-red-700">+1 (555) 123-4567</a></p>
+      </div>
+      <div>
+       <p class="text-gray-600"><strong>Email:</strong></p>
+       <p class="text-gray-700"><a href="mailto:info@testadventures.com" class="text-red-500 hover:text-red-700">info@testadventures.com</a></p>
+      </div>
+      <div>
+       <p class="text-gray-600"><strong>Business Hours:</strong></p>
+       <p class="text-gray-700">Monday - Friday: 9:00 AM - 5:00 PM</p>
+      </div>
+     </div>
     </div>
-</section>
+
+    <div class="bg-white shadow-lg rounded-xl p-6 sm:p-8" data-animate="slide-in-right">
+     <h3 class="text-lg font-semibold text-gray-800 mb-4">Send us a Message</h3>
+     <form action="#" method="POST">
+      <div class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+       <div>
+        <label for="first-name" class="block text-sm font-medium text-gray-700">First name</label>
+        <div class="mt-1">
+         <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="shadow-sm focus:ring-red-500 focus:border-red-500 block w-full sm:text-sm border-gray-300 rounded-md">
+        </div>
+       </div>
+
+       <div>
+        <label for="last-name" class="block text-sm font-medium text-gray-700">Last name</label>
+        <div class="mt-1">
+         <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="shadow-sm focus:ring-red-500 focus:border-red-500 block w-full sm:text-sm border-gray-300 rounded-md">
+        </div>
+       </div>
+
+       <div class="sm:col-span-2">
+        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+        <div class="mt-1">
+         <input id="email" name="email" type="email" autocomplete="email" class="shadow-sm focus:ring-red-500 focus:border-red-500 block w-full sm:text-sm border-gray-300 rounded-md">
+        </div>
+       </div>
+
+       <div class="sm:col-span-2">
+        <label for="phone-number" class="block text-sm font-medium text-gray-700">Phone Number</label>
+        <div class="mt-1 relative rounded-md shadow-sm">
+         <div class="absolute inset-y-0 left-0 flex items-center">
+          <label for="country" class="sr-only">Country</label>
+          <select id="country" name="country" autocomplete="country" class="focus:ring-red-500 focus:border-red-500 h-full py-0 pl-3 pr-7 border-transparent bg-transparent text-gray-500 sm:text-sm rounded-md">
+           <option>US</option>
+           <option>CA</option>
+           <option>EU</option>
+          </select>
+         </div>
+         <input type="text" name="phone-number" id="phone-number" autocomplete="tel" class="shadow-sm focus:ring-red-500 focus:border-red-500 block w-full sm:text-sm border-gray-300 rounded-md pl-20" placeholder="555-123-4567">
+        </div>
+       </div>
+
+       <div class="sm:col-span-2">
+        <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+        <div class="mt-1">
+         <textarea id="message" name="message" rows="4" class="shadow-sm focus:ring-red-500 focus:border-red-500 block w-full sm:text-sm border-gray-300 rounded-md"></textarea>
+        </div>
+       </div>
+
+       <div class="sm:col-span-2">
+        <div class="flex items-start">
+         <div class="flex-shrink-0">
+          <button type="button" class="bg-white relative inline-flex flex-shrink-0 justify-center items-center border-2 border-gray-200 rounded-full h-5 w-10 cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500" role="switch" aria-checked="false" aria-labelledby="privacy-policy-label">
+           <span aria-hidden="true" class="translate-x-0 pointer-events-none relative inline-block h-4 w-4 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200">
+            <span class="absolute inset-0 h-full w-full rounded-md bg-gray-400 transition-opacity ease-linear duration-200 opacity-0" aria-hidden="true"></span>
+           </span>
+          </button>
+         </div>
+         <div class="ml-3">
+          <span class="block text-sm text-gray-900" id="privacy-policy-label">
+           I agree to the <a href="#" class="font-medium text-red-600 hover:text-red-500">Privacy Policy</a>.
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+
+      <div class="mt-6">
+       <button type="submit" class="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">
+        Send Message
+       </button>
+      </div>
+     </form>
+    </div>
+   </div>
+  </div>
+ </section>
 
 <!-- FOOTER SECTION -->
-<footer class="bg-teal-700 text-white py-12 mt-24">
-    <div class="container mx-auto px-4">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<footer class="bg-gray-900 text-white py-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 
-            <div>
-                <h3 class="text-xl font-semibold mb-4">Testy Administrative Services</h3>
-                <p class="text-sm">We provide comprehensive administrative support to businesses of all sizes. Let us handle the paperwork so you can focus on growth.</p>
-                <div class="flex mt-4 space-x-4">
-                    <a href="#" class="hover:text-coral-300"><i class="fab fa-facebook-square fa-2x"></i></a>
-                    <a href="#" class="hover:text-coral-300"><i class="fab fa-linkedin fa-2x"></i></a>
-                    <a href="#" class="hover:text-coral-300"><i class="fab fa-twitter-square fa-2x"></i></a>
-                </div>
-            </div>
-
-            <div>
-                <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
-                <ul class="text-sm">
-                    <li class="mb-2"><a href="/" class="hover:text-coral-300">Home</a></li>
-                    <li class="mb-2"><a href="/services" class="hover:text-coral-300">Services</a></li>
-                    <li class="mb-2"><a href="/about" class="hover:text-coral-300">About Us</a></li>
-                    <li class="mb-2"><a href="/contact" class="hover:text-coral-300">Contact Us</a></li>
-                    <li class="mb-2"><a href="/careers" class="hover:text-coral-300">Careers</a></li>
-                </ul>
-            </div>
-
-            <div>
-                <h3 class="text-xl font-semibold mb-4">Our Services</h3>
-                <ul class="text-sm">
-                    <li class="mb-2"><a href="#" class="hover:text-coral-300">Virtual Assistant Services</a></li>
-                    <li class="mb-2"><a href="#" class="hover:text-coral-300">Bookkeeping & Accounting</a></li>
-                    <li class="mb-2"><a href="#" class="hover:text-coral-300">Payroll Management</a></li>
-                    <li class="mb-2"><a href="#" class="hover:text-coral-300">Customer Support</a></li>
-                    <li class="mb-2"><a href="#" class="hover:text-coral-300">Data Entry & Management</a></li>
-                </ul>
-            </div>
-
-            <div>
-                <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
-                <p class="text-sm mb-2">123 Main Street, Suite 400</p>
-                <p class="text-sm mb-2">Anytown, CA 91234</p>
-                <p class="text-sm mb-2">Email: <a href="mailto:info@testy.com" class="hover:text-coral-300">info@testy.com</a></p>
-                <p class="text-sm">Phone: (555) 123-4567</p>
-            </div>
-
-        </div>
-
-        <div class="mt-8 text-center text-sm">
-            &copy; 2023 Testy Administrative Services. All rights reserved.
-        </div>
-    </div>
-</footer>
+        <!-- Company Info -->
+        <div class="space-y-4">
+            <h3 class="text-lg font-semibold">test Adventure Tourism</h3>
+            <p class="text-gray-400">
+                Embark on unforgettable adventures with test. Explore the world's most breathtaking landscapes and create memories that last a lifetime.
+            </p>
+            <div class="flex space-x-4">
+                <a href="#" class="text-gray-400 hover:text-white" aria-label="Facebook"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.667 9.116 8.438 9.879v-6.988h-2.54V12h2.54V9.797c0-2.476 1.483-3.85 3.707-3.85 1.047 0 1.952.082 2.229.119v2.58h-1.52c-1.213 0-1.56.616-1.56 1.51V12h2.907l-.419 3.091h-2.488v6.988C18.333 21.116 22 16.991 22 12z" clip-rule="evenodd" /></svg></a>
+                <a href="#" class="text-gray-400 hover:text-white" aria-label="Instagram"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.46 1.548.523 2.682 1.66 3.204 3.203.243.635.414 1.362.46 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.065-.218 1.791-.46 2.427a3.824 3.824 0 01-3.204 3.203c-.635.243-1.362.414-2.427.46-.048 1.024-.06 1.378-.06 3.808s.012 2.784.06 3.808c.049 1.065.218 1.791.46 2.427a3.824 3.824 0 013.204 3.203c.635.243 1.362.414 2.427.46.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.065-.218 1.791-.46 2.427a3.824 3.824 0 01-3.204 3.203c-.635.243-1.362.414-2.427.46-.048 1.024-.06 1.378-.06 3.808s.012 2.784.06 3.808c.049 1.065.218 1.791.46 2.427a3.824 3.824 0 013.204 3.203c.635.243 1.362.414 2.427.46.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.065-.218 1.791-.46 2.427a3.824 3.824 0 01-3.204 3.203c-.635.243-1.362.414-2.427.46-.048 1.024-.06 1.378-.06 3.808s.012 2.784.06 3.808c.049 1.065.218 1.791.46 2.427a3.824 3.824 0 01-3.204 3.203c-.635.243-1.362.414-2.427.46-.048 1.024-.06 1.378-.06 3.808s.012 2.784.06 3.808c.049 1.065.218 1.791.46 2.427a3.824 3.824 0 01-3.204 3.203c-.635.243-1.362.414-2.427.46-.048 1.024-.06 1.378-.06 3.808s.012 2.784.06 3.808c.049 1.065.218 1.791.46 2.427a3.824 3.824 0 01-3.204 3.203c-.635.243-1.362.414-2.427.46-.048 1.024-.06 1.378-.06 3.808s.012 2.784.06 3.808c.049 1.065.218 1.791.46 2.427a3.824 3.824 0 01-3.204 3.203c-.635.243-1.362.414-2.427.46-.048 1.024-.06 1.378-.06 3.808s.012 2.784.06 3.808c.049 1.065.218 1.791.46 2.427a3.824 3.824 0 01-3.204 3.203c-.635.243-1.362.414-2.427.46-.048 1.024-.06 1.378-.06 3.808s.012 2.784.06 3.808c.049 1.065.218 1.791.46 2.427a3.824 3.824 0 01-3.204 3.203c-.635.243-1.362.414-2.427.46-.048 1.024-.06 1.378-.06 3.808V12.315c0-2.43.013-2.784.06-3.808.049-1.065.218-1.791.46-2.427a3.824 3.824 0 013.204-3.203c.635-.243 1.362-.414 2.427-.46.048-1.024.06-1.378.06-3.808s-.012-2.784-.06-3.808c-.049-1.065-.218-1.791-.46-2.427a3.824 3.824 0 01-3.204-3.203c-.635-.243-1.362-.414-2.427-.46-.048-1.024-.06-1.378-.06-3.808V2.315zM4.855 4.856a7.28 7.28 0 000 14.292 7.28 7.28 0 0014.292 0A7.28 7.28 0 004.855 4.856z" clip-rule="evenodd" /></svg></a>
+                <a href="#" class="text-gray-400 hover:text-white" aria-label="Twitter"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.005-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.807-2.278 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.107 4.107 0 001.27 5.493 4.086 4.086 0 01-1.858-.513 4.107 4.107 0 003.214 4.037 4.086 4.086 0 01-1.858-.513
 
     </main>
     
