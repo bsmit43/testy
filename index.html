@@ -1,1404 +1,818 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="test - Professional website">
-    <meta name="generator" content="Website Generator">
-    <meta name="theme-color" content="hsl(241, 75%, 40%)">
-    <title>test</title>
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href='https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap' rel='stylesheet'>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <style>
-        body{font-family:'Manrope', system-ui, sans-serif;overflow-x:hidden;width:100%;max-width:100%;margin:0;padding:0}
-        h1,h2,h3,h4,h5,h6{font-family:'Manrope', sans-serif}
-        section,header,footer{width:100vw;max-width:100%;overflow-x:hidden}
-        header{background-size:cover;background-position:center;background-repeat:no-repeat;position:relative}
-        [data-animate]{opacity:0;transform:translateY(20px);transition:opacity .6s ease-out,transform .6s ease-out}[data-animate].visible{opacity:1;transform:translateY(0)}
-        .nav-fixed{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:blur(8px);box-shadow:0 1px 3px rgba(0,0,0,.1);transition:all .3s ease;width:100%}
-        ::-webkit-scrollbar{width:8px;height:8px}
-        ::-webkit-scrollbar-track{background:#f1f1f1}
-        ::-webkit-scrollbar-thumb{background:hsl(241, 75%, 40%);border-radius:4px}
-        ::-webkit-scrollbar-thumb:hover{background:hsl(241, 75%, 30%)}
-        body::before{content:'';position:fixed;top:0;left:0;right:0;height:3px;background:hsl(241, 75%, 40%);transform:scaleX(calc(var(--scroll-progress,0%)/100));transform-origin:left;z-index:1000}
-        @media print{[data-animate]{opacity:1;transform:none}}
-    </style>
-    
-    <script>
-        tailwind.config={theme:{extend:{colors:{primary:{"50":"hsl(241, 75%, 95%)","100":"hsl(241, 75%, 90%)","200":"hsl(241, 75%, 80%)","300":"hsl(241, 75%, 70%)","400":"hsl(241, 75%, 60%)","500":"hsl(241, 75%, 50%)","600":"hsl(241, 75%, 40%)","700":"hsl(241, 75%, 30%)","800":"hsl(241, 75%, 20%)","900":"hsl(241, 75%, 10%)"}},fontFamily:{sans:[''Manrope'','system-ui','sans-serif'],heading:[''Manrope'','sans-serif']}}}}
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="testy - Professional website">
+  <meta name="generator" content="Website Generator">
+  <meta name="theme-color" content="hsl(180, 72%, 40%)">
+  <title>testy</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href='https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Lora:wght@400;500;600&display=swap' rel='stylesheet'>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+      /* Professional Corporate Style - Refined aesthetics with clear typography */
+      body{font-family:'Lora', serif;overflow-x:hidden;width:100%;max-width:100%;margin:0;padding:0}
+      h1,h2,h3,h4,h5,h6{font-family:'Montserrat', sans-serif}
+      section,header,footer{width:100vw;max-width:100%;overflow-x:hidden}
+      header{background-size:cover;background-position:center;background-repeat:no-repeat;position:relative;min-height:500px;display:flex;align-items:center}
+      [data-animate]{opacity:0;transition:opacity 1s ease-out}[data-animate].visible{opacity:1}
+      .nav-fixed{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(12px);box-shadow:0 2px 10px rgba(0,0,0,.1);transition:all .3s ease;width:100%}
+      ::-webkit-scrollbar{width:10px;height:10px}::-webkit-scrollbar-track{background:#f1f1f1}::-webkit-scrollbar-thumb{background:hsl(180, 72%, 40%);border-radius:2px}::-webkit-scrollbar-thumb:hover{background:hsl(180, 72%, 20%)}
+      body::before{content:'';position:fixed;top:0;left:0;right:0;height:4px;background:hsl(180, 72%, 40%);transform:scaleX(calc(var(--scroll-progress,0%)/100));transform-origin:left;z-index:1000}
+      @media print{[data-animate]{opacity:1;transform:none}}
+  </style>
+  
+  <script>
+      tailwind.config={theme:{extend:{colors:{primary:{"50":"hsl(180, 72%, 95%)","100":"hsl(180, 72%, 90%)","200":"hsl(180, 72%, 80%)","300":"hsl(180, 72%, 70%)","400":"hsl(180, 72%, 60%)","500":"hsl(180, 72%, 50%)","600":"hsl(180, 72%, 40%)","700":"hsl(180, 72%, 30%)","800":"hsl(180, 72%, 20%)","900":"hsl(180, 72%, 10%)"}},fontFamily:{sans:[''Lora'','serif'],heading:[''Montserrat'','sans-serif']}}}}
+  </script>
 </head>
 <body class="antialiased text-gray-800">
-    <main>
-        
+  <nav class="bg-white shadow-md sticky top-0 z-50" data-animate="slide-in-top">
+    <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+        <!-- Logo -->
+        <a href="/" class="flex items-center space-x-2">
+            <img src="/api/placeholder/50/50" alt="Testy Logo" class="h-10 w-10 rounded-full object-cover">
+            <span class="text-xl font-semibold text-gray-800">Testy</span>
+        </a>
+
+        <!-- Mobile Menu Button (Hidden on larger screens) -->
+        <button id="mobile-menu-button" class="md:hidden text-gray-700 hover:text-gray-900 focus:outline-none focus:text-gray-900">
+            <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2z"/>
+            </svg>
+        </button>
+
+        <!-- Navigation Links (Hidden on mobile) -->
+        <div class="hidden md:flex items-center space-x-6">
+            <a href="/" class="text-gray-700 hover:text-blue-600 transition duration-300">Home</a>
+            <a href="/services" class="text-gray-700 hover:text-blue-600 transition duration-300">Services</a>
+            <a href="/about" class="text-gray-700 hover:text-blue-600 transition duration-300">About Us</a>
+            <a href="/contact" class="text-gray-700 hover:text-blue-600 transition duration-300">Contact</a>
+            <a href="/blog" class="text-gray-700 hover:text-blue-600 transition duration-300">Blog</a>
+            <a href="/pricing" class="text-gray-700 hover:text-blue-600 transition duration-300">Pricing</a>
+            <a href="/login" class="text-gray-700 hover:text-blue-600 transition duration-300">Login</a>
+            <a href="/register" class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">Get Started</a>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-white shadow-md rounded-b-lg py-4 px-6">
+            <a href="/" class="block text-gray-700 hover:text-blue-600 py-2 transition duration-300">Home</a>
+            <a href="/services" class="block text-gray-700 hover:text-blue-600 py-2 transition duration-300">Services</a>
+            <a href="/about" class="block text-gray-700 hover:text-blue-600 py-2 transition duration-300">About Us</a>
+            <a href="/contact" class="block text-gray-700 hover:text-blue-600 py-2 transition duration-300">Contact</a>
+            <a href="/blog" class="block text-gray-700 hover:text-blue-600 py-2 transition duration-300">Blog</a>
+            <a href="/pricing" class="block text-gray-700 hover:text-blue-600 py-2 transition duration-300">Pricing</a>
+            <a href="/login" class="block text-gray-700 hover:text-blue-600 py-2 transition duration-300">Login</a>
+            <a href="/register" class="block bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-300 text-center">Get Started</a>
+        </div>
+    </div>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</nav>
+  <main>
+      
 <!-- NAV SECTION -->
 
 
 <!-- HEADER SECTION -->
-<header class="relative bg-gray-900 overflow-hidden">
-  <div class="absolute inset-0">
-   <img class="h-full w-full object-cover object-center" src="https://pixabay.com/get/g7843d08f8ae31a85187d42ae082687c0d736b2dcf1964a938837e0fd4c4993d6f250b4cf70efb5d05b81a7d471a8ff1d6d5e8c1a17f98c5657eb3a338cfe1fea_640.jpg" alt="Mountains" />
-   <div class="absolute inset-0 bg-gradient-to-r from-gray-900 to-red-900 opacity-60"></div>
-  </div>
 
-  <nav class="relative px-6 py-4">
-   <div class="container mx-auto flex items-center justify-between">
-    <div class="flex items-center">
-     <a class="text-xl font-bold text-white hover:text-red-500 transition duration-300" href="/">
-      test
-     </a>
-    </div>
-    <div class="hidden lg:flex space-x-6">
-     <a class="text-white hover:text-red-500 transition duration-300" href="#adventures">Adventures</a>
-     <a class="text-white hover:text-red-500 transition duration-300" href="#about">About Us</a>
-     <a class="text-white hover:text-red-500 transition duration-300" href="#testimonials">Testimonials</a>
-     <a class="text-white hover:text-red-500 transition duration-300" href="#contact">Contact</a>
-    </div>
-    <div class="lg:hidden">
-     <button id="mobile-menu-button" class="text-white focus:outline-none focus:text-red-500">
-      <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-      </svg>
-     </button>
-    </div>
-   </div>
-  </nav>
-
-  <div id="mobile-menu" class="hidden lg:hidden bg-gray-800 py-4 px-6">
-   <a class="block text-white py-2 hover:text-red-500 transition duration-300" href="#adventures">Adventures</a>
-   <a class="block text-white py-2 hover:text-red-500 transition duration-300" href="#about">About Us</a>
-   <a class="block text-white py-2 hover:text-red-500 transition duration-300" href="#testimonials">Testimonials</a>
-   <a class="block text-white py-2 hover:text-red-500 transition duration-300" href="#contact">Contact</a>
-  </div>
-
-  <div class="relative py-24 px-6 md:px-12 lg:px-24 xl:px-32">
-   <div class="container mx-auto text-center">
-    <h1 class="text-4xl font-extrabold text-white sm:text-5xl lg:text-6xl" data-animate="fade-in-up">
-     Explore the Unexplored with test
-    </h1>
-    <p class="mt-4 text-lg text-gray-200 sm:text-xl lg:text-2xl" data-animate="fade-in-up" data-animate-delay="200">
-     Your gateway to unforgettable adventure experiences.
-    </p>
-    <div class="mt-8 flex justify-center" data-animate="fade-in-up" data-animate-delay="400">
-     <a href="#adventures" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">
-      Discover Adventures
-     </a>
-    </div>
-   </div>
-  </div>
-
-  
- </header>
 
 <!-- ABOUT SECTION -->
-<section id="about" class="bg-gray-100 py-16 overflow-hidden">
+<section id="about" class="py-16 bg-gray-50">
   <div class="container mx-auto px-4">
-   <div class="lg:flex lg:items-center lg:justify-between">
-    <div class="lg:w-1/2 mb-8 lg:mb-0" data-animate="fade-right">
-     <img src="https://pixabay.com/get/g9a1e0c532b817187a708e29de344e26e07389c619b8f60782793747226676518863bb0768eabce0785827acdb84471462ea846bdc0cd8cba462afed7524ea207_640.jpg" alt="Adventurer rappelling down a cliff" class="rounded-xl shadow-lg w-full object-cover h-96">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div class="order-2 md:order-1" data-animate="fade-right">
+        <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-4">
+          About Testy Accounting: Your Trusted Financial Partner
+        </h2>
+        <p class="text-gray-700 leading-relaxed mb-6">
+          At Testy Accounting, we understand that managing your finances can be complex and time-consuming.
+          That's why we're dedicated to providing comprehensive accounting solutions tailored to your specific needs.
+          Whether you're a small business owner, a growing startup, or an individual seeking expert financial guidance,
+          we're here to help you achieve your financial goals.
+        </p>
+        <p class="text-gray-700 leading-relaxed mb-6">
+          Our team of experienced and certified accountants is committed to delivering accurate, reliable, and timely
+          financial information. We go beyond simply crunching numbers; we provide insightful analysis and strategic
+          advice to help you make informed decisions and optimize your financial performance.
+        </p>
+        <ul class="list-disc list-inside text-gray-700">
+          <li>
+            <strong>Expertise:</strong> Benefit from our deep understanding of accounting principles and industry best
+            practices.
+          </li>
+          <li>
+            <strong>Personalized Service:</strong> Receive customized solutions that address your unique financial
+            challenges.
+          </li>
+          <li>
+            <strong>Integrity:</strong> Trust us to handle your finances with the utmost confidentiality and ethical
+            standards.
+          </li>
+          <li>
+            <strong>Peace of Mind:</strong> Gain confidence in your financial stability and future success.
+          </li>
+        </ul>
+      </div>
+
+      <div class="order-1 md:order-2" data-animate="fade-left">
+        <img
+          src="/images/g4a72647734b4b15f890ffa9568f494944922da43ea5bec251b77d266d4de53b787b5fa788adcd2762b8a8b29e3c452b16b58ce36dc19f8a462e19f666c5b1617_640.jpg"
+          alt="Accountant working on financial documents"
+          class="rounded-lg shadow-lg w-full h-auto object-cover"
+        />
+      </div>
     </div>
-    <div class="lg:w-1/2 lg:pl-12" data-animate="fade-left">
-     <h2 class="text-3xl font-extrabold text-gray-900 mb-6">About Us</h2>
-     <p class="text-lg text-gray-700 mb-6">
-      At test, we're more than just an adventure tourism company – we're a family of passionate explorers dedicated to crafting unforgettable experiences in the heart of nature. Founded in 2010 by avid mountaineer, John Doe, our mission is to share the thrill of adventure while fostering a deep respect for the environment.
-     </p>
-     <p class="text-lg text-gray-700 mb-6">
-      We specialize in expertly guided tours and expeditions, ranging from exhilarating white-water rafting trips down the Colorado River to challenging treks through the majestic Rocky Mountains. Our team of certified guides boasts years of experience and a commitment to safety, ensuring that every adventure is both thrilling and secure.
-     </p>
-     <p class="text-lg text-gray-700 mb-6">
-      But our commitment extends beyond just providing adrenaline-pumping activities. We believe in responsible tourism, partnering with local communities and adhering to strict environmental guidelines to minimize our impact. When you choose test, you're not just embarking on an adventure; you're contributing to the preservation of the natural world for future generations.
-     </p>
-     <div class="flex items-center mt-8">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-red-600 mr-4">
-       <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM8.547 9.505a1.5 1.5 0 10-2.97-1.517 1.5 1.5 0 002.97 1.517zm9.753 0a1.5 1.5 0 10-2.97-1.517 1.5 1.5 0 002.97 1.517zm-1.5 9.75a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" clip-rule="evenodd" />
-      </svg>
-      <span class="text-gray-700 font-medium">Committed to Sustainable Tourism</span>
-     </div>
+
+    <div class="mt-12 text-center" data-animate="fade-up">
+      <h3 class="text-2xl font-semibold text-gray-900 mb-4">Our Mission</h3>
+      <p class="text-gray-700 leading-relaxed">
+        To empower our clients with the financial knowledge and support they need to thrive. We strive to build
+        long-term relationships based on trust, transparency, and a shared commitment to success.
+      </p>
     </div>
-   </div>
   </div>
- </section>
+</section>
 
 <!-- SERVICES SECTION -->
-<section id="services" class="py-16 bg-gray-100">
-  <div class="container mx-auto px-4">
-    <div class="text-center mb-12">
-      <h2 class="text-3xl font-extrabold text-gray-800 sm:text-4xl" data-animate="fade-in">Our Adventure Services</h2>
-      <p class="mt-4 text-lg text-gray-600" data-animate="fade-in" data-animate-delay="200">
-        Explore the world with us. We offer a range of thrilling and unforgettable adventure experiences.
-      </p>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-      <!-- Service Card 1: Mountain Climbing -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300" data-animate="slide-in-up">
-        <img src="https://pixabay.com/get/g8bd8bd399c28f91d9ca40f26bc505a26873fde9d138905acd1ba758a8d93224e55596714a05e3546fb5e0d132494f8d569c8c2affb77721923b188698726f56f_640.jpg" alt="Mountain Climbing" class="w-full h-64 object-cover">
-        <div class="p-6">
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">Mountain Climbing</h3>
-          <p class="text-gray-600 mb-4">
-            Conquer majestic peaks with our expert guides. We provide all the necessary equipment and training for a safe and exhilarating climb.
-          </p>
-          <ul class="list-disc list-inside text-sm text-gray-500 mb-4">
-            <li>Guided climbs for all skill levels</li>
-            <li>Equipment rental available</li>
-            <li>Safety briefings and training</li>
-          </ul>
-          <a href="#" class="inline-block bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-200">
-            Learn More
-          </a>
+<section id="services" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl" data-animate="fade-in">
+                Comprehensive Accounting Services
+            </h2>
+            <p class="mt-4 text-lg text-gray-600" data-animate="fade-in" data-animate-delay="200">
+                We offer a wide range of accounting services tailored to meet your specific business needs.
+            </p>
         </div>
-      </div>
-
-      <!-- Service Card 2: White Water Rafting -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300" data-animate="slide-in-up" data-animate-delay="100">
-        <img src="https://pixabay.com/get/g9a1e0c532b817187a708e29de344e26e07389c619b8f60782793747226676518863bb0768eabce0785827acdb84471462ea846bdc0cd8cba462afed7524ea207_640.jpg" alt="White Water Rafting" class="w-full h-64 object-cover">
-        <div class="p-6">
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">White Water Rafting</h3>
-          <p class="text-gray-600 mb-4">
-            Experience the thrill of navigating rushing rapids. Our experienced raft guides will ensure a safe and unforgettable adventure.
-          </p>
-          <ul class="list-disc list-inside text-sm text-gray-500 mb-4">
-            <li>Various river grades available</li>
-            <li>Safety equipment provided</li>
-            <li>Professional raft guides</li>
-          </ul>
-          <a href="#" class="inline-block bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-200">
-            Learn More
-          </a>
-        </div>
-      </div>
-
-      <!-- Service Card 3: Jungle Trekking -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300" data-animate="slide-in-up" data-animate-delay="200">
-        <img src="https://pixabay.com/get/g7843d08f8ae31a85187d42ae082687c0d736b2dcf1964a938837e0fd4c4993d6f250b4cf70efb5d05b81a7d471a8ff1d6d5e8c1a17f98c5657eb3a338cfe1fea_640.jpg" alt="Jungle Trekking" class="w-full h-64 object-cover">
-        <div class="p-6">
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">Jungle Trekking</h3>
-          <p class="text-gray-600 mb-4">
-            Immerse yourself in the lush rainforest. Discover exotic wildlife and breathtaking landscapes on our guided jungle treks.
-          </p>
-          <ul class="list-disc list-inside text-sm text-gray-500 mb-4">
-            <li>Experienced local guides</li>
-            <li>Diverse flora and fauna</li>
-            <li>Sustainable tourism practices</li>
-          </ul>
-          <a href="#" class="inline-block bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-200">
-            Learn More
-          </a>
-        </div>
-      </div>
-
-      <!-- Service Card 4: Scuba Diving -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300" data-animate="slide-in-up">
-        <img src="https://pixabay.com/get/g5e1f609de2cb7ee9627d7934f9d60d741d404a33024e123be5e2cce3afe0fe2578483cf194dbf0da7ffeda7d64e74510e6cf414db51126876f8f6f48e83f0d60_640.jpg" alt="Scuba Diving" class="w-full h-64 object-cover">
-        <div class="p-6">
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">Scuba Diving</h3>
-          <p class="text-gray-600 mb-4">
-            Explore the underwater world with our certified dive instructors. Discover vibrant coral reefs and fascinating marine life.
-          </p>
-          <ul class="list-disc list-inside text-sm text-gray-500 mb-4">
-            <li>PADI certified instructors</li>
-            <li>Equipment rental available</li>
-            <li>Beginner to advanced courses</li>
-          </ul>
-          <a href="#" class="inline-block bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-200">
-            Learn More
-          </a>
-        </div>
-      </div>
-
-      <!-- Service Card 5: Paragliding -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300" data-animate="slide-in-up" data-animate-delay="100">
-        <img src="https://images.unsplash.com/photo-1546959221-8904c25699a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHBhcmFnbGlkaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60" alt="Paragliding" class="w-full h-64 object-cover">
-        <div class="p-6">
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">Paragliding</h3>
-          <p class="text-gray-600 mb-4">
-            Soar through the skies and experience breathtaking views with our tandem paragliding flights. No experience necessary!
-          </p>
-          <ul class="list-disc list-inside text-sm text-gray-500 mb-4">
-            <li>Tandem flights with certified pilots</li>
-            <li>Stunning aerial views</li>
-            <li>Safety equipment provided</li>
-          </ul>
-          <a href="#" class="inline-block bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-200">
-            Learn More
-          </a>
-        </div>
-      </div>
-
-      <!-- Service Card 6: Rock Climbing -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300" data-animate="slide-in-up" data-animate-delay="200">
-        <img src="https://images.unsplash.com/photo-1519682337058-5ef9f0949f07?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHJvY2slMjBjbGltYmluZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="Rock Climbing" class="w-full h-64 object-cover">
-        <div class="p-6">
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">Rock Climbing</h3>
-          <p class="text-gray-600 mb-4">
-            Challenge yourself with our guided rock climbing adventures. We offer routes for all skill levels, from beginner to expert.
-          </p>
-          <ul class="list-disc list-inside text-sm text-gray-500 mb-4">
-            <li>Guided climbs for all skill levels</li>
-            <li>Equipment rental available</li>
-            <li>Safety briefings and training</li>
-          </ul>
-          <a href="#" class="inline-block bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-200">
-            Learn More
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FEATURES SECTION -->
-<section id="features" class="py-16 bg-gray-100">
-  <div class="container mx-auto px-4">
-    <div class="text-center mb-12">
-      <h2 class="text-3xl font-extrabold text-gray-800 sm:text-4xl lg:text-5xl" data-animate="fade-in">
-        Unleash Your Inner Explorer with Test
-      </h2>
-      <p class="mt-4 text-lg text-gray-600" data-animate="fade-in" data-animate-delay="200">
-        Experience the thrill of adventure with our expertly curated tours and activities.
-      </p>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-      <!-- Feature 1 -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden" data-animate="slide-in-bottom">
-        <img src="https://pixabay.com/get/g7843d08f8ae31a85187d42ae082687c0d736b2dcf1964a938837e0fd4c4993d6f250b4cf70efb5d05b81a7d471a8ff1d6d5e8c1a17f98c5657eb3a338cfe1fea_640.jpg" alt="Rock Climbing Adventure" class="w-full h-48 object-cover">
-        <div class="p-6">
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">Rock Climbing Expeditions</h3>
-          <p class="text-gray-600 mb-4">
-            Challenge yourself with our guided rock climbing adventures. From beginner-friendly climbs to advanced ascents, we have something for every skill level.
-          </p>
-          <ul class="list-disc list-inside text-gray-600">
-            <li>Expertly trained guides</li>
-            <li>State-of-the-art equipment</li>
-            <li>Breathtaking views</li>
-          </ul>
-          <a href="#" class="mt-4 inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition duration-200">
-            Book Now
-          </a>
-        </div>
-      </div>
-
-      <!-- Feature 2 -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden" data-animate="slide-in-bottom" data-animate-delay="200">
-        <img src="https://pixabay.com/get/g9a1e0c532b817187a708e29de344e26e07389c619b8f60782793747226676518863bb0768eabce0785827acdb84471462ea846bdc0cd8cba462afed7524ea207_640.jpg" alt="White Water Rafting" class="w-full h-48 object-cover">
-        <div class="p-6">
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">White Water Rafting Thrills</h3>
-          <p class="text-gray-600 mb-4">
-            Experience the adrenaline rush of navigating raging rapids. Our white water rafting tours are perfect for thrill-seekers.
-          </p>
-          <ul class="list-disc list-inside text-gray-600">
-            <li>Safety-certified rafts</li>
-            <li>Experienced river guides</li>
-            <li>Unforgettable memories</li>
-          </ul>
-          <a href="#" class="mt-4 inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition duration-200">
-            Book Now
-          </a>
-        </div>
-      </div>
-
-      <!-- Feature 3 -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden" data-animate="slide-in-bottom" data-animate-delay="400">
-        <img src="https://pixabay.com/get/g8bd8bd399c28f91d9ca40f26bc505a26873fde9d138905acd1ba758a8d93224e55596714a05e3546fb5e0d132494f8d569c8c2affb77721923b188698726f56f_640.jpg" alt="Mountain Hiking Adventures" class="w-full h-48 object-cover">
-        <div class="p-6">
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">Scenic Mountain Hiking</h3>
-          <p class="text-gray-600 mb-4">
-            Explore breathtaking landscapes on our guided mountain hiking tours. Discover hidden trails and panoramic views.
-          </p>
-          <ul class="list-disc list-inside text-gray-600">
-            <li>Customizable trail options</li>
-            <li>Knowledgeable local guides</li>
-            <li>Stunning natural beauty</li>
-          </ul>
-          <a href="#" class="mt-4 inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition duration-200">
-            Book Now
-          </a>
-        </div>
-      </div>
-
-      <!-- Feature 4 -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden md:col-span-2 lg:col-span-1" data-animate="slide-in-bottom">
-        <img src="https://pixabay.com/get/g5e1f609de2cb7ee9627d7934f9d60d741d404a33024e123be5e2cce3afe0fe2578483cf194dbf0da7ffeda7d64e74510e6cf414db51126876f8f6f48e83f0d60_640.jpg" alt="Ziplining Through the Canopy" class="w-full h-48 object-cover">
-        <div class="p-6">
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">Ziplining Through the Canopy</h3>
-          <p class="text-gray-600 mb-4">
-            Soar through the treetops on our exhilarating zipline courses. Experience the rainforest from a whole new perspective.
-          </p>
-          <ul class="list-disc list-inside text-gray-600">
-            <li>Multiple zipline courses</li>
-            <li>Certified safety instructors</li>
-            <li>Unforgettable views</li>
-          </ul>
-          <a href="#" class="mt-4 inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition duration-200">
-            Book Now
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- TEAM SECTION -->
-<section id="team" class="py-16 bg-gray-100">
-  <div class="container mx-auto px-4">
-    <h2 class="text-3xl font-bold text-gray-800 text-center mb-8" data-animate="fade-in">Meet Our Expert Team</h2>
-    <p class="text-gray-600 text-center mb-12" data-animate="fade-in" data-animate-delay="200">
-      Our team is passionate about adventure and dedicated to providing you with unforgettable experiences.
-    </p>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-
-      <!-- Team Member 1 -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden" data-animate="slide-in-bottom">
-        <img src="https://api.placeholder.co/400x300" alt="Team Member 1" class="w-full h-64 object-cover">
-        <div class="p-4">
-          <h3 class="text-xl font-semibold text-gray-800">Alex Johnson</h3>
-          <p class="text-gray-500">Lead Guide & Mountaineer</p>
-          <p class="text-gray-700 mt-2">Alex has been leading expeditions for over 10 years and is a certified mountain guide. He ensures your safety and provides expert knowledge of the terrain.</p>
-          <div class="mt-4 flex justify-center space-x-4">
-            <a href="#" class="text-red-500 hover:text-red-700"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="text-red-500 hover:text-red-700"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="text-red-500 hover:text-red-700"><i class="fab fa-linkedin-in"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Team Member 2 -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden" data-animate="slide-in-bottom" data-animate-delay="100">
-        <img src="https://api.placeholder.co/400x300" alt="Team Member 2" class="w-full h-64 object-cover">
-        <div class="p-4">
-          <h3 class="text-xl font-semibold text-gray-800">Sarah Chen</h3>
-          <p class="text-gray-500">Adventure Planner & Logistics</p>
-          <p class="text-gray-700 mt-2">Sarah is our expert planner, ensuring all your adventure details are meticulously organized. From permits to transportation, she's got you covered.</p>
-          <div class="mt-4 flex justify-center space-x-4">
-            <a href="#" class="text-red-500 hover:text-red-700"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="text-red-500 hover:text-red-700"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="text-red-500 hover:text-red-700"><i class="fab fa-linkedin-in"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Team Member 3 -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden" data-animate="slide-in-bottom" data-animate-delay="200">
-        <img src="https://api.placeholder.co/400x300" alt="Team Member 3" class="w-full h-64 object-cover">
-        <div class="p-4">
-          <h3 class="text-xl font-semibold text-gray-800">David Lee</h3>
-          <p class="text-gray-500">Rock Climbing Instructor</p>
-          <p class="text-gray-700 mt-2">David is a certified rock climbing instructor with years of experience. He provides safe and exciting climbing experiences for all skill levels.</p>
-          <div class="mt-4 flex justify-center space-x-4">
-            <a href="#" class="text-red-500 hover:text-red-700"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="text-red-500 hover:text-red-700"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="text-red-500 hover:text-red-700"><i class="fab fa-linkedin-in"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Team Member 4 -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden" data-animate="slide-in-bottom" data-animate-delay="300">
-        <img src="https://api.placeholder.co/400x300" alt="Team Member 4" class="w-full h-64 object-cover">
-        <div class="p-4">
-          <h3 class="text-xl font-semibold text-gray-800">Emily Wilson</h3>
-          <p class="text-gray-500">Wilderness First Responder</p>
-          <p class="text-gray-700 mt-2">Emily is a certified Wilderness First Responder and ensures the safety and well-being of all our participants. Her expertise is invaluable on every adventure.</p>
-          <div class="mt-4 flex justify-center space-x-4">
-            <a href="#" class="text-red-500 hover:text-red-700"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="text-red-500 hover:text-red-700"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="text-red-500 hover:text-red-700"><i class="fab fa-linkedin-in"></i></a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- PORTFOLIO SECTION -->
-<section id="portfolio" class="py-16 bg-gray-100">
-  <div class="container mx-auto px-4">
-    <div class="text-center mb-12">
-      <h2 class="text-3xl font-extrabold text-gray-800 mb-4" data-animate="fade-in">
-        Our Adventures
-      </h2>
-      <p class="text-lg text-gray-600" data-animate="fade-in" data-animate-delay="200">
-        Explore some of our most thrilling and unforgettable adventures.
-      </p>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-      <!-- Adventure 1 -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden" data-animate="slide-in-bottom">
-        <img src="https://pixabay.com/get/g7843d08f8ae31a85187d42ae082687c0d736b2dcf1964a938837e0fd4c4993d6f250b4cf70efb5d05b81a7d471a8ff1d6d5e8c1a17f98c5657eb3a338cfe1fea_640.jpg" alt="Whitewater Rafting" class="w-full h-64 object-cover">
-        <div class="p-6">
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">
-            Whitewater Rafting on the Colorado River
-          </h3>
-          <p class="text-gray-600 mb-4">
-            Experience the thrill of navigating the rapids on the mighty Colorado River. Our expert guides will ensure a safe and exhilarating adventure.
-          </p>
-          <a href="#" class="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition duration-200">
-            Learn More
-          </a>
-        </div>
-      </div>
-
-      <!-- Adventure 2 -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden" data-animate="slide-in-bottom" data-animate-delay="100">
-        <img src="https://pixabay.com/get/g9a1e0c532b817187a708e29de344e26e07389c619b8f60782793747226676518863bb0768eabce0785827acdb84471462ea846bdc0cd8cba462afed7524ea207_640.jpg" alt="Mountain Hiking" class="w-full h-64 object-cover">
-        <div class="p-6">
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">
-            Summiting Mount Everest Base Camp Trek
-          </h3>
-          <p class="text-gray-600 mb-4">
-            Embark on an unforgettable journey to the base of the world's highest peak. Witness breathtaking views and experience the Sherpa culture.
-          </p>
-          <a href="#" class="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition duration-200">
-            Learn More
-          </a>
-        </div>
-      </div>
-
-      <!-- Adventure 3 -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden" data-animate="slide-in-bottom" data-animate-delay="200">
-        <img src="https://pixabay.com/get/g8bd8bd399c28f91d9ca40f26bc505a26873fde9d138905acd1ba758a8d93224e55596714a05e3546fb5e0d132494f8d569c8c2affb77721923b188698726f56f_640.jpg" alt="Rock Climbing" class="w-full h-64 object-cover">
-        <div class="p-6">
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">
-            Rock Climbing in Yosemite National Park
-          </h3>
-          <p class="text-gray-600 mb-4">
-            Challenge yourself with a rock climbing adventure in the iconic Yosemite Valley. Our certified instructors will guide you through every step.
-          </p>
-          <a href="#" class="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition duration-200">
-            Learn More
-          </a>
-        </div>
-      </div>
-
-      <!-- Adventure 4 -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden" data-animate="slide-in-bottom">
-        <img src="https://pixabay.com/get/g5e1f609de2cb7ee9627d7934f9d60d741d404a33024e123be5e2cce3afe0fe2578483cf194dbf0da7ffeda7d64e74510e6cf414db51126876f8f6f48e83f0d60_640.jpg" alt="Kayaking" class="w-full h-64 object-cover">
-        <div class="p-6">
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">
-            Sea Kayaking in the Fjords of Norway
-          </h3>
-          <p class="text-gray-600 mb-4">
-            Paddle through the stunning fjords of Norway and witness breathtaking landscapes. Our guided tours offer a unique perspective of this natural wonder.
-          </p>
-          <a href="#" class="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition duration-200">
-            Learn More
-          </a>
-        </div>
-      </div>
-
-      <!-- Adventure 5 -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden" data-animate="slide-in-bottom" data-animate-delay="100">
-        <img src="https://images.unsplash.com/photo-1501785888020-7ca268d42c1c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Ziplining" class="w-full h-64 object-cover">
-        <div class="p-6">
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">
-            Ziplining Through the Rainforest Canopy
-          </h3>
-          <p class="text-gray-600 mb-4">
-            Soar through the lush rainforest canopy on an exhilarating zipline adventure. Experience the rainforest from a unique perspective.
-          </p>
-          <a href="#" class="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition duration-200">
-            Learn More
-          </a>
-        </div>
-      </div>
-
-      <!-- Adventure 6 -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden" data-animate="slide-in-bottom" data-animate-delay="200">
-        <img src="https://images.unsplash.com/photo-1534531279159-77836e60813b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Safari" class="w-full h-64 object-cover">
-        <div class="p-6">
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">
-            African Safari Adventure
-          </h3>
-          <p class="text-gray-600 mb-4">
-            Embark on an unforgettable safari adventure in the heart of Africa. Witness the Big Five and experience the beauty of the African savanna.
-          </p>
-          <a href="#" class="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition duration-200">
-            Learn More
-          </a>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="text-center mt-8" data-animate="fade-in" data-animate-delay="300">
-      <a href="#" class="inline-block bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold py-3 px-6 rounded-lg transition duration-200">
-        View All Adventures
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- TESTIMONIALS SECTION -->
-<section id="testimonials" class="bg-gray-100 py-16 px-4 md:px-8 lg:px-16 xl:px-32 overflow-hidden">
-    <div class="container mx-auto">
-        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 text-center mb-8" data-animate="fade-in">
-            What Our Adventurers Say
-        </h2>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
+            <!-- Service 1: Bookkeeping -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300" data-animate="slide-in-bottom">
+                <img class="h-64 w-full object-cover" src="https://pixabay.com/get/g447e278b796089859356467b99a4c234c38022421719a007a6609b2933f292796f2a932165c3a73a183781c495a42c35_640.jpg" alt="Bookkeeping Services">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Bookkeeping Services</h3>
+                    <p class="text-gray-700">
+                        Maintain accurate and up-to-date financial records with our professional bookkeeping services. We handle everything from transaction recording to reconciliation.
+                    </p>
+                    <ul class="list-disc list-inside mt-4 text-gray-600">
+                        <li>Daily transaction recording</li>
+                        <li>Bank reconciliation</li>
+                        <li>Accounts payable and receivable management</li>
+                        <li>Financial statement preparation</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Service 2: Tax Preparation -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300" data-animate="slide-in-bottom" data-animate-delay="100">
+                <img class="h-64 w-full object-cover" src="https://pixabay.com/get/g4603242054004579a5a255391a63198b1b8031037d75703919b2c42717161147a7439a5c1b83856f3a014a58a528a13c_640.jpg" alt="Tax Preparation Services">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Tax Preparation & Planning</h3>
+                    <p class="text-gray-700">
+                        Maximize your tax savings and ensure compliance with our expert tax preparation and planning services. We stay up-to-date with the latest tax laws to minimize your liabilities.
+                    </p>
+                    <ul class="list-disc list-inside mt-4 text-gray-600">
+                        <li>Individual tax returns</li>
+                        <li>Business tax returns</li>
+                        <li>Tax planning strategies</li>
+                        <li>Audit support</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Service 3: Payroll Services -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300" data-animate="slide-in-bottom" data-animate-delay="200">
+                <img class="h-64 w-full object-cover" src="https://pixabay.com/get/g726b264b25232802a657746636719245807f673727c864412774223792798b57666958584424706347499f608854196_640.jpg" alt="Payroll Services">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Payroll Services</h3>
+                    <p class="text-gray-700">
+                        Simplify your payroll process with our comprehensive payroll services. We handle everything from calculating wages to filing payroll taxes.
+                    </p>
+                    <ul class="list-disc list-inside mt-4 text-gray-600">
+                        <li>Payroll processing</li>
+                        <li>Payroll tax filing</li>
+                        <li>Employee pay stubs</li>
+                        <li>Year-end reporting</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Service 4: Financial Consulting -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300" data-animate="slide-in-bottom">
+                <img class="h-64 w-full object-cover" src="https://pixabay.com/get/g035249167e0a32332e34735958411585a30047711c6288248a145f857a0714f171c3a3c369c154889c0260281712f9f4_640.jpg" alt="Financial Consulting Services">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Financial Consulting</h3>
+                    <p class="text-gray-700">
+                        Gain valuable insights and strategic guidance with our financial consulting services. We help you make informed decisions to achieve your business goals.
+                    </p>
+                    <ul class="list-disc list-inside mt-4 text-gray-600">
+                        <li>Budgeting and forecasting</li>
+                        <li>Financial analysis</li>
+                        <li>Business valuation</li>
+                        <li>Strategic planning</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Service 5: Audit & Assurance -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300" data-animate="slide-in-bottom" data-animate-delay="100">
+                <img class="h-64 w-full object-cover" src="https://pixabay.com/get/g738a73847c651c46c72922132343750c4f1a090f7e504e3c09c235967726527b388375099672c28020c5b451f004c6b5_640.jpg" alt="Audit & Assurance Services">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Audit & Assurance</h3>
+                    <p class="text-gray-700">
+                        Ensure the accuracy and reliability of your financial statements with our audit and assurance services. We provide independent assessments to give you and your stakeholders confidence.
+                    </p>
+                    <ul class="list-disc list-inside mt-4 text-gray-600">
+                        <li>Financial statement audits</li>
+                        <li>Internal control assessments</li>
+                        <li>Compliance audits</li>
+                        <li>Due diligence</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Service 6: Business Advisory -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300" data-animate="slide-in-bottom" data-animate-delay="200">
+                <img class="h-64 w-full object-cover" src="https://pixabay.com/get/g64e99c62a94882205c8646971598a3b01a40971b7c595914831333f4f69a72a2304014479010576b0909a933c166c7f5_640.jpg" alt="Business Advisory Services">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Business Advisory Services</h3>
+                    <p class="text-gray-700">
+                        We offer strategic advice and support to help your business grow and thrive. Our advisory services cover a wide range of areas, from business planning to operational improvements.
+                    </p>
+                    <ul class="list-disc list-inside mt-4 text-gray-600">
+                        <li>Business planning</li>
+                        <li>Performance improvement</li>
+                        <li>Succession planning</li>
+                        <li>Mergers and acquisitions</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- FEATURES SECTION -->
+<section id="features" class="py-16 bg-gray-50 overflow-hidden">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl" data-animate="fade-in">
+                Key Features of Testy Accounting
+            </h2>
+            <p class="mt-4 text-lg text-gray-500" data-animate="fade-in" data-animate-delay="200">
+                Streamline your finances and gain valuable insights with our powerful accounting features.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Feature 1: Real-time Reporting -->
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300" data-animate="fade-up">
+                <div class="flex items-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 text-indigo-600 mr-3">
+                        <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.333 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.689-2.779-.217-2.779-1.643v-3.912a.75.75 0 01.128-.53l3.28-2.46c.242-.181.242-.477 0-.658l-3.28-2.46a.75.75 0 01-.128-.53V5.653z" clip-rule="evenodd" />
+                    </svg>
+
+                    <h3 class="text-xl font-semibold text-gray-800">Real-time Reporting</h3>
+                </div>
+                <p class="text-gray-600">
+                    Access up-to-the-minute financial data with our dynamic reporting dashboards. Track key metrics, identify trends, and make informed decisions.
+                </p>
+            </div>
+
+            <!-- Feature 2: Automated Invoicing -->
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300" data-animate="fade-up" data-animate-delay="100">
+                <div class="flex items-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 text-indigo-600 mr-3">
+                        <path d="M12.75 12.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM7.5 15.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM8.25 9.75a.75.75 0 100-1.5.75.75 0 000 1.5zM15.75 15.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM15 8.25a.75.75 0 100-1.5.75.75 0 000 1.5zM17.25 12.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12 18a.75.75 0 100-1.5.75.75 0 000 1.5zM9.75 18a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM10.5 12.75a.75.75 0 100-1.5.75.75 0 000 1.5zM4.875 7.125A.75.75 0 004.125 8v8a.75.75 0 00.75.75h8a.75.75 0 00.75-.75v-.875a.75.75 0 00-.75-.75H5.625v-6.5h6.5a.75.75 0 00.75-.75V8a.75.75 0 00-.75-.75h-6.5zM19.125 7.125A.75.75 0 0018.375 8v.875h-6.5a.75.75 0 00-.75.75v6.5h6.5a.75.75 0 00.75.75V16a.75.75 0 00.75-.75h.875a.75.75 0 00.75-.75v-8a.75.75 0 00-.75-.75h-.875z" />
+                    </svg>
+                    <h3 class="text-xl font-semibold text-gray-800">Automated Invoicing</h3>
+                </div>
+                <p class="text-gray-600">
+                    Create and send professional invoices in seconds. Automate recurring invoices, track payments, and send reminders to ensure timely payments.
+                </p>
+            </div>
+
+            <!-- Feature 3: Expense Tracking -->
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300" data-animate="fade-up" data-animate-delay="200">
+                <div class="flex items-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 text-indigo-600 mr-3">
+                        <path d="M6.32 2.577a49.255 49.255 0 0111.36 0c1.497.174 2.57 1.46 2.57 2.93V21a.75.75 0 01-.75.75H3.75a.75.75 0 01-.75-.75V5.507c0-1.47 1.073-2.756 2.57-2.93z" />
+                    </svg>
+
+                    <h3 class="text-xl font-semibold text-gray-800">Expense Tracking</h3>
+                </div>
+                <p class="text-gray-600">
+                    Effortlessly track your business expenses. Categorize expenses, upload receipts, and generate reports to gain insights into your spending habits.
+                </p>
+            </div>
+
+            <!-- Feature 4: Bank Reconciliation -->
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300" data-animate="fade-up">
+                <div class="flex items-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 text-indigo-600 mr-3">
+                        <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm14.024-.983a1.125 1.125 0 010 1.966l-5.603 3.113A1.125 1.125 0 018.409 15.01l1.615-2.888a1.125 1.125 0 011.889.959l-1.591 2.848a1.125 1.125 0 001.182 1.158l5.905-3.304a1.125 1.125 0 00-1.182-1.158l-1.591 2.848a1.125 1.125 0 011.889.959l1.615-2.888a1.125 1.125 0 00-1.182-1.158l-5.905 3.304a1.125 1.125 0 01-1.966-1.602l5.603-3.113a1.125 1.125 0 011.966 1.602l-5.603 3.113A1.125 1.125 0 008.409 8.99l1.615 2.888a1.125 1.125 0 011.889-.959l-1.591-2.848a1.125 1.125 0 001.182-1.158l5.905 3.304a1.125 1.125 0 00-1.182 1.158l-1.591-2.848a1.125 1.125 0 011.889-.959l1.615 2.888a1.125 1.125 0 001.182 1.158l5.905-3.304a1.125 1.125 0 010-1.966z" clip-rule="evenodd" />
+                    </svg>
+
+                    <h3 class="text-xl font-semibold text-gray-800">Bank Reconciliation</h3>
+                </div>
+                <p class="text-gray-600">
+                    Seamlessly connect your bank accounts and reconcile transactions with ease. Ensure accuracy and identify discrepancies quickly.
+                </p>
+            </div>
+
+            <!-- Feature 5: Tax Preparation -->
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300" data-animate="fade-up" data-animate-delay="100">
+                <div class="flex items-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 text-indigo-600 mr-3">
+                        <path fill-rule="evenodd" d="M15.75 2.25H8.25a3 3 0 00-3 3v1.5a3 3 0 003 3h1.5a3 3 0 013 3v1.5a3 3 0 01-3 3H8.25a3 3 0 01-3-3V15a3 3 0 013-3h1.5a3 3 0 003-3V8.25a3 3 0 00-3-3H8.25a3 3 0 00-3 3v9a4.5 4.5 0 004.5 4.5h7.5a4.5 4.5 0 004.5-4.5v-9a4.5 4.5 0 00-4.5-4.5h-7.5z" clip-rule="evenodd" />
+                    </svg>
+
+                    <h3 class="text-xl font-semibold text-gray-800">Tax Preparation</h3>
+                </div>
+                <p class="text-gray-600">
+                    Simplify your tax preparation process. Generate tax reports, track deductible expenses, and ensure compliance with tax regulations.
+                </p>
+            </div>
+
+            <!-- Feature 6: Budgeting & Forecasting -->
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300" data-animate="fade-up" data-animate-delay="200">
+                <div class="flex items-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 text-indigo-600 mr-3">
+                        <path d="M4.615 1.595a.75.75 0 00-.826.95l1.922 2.882c.157.236.429.383.715.383h1.5a.75.75 0 000-1.5h-1.096l-1.63-2.444a.75.75 0 00-.281-.227zm14.77 0a.75.75 0 00-.281.227l-1.63 2.444h-1.096a.75.75 0 000 1.5h1.5c.286 0 .558-.147.715-.383l1.922-2.882a.75.75 0 00-.826-.95zM3.75 7.5a.75.75 0 01.75-.75h15a.75.75 0 010 1.5h-15a.75.75 0 01-.75-.75zM3 12.75a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75zM3.75 18a.75.75 0 01.75-.75h9a.75.75 0 010 1.5h-9a.75.75 0 01-.75-.75z" />
+                    </svg>
+                    <h3 class="text-xl font-semibold text-gray-800">Budgeting & Forecasting</h3>
+                </div>
+                <p class="text-gray-600">
+                    Create budgets, track your progress, and forecast future financial performance. Gain insights into your cash flow and make informed investment decisions.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIALS SECTION -->
+<section class="py-16 bg-gray-50" data-animate="fade-in">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-extrabold text-gray-800 text-center mb-8">What Our Clients Say</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
             <!-- Testimonial 1 -->
-            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between" data-animate="slide-in-left">
+            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between h-full">
                 <div>
-                    <div class="flex items-center mb-4">
-                        <img src="https://api.placeholder.co/40x40" alt="Sarah Johnson" class="rounded-full mr-4">
+                    <div class="text-gray-600 italic mb-4">
+                        "Testy has completely transformed our financial processes. Their expertise and personalized service have been invaluable to our business growth. We highly recommend them!"
+                    </div>
+                    <div class="flex items-center">
+                        <img src="/images/g64bf9f3517e778f216fefa5047b69bc91c836508883ad716bceb8eb7a9f176f72f25f3d8dc4a3abb520384b91307544b50e1312de57e84b031f87f3801cf1d46_640.jpg" alt="Sarah Johnson" class="w-12 h-12 rounded-full mr-4">
                         <div>
-                            <p class="font-semibold text-gray-700">Sarah Johnson</p>
-                            <p class="text-sm text-gray-500">Experienced Hiker</p>
+                            <p class="font-semibold text-gray-800">Sarah Johnson</p>
+                            <p class="text-sm text-gray-500">CEO, Tech Solutions Inc.</p>
                         </div>
                     </div>
-                    <p class="text-gray-600 mb-4">
-                        "The guided trek through the Andes was absolutely breathtaking! The guides were knowledgeable and supportive, and the scenery was unforgettable. I highly recommend test to anyone looking for an authentic adventure."
-                    </p>
-                </div>
-                <div class="text-yellow-500">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
                 </div>
             </div>
 
             <!-- Testimonial 2 -->
-            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between" data-animate="fade-in">
+            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between h-full">
                 <div>
-                    <div class="flex items-center mb-4">
-                        <img src="https://api.placeholder.co/40x40" alt="David Lee" class="rounded-full mr-4">
+                    <div class="text-gray-600 italic mb-4">
+                        "We've been using Testy for our small business accounting for over a year now, and we couldn't be happier. They are always responsive, knowledgeable, and proactive in helping us manage our finances effectively."
+                    </div>
+                    <div class="flex items-center">
+                        <img src="/images/g4a72647734b4b15f890ffa9568f494944922da43ea5bec251b77d266d4de53b787b5fa788adcd2762b8a8b29e3c452b16b58ce36dc19f8a462e19f666c5b1617_640.jpg" alt="Michael Davis" class="w-12 h-12 rounded-full mr-4">
                         <div>
-                            <p class="font-semibold text-gray-700">David Lee</p>
-                            <p class="text-sm text-gray-500">Kayaking Enthusiast</p>
+                            <p class="font-semibold text-gray-800">Michael Davis</p>
+                            <p class="text-sm text-gray-500">Owner, Davis & Co.</p>
                         </div>
                     </div>
-                    <p class="text-gray-600 mb-4">
-                        "The kayaking tour was incredible! The equipment was top-notch, and the instructors made me feel safe and confident on the water. The wildlife sightings were a definite highlight. I'll definitely be back for another adventure!"
-                    </p>
-                </div>
-                <div class="text-yellow-500">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
                 </div>
             </div>
 
             <!-- Testimonial 3 -->
-            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between" data-animate="slide-in-right">
+            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between h-full">
                 <div>
-                    <div class="flex items-center mb-4">
-                        <img src="https://api.placeholder.co/40x40" alt="Emily Carter" class="rounded-full mr-4">
+                    <div class="text-gray-600 italic mb-4">
+                        "The team at Testy are true professionals. Their attention to detail and commitment to accuracy have saved us countless hours and headaches. We highly recommend their services to any business looking for reliable accounting support."
+                    </div>
+                    <div class="flex items-center">
+                        <img src="/images/g5b6e2e29c1825599e98d6c9e92e36f13359b699d451cf71408a6c39a2c4b142f1ab6bc15fa7bcb4987d38e7ad90d44d210454be5cb175bd4c8cd882dfcba1f78_640.jpg" alt="Emily Wilson" class="w-12 h-12 rounded-full mr-4">
                         <div>
-                            <p class="font-semibold text-gray-700">Emily Carter</p>
-                            <p class="text-sm text-gray-500">Adventure Seeker</p>
+                            <p class="font-semibold text-gray-800">Emily Wilson</p>
+                            <p class="text-sm text-gray-500">CFO, Global Enterprises</p>
                         </div>
                     </div>
-                    <p class="text-gray-600 mb-4">
-                        "I had an amazing time rock climbing with test! The instructors were patient and encouraging, and the views from the top were absolutely stunning. It was a challenging but rewarding experience that I'll never forget."
-                    </p>
-                </div>
-                <div class="text-yellow-500">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div>
-            </div>
-
-             <!-- Testimonial 4 -->
-             <div class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between" data-animate="slide-in-left">
-                <div>
-                    <div class="flex items-center mb-4">
-                        <img src="https://api.placeholder.co/40x40" alt="John Smith" class="rounded-full mr-4">
-                        <div>
-                            <p class="font-semibold text-gray-700">John Smith</p>
-                            <p class="text-sm text-gray-500">Family Adventurer</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 mb-4">
-                        "We took our family on the white water rafting trip and it was a blast! The guides were excellent with the kids, and we all had a fantastic time. test made it easy to book and plan our adventure. Highly recommended for families!"
-                    </p>
-                </div>
-                <div class="text-yellow-500">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-            </div>
-
-            <!-- Testimonial 5 -->
-            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between" data-animate="fade-in">
-                <div>
-                    <div class="flex items-center mb-4">
-                        <img src="https://api.placeholder.co/40x40" alt="Jessica Brown" class="rounded-full mr-4">
-                        <div>
-                            <p class="font-semibold text-gray-700">Jessica Brown</p>
-                            <p class="text-sm text-gray-500">Solo Traveler</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 mb-4">
-                        "As a solo traveler, I was a bit nervous about joining a group tour, but test made me feel so welcome and comfortable. The canyoning experience was incredible, and I met some amazing people along the way. I'll definitely book with them again!"
-                    </p>
-                </div>
-                <div class="text-yellow-500">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-            </div>
-
-            <!-- Testimonial 6 -->
-            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between" data-animate="slide-in-right">
-                <div>
-                    <div class="flex items-center mb-4">
-                        <img src="https://api.placeholder.co/40x40" alt="Michael Davis" class="rounded-full mr-4">
-                        <div>
-                            <p class="font-semibold text-gray-700">Michael Davis</p>
-                            <p class="text-sm text-gray-500">Nature Photographer</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 mb-4">
-                        "The photography tour through the rainforest was a dream come true! The guides knew all the best spots for capturing stunning images, and they were incredibly knowledgeable about the local flora and fauna. I came away with some truly amazing shots."
-                    </p>
-                </div>
-                <div class="text-yellow-500">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
                 </div>
             </div>
 
         </div>
     </div>
 </section>
-
-<!-- PRICING SECTION -->
-<section id="pricing" class="bg-gray-100 py-16 overflow-hidden">
-  <div class="container mx-auto px-4">
-   <div class="text-center mb-16" data-animate="fade-in">
-    <h2 class="text-3xl lg:text-5xl font-extrabold text-gray-800 mb-4">
-     Adventure Awaits: Choose Your Path
-    </h2>
-    <p class="text-gray-600 text-lg">
-     Find the perfect adventure package to match your thrill level and budget.
-     All packages include expert guides, safety equipment, and unforgettable
-     memories.
-    </p>
-   </div>
-
-   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-    <!-- Package 1 -->
-    <div
-     class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300"
-     data-animate="slide-in-left"
-    >
-     <div class="p-6">
-      <h3 class="text-2xl font-semibold text-gray-800 mb-2">
-       Weekend Warrior Package
-      </h3>
-      <p class="text-gray-600 mb-4">
-       Perfect for a quick adrenaline rush. Explore local trails and conquer
-       challenging terrain.
-      </p>
-      <div class="flex items-center mb-4">
-       <span class="text-4xl font-bold text-red-600">$299</span>
-       <span class="text-gray-500">/person</span>
-      </div>
-      <ul class="list-disc list-inside text-gray-700 mb-6">
-       <li>2 Days/1 Night</li>
-       <li>Guided Hiking Tour</li>
-       <li>Rock Climbing Session</li>
-       <li>Campfire Dinner</li>
-       <li>Basic Camping Gear Included</li>
-      </ul>
-      <a
-       href="#"
-       class="block w-full text-center bg-red-600 hover:bg-red-700 text-white font-bold py-3 rounded-lg transition-colors duration-300"
-       >Book Now</a
-      >
-     </div>
-    </div>
-
-    <!-- Package 2 -->
-    <div
-     class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300"
-     data-animate="fade-in"
-    >
-     <div class="p-6">
-      <h3 class="text-2xl font-semibold text-gray-800 mb-2">
-       Mountain Majesty Expedition
-      </h3>
-      <p class="text-gray-600 mb-4">
-       Embark on a challenging multi-day trek through breathtaking mountain
-       scenery.
-      </p>
-      <div class="flex items-center mb-4">
-       <span class="text-4xl font-bold text-red-600">$599</span>
-       <span class="text-gray-500">/person</span>
-      </div>
-      <ul class="list-disc list-inside text-gray-700 mb-6">
-       <li>4 Days/3 Nights</li>
-       <li>Expert Mountain Guide</li>
-       <li>Advanced Hiking Trails</li>
-       <li>Stunning Summit Views</li>
-       <li>All Meals Included</li>
-      </ul>
-      <a
-       href="#"
-       class="block w-full text-center bg-red-600 hover:bg-red-700 text-white font-bold py-3 rounded-lg transition-colors duration-300"
-       >Book Now</a
-      >
-     </div>
-    </div>
-
-    <!-- Package 3 -->
-    <div
-     class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300"
-     data-animate="slide-in-right"
-    >
-     <div class="p-6">
-      <h3 class="text-2xl font-semibold text-gray-800 mb-2">
-       River Rafting Adventure
-      </h3>
-      <p class="text-gray-600 mb-4">
-       Experience the thrill of white-water rafting on a wild and scenic river.
-      </p>
-      <div class="flex items-center mb-4">
-       <span class="text-4xl font-bold text-red-600">$399</span>
-       <span class="text-gray-500">/person</span>
-      </div>
-      <ul class="list-disc list-inside text-gray-700 mb-6">
-       <li>1 Day Rafting Trip</li>
-       <li>Professional Rafting Guide</li>
-       <li>All Rafting Equipment Provided</li>
-       <li>Riverside Lunch</li>
-       <li>Transportation to/from River</li>
-      </ul>
-      <a
-       href="#"
-       class="block w-full text-center bg-red-600 hover:bg-red-700 text-white font-bold py-3 rounded-lg transition-colors duration-300"
-       >Book Now</a
-      >
-     </div>
-    </div>
-   </div>
-
-   <div class="mt-12 text-center" data-animate="fade-in">
-    <p class="text-gray-600">
-     Looking for a custom adventure?
-     <a href="#" class="text-red-600 hover:text-red-700 font-medium"
-      >Contact us</a
-     >
-     to create a personalized experience.
-    </p>
-   </div>
-  </div>
- </section>
-
-<!-- STATS SECTION -->
-<section class="py-16 bg-gray-100 overflow-hidden">
-  <div class="container mx-auto px-4">
-    <div class="text-center mb-12">
-      <h2 class="text-3xl font-extrabold text-gray-800 sm:text-4xl" data-animate="fade-in">
-        Our Impact, By the Numbers
-      </h2>
-      <p class="mt-4 text-lg text-gray-600" data-animate="fade-in" data-animate-delay="200">
-        We're passionate about adventure and dedicated to providing exceptional experiences. Here's a glimpse of what we've accomplished.
-      </p>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-      <div class="bg-white rounded-lg shadow-md p-6 text-center" data-animate="slide-in-left">
-        <div class="text-5xl font-bold text-red-600 mb-2">1200+</div>
-        <p class="text-gray-700 uppercase tracking-wider font-semibold">
-          Happy Adventurers
-        </p>
-        <p class="text-sm text-gray-500 mt-2">
-          People who've explored the world with us.
-        </p>
-      </div>
-
-      <div class="bg-white rounded-lg shadow-md p-6 text-center" data-animate="slide-in-right">
-        <div class="text-5xl font-bold text-red-600 mb-2">75+</div>
-        <p class="text-gray-700 uppercase tracking-wider font-semibold">
-          Unique Adventures
-        </p>
-        <p class="text-sm text-gray-500 mt-2">
-          From mountain treks to river rafting, we offer a wide range of experiences.
-        </p>
-      </div>
-
-      <div class="bg-white rounded-lg shadow-md p-6 text-center" data-animate="slide-in-left">
-        <div class="text-5xl font-bold text-red-600 mb-2">4.8</div>
-        <p class="text-gray-700 uppercase tracking-wider font-semibold">
-          Average Rating
-        </p>
-        <p class="text-sm text-gray-500 mt-2">
-          Based on customer reviews and feedback.
-        </p>
-      </div>
-
-      <div class="bg-white rounded-lg shadow-md p-6 text-center" data-animate="slide-in-right">
-        <div class="text-5xl font-bold text-red-600 mb-2">15</div>
-        <p class="text-gray-700 uppercase tracking-wider font-semibold">
-          Years of Experience
-        </p>
-        <p class="text-sm text-gray-500 mt-2">
-          Providing unforgettable adventure experiences.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FAQ SECTION -->
-<section id="faq" class="py-16 bg-gray-100">
-    <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-extrabold text-gray-800 text-center mb-8" data-animate="fade-in">
-            Frequently Asked Questions
-        </h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-
-            <!-- FAQ Item 1 -->
-            <div class="bg-white rounded-lg shadow-md p-6" data-animate="slide-in-left">
-                <h3 class="text-xl font-semibold text-gray-700 mb-2">
-                    What types of adventures do you offer?
-                </h3>
-                <p class="text-gray-600">
-                    We offer a wide range of adventures, including hiking, rock climbing, white water rafting,
-                    mountain biking, and guided nature tours. We cater to all skill levels, from beginners to
-                    experienced adventurers.
-                </p>
-            </div>
-
-            <!-- FAQ Item 2 -->
-            <div class="bg-white rounded-lg shadow-md p-6" data-animate="slide-in-right">
-                <h3 class="text-xl font-semibold text-gray-700 mb-2">
-                    What is included in the price of a trip?
-                </h3>
-                <p class="text-gray-600">
-                    The price of a trip typically includes all necessary equipment, professional guides,
-                    transportation to and from the activity location, and in some cases, meals. Specific inclusions
-                    will be detailed in the trip description.
-                </p>
-            </div>
-
-            <!-- FAQ Item 3 -->
-            <div class="bg-white rounded-lg shadow-md p-6" data-animate="slide-in-left">
-                <h3 class="text-xl font-semibold text-gray-700 mb-2">
-                    What should I bring on my adventure?
-                </h3>
-                <p class="text-gray-600">
-                    We recommend bringing comfortable hiking shoes, weather-appropriate clothing (layers are best),
-                    sunscreen, a hat, sunglasses, a water bottle, and a small backpack. A detailed packing list will
-                    be provided for each specific trip.
-                </p>
-            </div>
-
-            <!-- FAQ Item 4 -->
-            <div class="bg-white rounded-lg shadow-md p-6" data-animate="slide-in-right">
-                <h3 class="text-xl font-semibold text-gray-700 mb-2">
-                    Are your guides certified and experienced?
-                </h3>
-                <p class="text-gray-600">
-                    Yes, all of our guides are highly trained, certified, and experienced in their respective fields.
-                    They are passionate about adventure and dedicated to ensuring your safety and enjoyment.
-                </p>
-            </div>
-
-            <!-- FAQ Item 5 -->
-            <div class="bg-white rounded-lg shadow-md p-6" data-animate="slide-in-left">
-                <h3 class="text-xl font-semibold text-gray-700 mb-2">
-                    What is your cancellation policy?
-                </h3>
-                <p class="text-gray-600">
-                    Our cancellation policy varies depending on the trip. Generally, cancellations made more than 30
-                    days prior to the trip date will receive a full refund. Cancellations made within 30 days may be
-                    subject to a partial refund or credit towards a future trip. Please refer to the specific trip
-                    details for our cancellation policy.
-                </p>
-            </div>
-
-            <!-- FAQ Item 6 -->
-            <div class="bg-white rounded-lg shadow-md p-6" data-animate="slide-in-right">
-                <h3 class="text-xl font-semibold text-gray-700 mb-2">
-                    Do you offer group discounts?
-                </h3>
-                <p class="text-gray-600">
-                    Yes, we offer discounts for groups of 6 or more people. Please contact us for more information
-                    and to discuss your group's needs.
-                </p>
-            </div>
-
-             <!-- FAQ Item 7 -->
-             <div class="bg-white rounded-lg shadow-md p-6" data-animate="slide-in-left">
-                <h3 class="text-xl font-semibold text-gray-700 mb-2">
-                    Is travel insurance required?
-                </h3>
-                <p class="text-gray-600">
-                    While not strictly required, we highly recommend purchasing travel insurance to protect yourself against unforeseen circumstances such as trip cancellations, medical emergencies, or lost luggage.
-                </p>
-            </div>
-
-            <!-- FAQ Item 8 -->
-            <div class="bg-white rounded-lg shadow-md p-6" data-animate="slide-in-right">
-                <h3 class="text-xl font-semibold text-gray-700 mb-2">
-                    How do I book an adventure?
-                </h3>
-                <p class="text-gray-600">
-                    You can book an adventure directly through our website or by contacting our customer service team.  We are happy to assist you in choosing the perfect adventure for your needs and skill level.
-                </p>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- BLOG SECTION -->
-<section class="bg-gray-100 py-16">
-  <div class="container mx-auto px-4">
-   <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center" data-animate="fade-in">Latest Adventures & Insights</h2>
-
-   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-    <!-- Blog Post 1 -->
-    <div class="bg-white rounded-lg shadow-md overflow-hidden" data-animate="slide-in-left">
-     <img src="https://pixabay.com/get/g7843d08f8ae31a85187d42ae082687c0d736b2dcf1964a938837e0fd4c4993d6f250b4cf70efb5d05b81a7d471a8ff1d6d5e8c1a17f98c5657eb3a338cfe1fea_640.jpg" alt="Hiking Adventure" class="w-full h-48 object-cover">
-     <div class="p-6">
-      <h3 class="text-xl font-semibold text-gray-800 mb-2">Conquering Mount Cinder: A Trek to Remember</h3>
-      <p class="text-gray-600 mb-4">Join our team as we recount our thrilling ascent of Mount Cinder. Discover breathtaking views, challenging terrains, and the camaraderie that made it all worthwhile.</p>
-      <div class="flex items-center justify-between">
-       <span class="text-sm text-gray-500">October 26, 2023</span>
-       <a href="#" class="text-red-600 hover:text-red-800 font-medium">Read More</a>
-      </div>
-     </div>
-    </div>
-
-    <!-- Blog Post 2 -->
-    <div class="bg-white rounded-lg shadow-md overflow-hidden" data-animate="slide-in-up">
-     <img src="https://pixabay.com/get/g9a1e0c532b817187a708e29de344e26e07389c619b8f60782793747226676518863bb0768eabce0785827acdb84471462ea846bdc0cd8cba462afed7524ea207_640.jpg" alt="River Rafting Expedition" class="w-full h-48 object-cover">
-     <div class="p-6">
-      <h3 class="text-xl font-semibold text-gray-800 mb-2">Navigating the Rapids: Our Wild River Rafting Trip</h3>
-      <p class="text-gray-600 mb-4">Experience the adrenaline rush of white-water rafting with our expert guides. Learn about the river's ecosystem and the importance of conservation while having an unforgettable adventure.</p>
-      <div class="flex items-center justify-between">
-       <span class="text-sm text-gray-500">November 15, 2023</span>
-       <a href="#" class="text-red-600 hover:text-red-800 font-medium">Read More</a>
-      </div>
-     </div>
-    </div>
-
-    <!-- Blog Post 3 -->
-    <div class="bg-white rounded-lg shadow-md overflow-hidden" data-animate="slide-in-right">
-     <img src="https://pixabay.com/get/g8bd8bd399c28f91d9ca40f26bc505a26873fde9d138905acd1ba758a8d93224e55596714a05e3546fb5e0d132494f8d569c8c2affb77721923b188698726f56f_640.jpg" alt="Rock Climbing Challenge" class="w-full h-48 object-cover">
-     <div class="p-6">
-      <h3 class="text-xl font-semibold text-gray-800 mb-2">Scaling New Heights: Rock Climbing Adventures for All Levels</h3>
-      <p class="text-gray-600 mb-4">Discover the thrill of rock climbing with our certified instructors. From beginner-friendly routes to challenging ascents, we have something for every adventurer.</p>
-      <div class="flex items-center justify-between">
-       <span class="text-sm text-gray-500">December 5, 2023</span>
-       <a href="#" class="text-red-600 hover:text-red-800 font-medium">Read More</a>
-      </div>
-     </div>
-    </div>
-
-   </div>
-
-   <div class="text-center mt-8" data-animate="fade-in">
-    <a href="#" class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg inline-block">View All Blog Posts</a>
-   </div>
-
-  </div>
- </section>
 
 <!-- CONTACT SECTION -->
-<section id="contact" class="bg-gray-100 py-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
-  <div class="max-w-6xl mx-auto relative">
-   <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-red-100 to-transparent opacity-25 pointer-events-none"></div>
-   <div class="text-center mb-12">
-    <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl" data-animate="fade-in">
-     Contact Us
-    </h2>
-    <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl" data-animate="fade-in" data-animate-delay="200">
-     Ready to start your adventure? Get in touch with our team today!
-    </p>
-   </div>
+<section id="contact" class="py-20 bg-gray-100 overflow-hidden">
+    <div class="container mx-auto px-4">
+        <div class="lg:flex lg:flex-wrap lg:items-center -mx-4">
+            <div class="lg:w-1/2 px-4 mb-12 lg:mb-0" data-animate="fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Get in Touch</h2>
+                <p class="text-gray-600 leading-relaxed mb-8">
+                    We're here to help you navigate the complexities of accounting and finance. Contact us today to discuss your specific needs and discover how Testy can empower your business.
+                </p>
 
-   <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-    <div class="bg-white shadow-lg rounded-xl p-6 sm:p-8" data-animate="slide-in-left">
-     <h3 class="text-lg font-semibold text-gray-800 mb-4">Contact Information</h3>
-     <div class="space-y-4">
-      <div>
-       <p class="text-gray-600"><strong>Address:</strong></p>
-       <p class="text-gray-700">123 Adventure Street, Mountain View, CA 94043</p>
-      </div>
-      <div>
-       <p class="text-gray-600"><strong>Phone:</strong></p>
-       <p class="text-gray-700"><a href="tel:+15551234567" class="text-red-500 hover:text-red-700">+1 (555) 123-4567</a></p>
-      </div>
-      <div>
-       <p class="text-gray-600"><strong>Email:</strong></p>
-       <p class="text-gray-700"><a href="mailto:info@testadventures.com" class="text-red-500 hover:text-red-700">info@testadventures.com</a></p>
-      </div>
-      <div>
-       <p class="text-gray-600"><strong>Business Hours:</strong></p>
-       <p class="text-gray-700">Monday - Friday: 9:00 AM - 5:00 PM</p>
-      </div>
-     </div>
+                <div class="flex items-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-primary mr-3">
+                        <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.5a3 3 0 013 3h-6zm14.5 0a3 3 0 013-3h1.5a3 3 0 013 3h-6zm-13 4.5h23a1.5 1.5 0 001.5-1.5v-3a1.5 1.5 0 00-1.5-1.5h-23a1.5 1.5 0 00-1.5 1.5v3a1.5 1.5 0 001.5 1.5zm23 3H1.5a1.5 1.5 0 00-1.5 1.5v3a1.5 1.5 0 001.5 1.5h23a1.5 1.5 0 001.5-1.5v-3a1.5 1.5 0 00-1.5-1.5zm-23 3.75a3 3 0 013 3h1.5a3 3 0 013-3h-6zm14.5 0a3 3 0 013 3h1.5a3 3 0 013-3h-6z" clip-rule="evenodd" />
+                    </svg>
+                    <span class="text-gray-700">123 Main Street, Anytown, USA</span>
+                </div>
+
+                <div class="flex items-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-primary mr-3">
+                        <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+                        <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+                    </svg>
+                    <a href="mailto:info@testyaccounting.com" class="text-gray-700 hover:text-primary transition-colors duration-200">info@testyaccounting.com</a>
+                </div>
+
+                <div class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-primary mr-3">
+                        <path d="M1.5 4.5a3 3 0 013-3h1.5a3 3 0 013 3H5.857l1.95 1.95a7.5 7.5 0 0010.096 0l1.95-1.95h-1.643a3 3 0 013-3h1.5a3 3 0 013 3h-2.143l-1.95 1.95a7.5 7.5 0 000 10.096l1.95 1.95h2.143a3 3 0 01-3 3h-1.5a3 3 0 01-3-3h1.643l-1.95-1.95a7.5 7.5 0 00-10.096 0l-1.95 1.95H4.5a3 3 0 01-3-3h-1.5a3 3 0 013-3h2.143l1.95-1.95a7.5 7.5 0 000-10.096L4.5 4.5H1.5z" />
+                    </svg>
+                    <a href="tel:+15551234567" class="text-gray-700 hover:text-primary transition-colors duration-200">+1 (555) 123-4567</a>
+                </div>
+            </div>
+
+            <div class="lg:w-1/2 px-4" data-animate="fade-in">
+                <div class="bg-white rounded-lg shadow-xl p-8">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Send us a Message</h3>
+                    <form action="#" method="POST">
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name</label>
+                            <input type="text" id="name" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Your Name">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email</label>
+                            <input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Your Email">
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message</label>
+                            <textarea id="message" name="message" rows="4" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Your Message"></textarea>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <button class="bg-primary hover:bg-primary-dark text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition-colors duration-200" type="submit">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div class="bg-white shadow-lg rounded-xl p-6 sm:p-8" data-animate="slide-in-right">
-     <h3 class="text-lg font-semibold text-gray-800 mb-4">Send us a Message</h3>
-     <form action="#" method="POST">
-      <div class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
-       <div>
-        <label for="first-name" class="block text-sm font-medium text-gray-700">First name</label>
-        <div class="mt-1">
-         <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="shadow-sm focus:ring-red-500 focus:border-red-500 block w-full sm:text-sm border-gray-300 rounded-md">
-        </div>
-       </div>
-
-       <div>
-        <label for="last-name" class="block text-sm font-medium text-gray-700">Last name</label>
-        <div class="mt-1">
-         <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="shadow-sm focus:ring-red-500 focus:border-red-500 block w-full sm:text-sm border-gray-300 rounded-md">
-        </div>
-       </div>
-
-       <div class="sm:col-span-2">
-        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-        <div class="mt-1">
-         <input id="email" name="email" type="email" autocomplete="email" class="shadow-sm focus:ring-red-500 focus:border-red-500 block w-full sm:text-sm border-gray-300 rounded-md">
-        </div>
-       </div>
-
-       <div class="sm:col-span-2">
-        <label for="phone-number" class="block text-sm font-medium text-gray-700">Phone Number</label>
-        <div class="mt-1 relative rounded-md shadow-sm">
-         <div class="absolute inset-y-0 left-0 flex items-center">
-          <label for="country" class="sr-only">Country</label>
-          <select id="country" name="country" autocomplete="country" class="focus:ring-red-500 focus:border-red-500 h-full py-0 pl-3 pr-7 border-transparent bg-transparent text-gray-500 sm:text-sm rounded-md">
-           <option>US</option>
-           <option>CA</option>
-           <option>EU</option>
-          </select>
-         </div>
-         <input type="text" name="phone-number" id="phone-number" autocomplete="tel" class="shadow-sm focus:ring-red-500 focus:border-red-500 block w-full sm:text-sm border-gray-300 rounded-md pl-20" placeholder="555-123-4567">
-        </div>
-       </div>
-
-       <div class="sm:col-span-2">
-        <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
-        <div class="mt-1">
-         <textarea id="message" name="message" rows="4" class="shadow-sm focus:ring-red-500 focus:border-red-500 block w-full sm:text-sm border-gray-300 rounded-md"></textarea>
-        </div>
-       </div>
-
-       <div class="sm:col-span-2">
-        <div class="flex items-start">
-         <div class="flex-shrink-0">
-          <button type="button" class="bg-white relative inline-flex flex-shrink-0 justify-center items-center border-2 border-gray-200 rounded-full h-5 w-10 cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500" role="switch" aria-checked="false" aria-labelledby="privacy-policy-label">
-           <span aria-hidden="true" class="translate-x-0 pointer-events-none relative inline-block h-4 w-4 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200">
-            <span class="absolute inset-0 h-full w-full rounded-md bg-gray-400 transition-opacity ease-linear duration-200 opacity-0" aria-hidden="true"></span>
-           </span>
-          </button>
-         </div>
-         <div class="ml-3">
-          <span class="block text-sm text-gray-900" id="privacy-policy-label">
-           I agree to the <a href="#" class="font-medium text-red-600 hover:text-red-500">Privacy Policy</a>.
-          </span>
-         </div>
-        </div>
-       </div>
-      </div>
-
-      <div class="mt-6">
-       <button type="submit" class="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">
-        Send Message
-       </button>
-      </div>
-     </form>
-    </div>
-   </div>
-  </div>
- </section>
+</section>
 
 <!-- FOOTER SECTION -->
-<footer class="bg-gray-900 text-white py-12 px-4 sm:px-6 lg:px-8">
-    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<footer class="bg-gray-900 text-white py-12 mt-24" data-animate="fade-up">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-xl font-semibold mb-4">Testy Accounting</h3>
+                <p class="text-gray-400">Your trusted partner for financial success. We provide expert accounting services to businesses of all sizes.</p>
+                <div class="flex mt-4 space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f fa-lg"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                </div>
+            </div>
 
-        <!-- Company Info -->
-        <div class="space-y-4">
-            <h3 class="text-lg font-semibold">test Adventure Tourism</h3>
-            <p class="text-gray-400">
-                Embark on unforgettable adventures with test. Explore the world's most breathtaking landscapes and create memories that last a lifetime.
+            <div>
+                <h3 class="text-xl font-semibold mb-4">Services</h3>
+                <ul class="text-gray-400">
+                    <li class="mb-2"><a href="#" class="hover:text-white">Tax Preparation</a></li>
+                    <li class="mb-2"><a href="#" class="hover:text-white">Bookkeeping</a></li>
+                    <li class="mb-2"><a href="#" class="hover:text-white">Financial Planning</a></li>
+                    <li class="mb-2"><a href="#" class="hover:text-white">Auditing</a></li>
+                    <li class="mb-2"><a href="#" class="hover:text-white">Payroll Services</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                <ul class="text-gray-400">
+                    <li class="mb-2"><a href="/" class="hover:text-white">Home</a></li>
+                    <li class="mb-2"><a href="/about" class="hover:text-white">About Us</a></li>
+                    <li class="mb-2"><a href="/services" class="hover:text-white">Our Services</a></li>
+                    <li class="mb-2"><a href="/contact" class="hover:text-white">Contact Us</a></li>
+                    <li class="mb-2"><a href="/blog" class="hover:text-white">Blog</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
+                <p class="text-gray-400 mb-2">123 Main Street, Anytown, USA</p>
+                <p class="text-gray-400 mb-2">Email: info@testyaccounting.com</p>
+                <p class="text-gray-400">Phone: (555) 123-4567</p>
+
+                <form class="mt-4">
+                    <label for="email" class="block text-gray-400 mb-1">Subscribe to our Newsletter</label>
+                    <div class="flex">
+                        <input type="email" id="email" placeholder="Your Email" class="bg-gray-800 text-white rounded-l-lg py-2 px-4 focus:outline-none">
+                        <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white rounded-r-lg py-2 px-4">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="mt-12 border-t border-gray-700 pt-8 text-center text-gray-400">
+            <p>&copy; 2024 Testy Accounting. All rights reserved.</p>
+            <p class="mt-2">
+                <a href="/privacy" class="hover:text-white mr-4">Privacy Policy</a>
+                <a href="/terms" class="hover:text-white">Terms of Service</a>
             </p>
-            <div class="flex space-x-4">
-                <a href="#" class="text-gray-400 hover:text-white" aria-label="Facebook"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.667 9.116 8.438 9.879v-6.988h-2.54V12h2.54V9.797c0-2.476 1.483-3.85 3.707-3.85 1.047 0 1.952.082 2.229.119v2.58h-1.52c-1.213 0-1.56.616-1.56 1.51V12h2.907l-.419 3.091h-2.488v6.988C18.333 21.116 22 16.991 22 12z" clip-rule="evenodd" /></svg></a>
-                <a href="#" class="text-gray-400 hover:text-white" aria-label="Instagram"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.46 1.548.523 2.682 1.66 3.204 3.203.243.635.414 1.362.46 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.065-.218 1.791-.46 2.427a3.824 3.824 0 01-3.204 3.203c-.635.243-1.362.414-2.427.46-.048 1.024-.06 1.378-.06 3.808s.012 2.784.06 3.808c.049 1.065.218 1.791.46 2.427a3.824 3.824 0 013.204 3.203c.635.243 1.362.414 2.427.46.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.065-.218 1.791-.46 2.427a3.824 3.824 0 01-3.204 3.203c-.635.243-1.362.414-2.427.46-.048 1.024-.06 1.378-.06 3.808s.012 2.784.06 3.808c.049 1.065.218 1.791.46 2.427a3.824 3.824 0 013.204 3.203c.635.243 1.362.414 2.427.46.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.065-.218 1.791-.46 2.427a3.824 3.824 0 01-3.204 3.203c-.635.243-1.362.414-2.427.46-.048 1.024-.06 1.378-.06 3.808s.012 2.784.06 3.808c.049 1.065.218 1.791.46 2.427a3.824 3.824 0 01-3.204 3.203c-.635.243-1.362.414-2.427.46-.048 1.024-.06 1.378-.06 3.808s.012 2.784.06 3.808c.049 1.065.218 1.791.46 2.427a3.824 3.824 0 01-3.204 3.203c-.635.243-1.362.414-2.427.46-.048 1.024-.06 1.378-.06 3.808s.012 2.784.06 3.808c.049 1.065.218 1.791.46 2.427a3.824 3.824 0 01-3.204 3.203c-.635.243-1.362.414-2.427.46-.048 1.024-.06 1.378-.06 3.808s.012 2.784.06 3.808c.049 1.065.218 1.791.46 2.427a3.824 3.824 0 01-3.204 3.203c-.635.243-1.362.414-2.427.46-.048 1.024-.06 1.378-.06 3.808s.012 2.784.06 3.808c.049 1.065.218 1.791.46 2.427a3.824 3.824 0 01-3.204 3.203c-.635.243-1.362.414-2.427.46-.048 1.024-.06 1.378-.06 3.808s.012 2.784.06 3.808c.049 1.065.218 1.791.46 2.427a3.824 3.824 0 01-3.204 3.203c-.635.243-1.362.414-2.427.46-.048 1.024-.06 1.378-.06 3.808V12.315c0-2.43.013-2.784.06-3.808.049-1.065.218-1.791.46-2.427a3.824 3.824 0 013.204-3.203c.635-.243 1.362-.414 2.427-.46.048-1.024.06-1.378.06-3.808s-.012-2.784-.06-3.808c-.049-1.065-.218-1.791-.46-2.427a3.824 3.824 0 01-3.204-3.203c-.635-.243-1.362-.414-2.427-.46-.048-1.024-.06-1.378-.06-3.808V2.315zM4.855 4.856a7.28 7.28 0 000 14.292 7.28 7.28 0 0014.292 0A7.28 7.28 0 004.855 4.856z" clip-rule="evenodd" /></svg></a>
-                <a href="#" class="text-gray-400 hover:text-white" aria-label="Twitter"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.005-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.807-2.278 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.107 4.107 0 001.27 5.493 4.086 4.086 0 01-1.858-.513 4.107 4.107 0 003.214 4.037 4.086 4.086 0 01-1.858-.513
+        </div>
+    </div>
+</footer>
 
-    </main>
-    
-    <script>
-        document.addEventListener('DOMContentLoaded',function(){
-            // Animation system
-            const observer=new IntersectionObserver(entries=>{
-                entries.forEach((entry,i)=>{
-                    if(entry.isIntersecting){
-                        setTimeout(()=>{
-                            entry.target.classList.add('visible');
-                            // Handle staggered children if using that animation style
-                            if(entry.target.getAttribute('data-animate')==='stagger'){
-                                Array.from(entry.target.children).forEach((child,childIndex)=>{
-                                    child.style.setProperty('--child-index',childIndex);
-                                });
-                            }
-                        },i*100);
-                        observer.unobserve(entry.target);
-                    }
-                });
-            },{threshold:0.15,rootMargin:'0px 0px -100px 0px'});
-            
-            document.querySelectorAll('[data-animate]').forEach(el=>observer.observe(el));
-            
-            // Fixed navigation
-            const nav=document.querySelector('nav');
-            if(nav){
-                const handleScroll=()=>{
-                    nav.classList[window.scrollY>100?'add':'remove']('nav-fixed');
-                };
-                window.addEventListener('scroll',handleScroll,{passive:true});
-                handleScroll();
-            }
-            
-            // Smooth scroll
-            document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
-                anchor.addEventListener('click',function(e){
-                    e.preventDefault();
-                    const targetId=this.getAttribute('href');
-                    if(targetId==='#')return;
-                    const target=document.querySelector(targetId);
-                    if(target){
-                        const targetPosition=target.getBoundingClientRect().top+window.pageYOffset-(nav?nav.offsetHeight:0)-20;
-                        window.scrollTo({top:targetPosition,behavior:'smooth'});
-                    }
-                });
-            });
-            
-            // Scroll progress indicator
-            const height=Math.max(
-                document.body.scrollHeight,
-                document.body.offsetHeight,
-                document.documentElement.clientHeight,
-                document.documentElement.scrollHeight,
-                document.documentElement.offsetHeight
-            )-window.innerHeight;
-            
-            window.addEventListener('scroll',()=>{
-                document.documentElement.style.setProperty('--scroll-progress',(window.scrollY/height*100)+'%');
-            },{passive:true});
-            
-            // Mobile menu
-            const menuToggle=document.getElementById('mobile-menu-toggle');
-            const mobileMenu=document.getElementById('mobile-menu');
-            if(menuToggle&&mobileMenu){
-                menuToggle.addEventListener('click',()=>{
-                    mobileMenu.classList.toggle('hidden');
-                    document.body.classList.toggle('overflow-hidden');
-                });
-                document.addEventListener('click',e=>{
-                    if(mobileMenu&&!mobileMenu.classList.contains('hidden')&&
-                        menuToggle&&!menuToggle.contains(e.target)&&!mobileMenu.contains(e.target)){
-                        mobileMenu.classList.add('hidden');
-                        document.body.classList.remove('overflow-hidden');
-                    }
-                });
-            }
-            
-            // Accordions
-            document.querySelectorAll('[data-accordion-target]').forEach(btn=>{
-                btn.addEventListener('click',()=>{
-                    const target=document.querySelector(btn.getAttribute('data-accordion-target'));
-                    if(target){
-                        const isExpanded=btn.getAttribute('aria-expanded')==='true';
-                        target.classList.toggle('hidden');
-                        btn.setAttribute('aria-expanded',isExpanded?'false':'true');
-                        const icon=btn.querySelector('.accordion-icon');
-                        if(icon)icon.classList.toggle('rotate-180');
-                    }
-                });
-            });
-            
-            // Form validation (optional enhancement)
-            document.querySelectorAll('form').forEach(form=>{
-                form.addEventListener('submit',function(e){
-                    let valid=true;
-                    const requiredFields=form.querySelectorAll('[required]');
-                    
-                    requiredFields.forEach(field=>{
-                        if(!field.value.trim()){
-                            valid=false;
-                            field.classList.add('border-red-500');
-                            
-                            // Add error message if not already present
-                            let errorMsg=field.parentNode.querySelector('.error-message');
-                            if(!errorMsg){
-                                errorMsg=document.createElement('p');
-                                errorMsg.className='text-red-500 text-sm mt-1 error-message';
-                                errorMsg.textContent='This field is required';
-                                field.parentNode.appendChild(errorMsg);
-                            }
-                        }else{
-                            field.classList.remove('border-red-500');
-                            const errorMsg=field.parentNode.querySelector('.error-message');
-                            if(errorMsg)errorMsg.remove();
-                        }
-                    });
-                    
-                    if(!valid){
-                        e.preventDefault();
-                    }
-                });
-            });
-            
-            // Tabs functionality if present
-            document.querySelectorAll('[data-tabs]').forEach(tabGroup=>{
-                const tabs=tabGroup.querySelectorAll('[data-tab]');
-                const tabContents=document.querySelectorAll('[data-tab-content]');
-                
-                tabs.forEach(tab=>{
-                    tab.addEventListener('click',()=>{
-                        const target=tab.getAttribute('data-tab');
-                        
-                        // Update active tab state
-                        tabs.forEach(t=>t.classList.remove('active-tab','text-primary-600','border-primary-600'));
-                        tab.classList.add('active-tab','text-primary-600','border-primary-600');
-                        
-                        // Show correct content
-                        tabContents.forEach(content=>{
-                            if(content.getAttribute('data-tab-content')===target){
-                                content.classList.remove('hidden');
-                            }else{
-                                content.classList.add('hidden');
-                            }
-                        });
-                    });
-                });
-            });
-            
-            // Carousels
-            document.querySelectorAll('[data-carousel]').forEach(carousel=>{
-                const slides=carousel.querySelectorAll('[data-slide]');
-                const prevBtn=carousel.querySelector('[data-carousel-prev]');
-                const nextBtn=carousel.querySelector('[data-carousel-next]');
-                
-                if(slides.length>0&&prevBtn&&nextBtn){
-                    let current=0,interval=null;
-                    
-                    slides[0].classList.remove('hidden');
-                    
-                    const updateIndicators=()=>{
-                        carousel.querySelectorAll('[data-indicator]').forEach((ind,i)=>{
-                            ind.classList[i===current?'add':'remove']('bg-primary-600');
-                            ind.classList[i!==current?'add':'remove']('bg-gray-300');
-                        });
-                    };
-                    
-                    const showSlide=idx=>{
-                        slides.forEach(s=>s.classList.add('hidden'));
-                        slides[idx].classList.remove('hidden');
-                        updateIndicators();
-                    };
-                    
-                    nextBtn.addEventListener('click',()=>{
-                        current=(current+1)%slides.length;
-                        showSlide(current);
-                    });
-                    
-                    prevBtn.addEventListener('click',()=>{
-                        current=(current-1+slides.length)%slides.length;
-                        showSlide(current);
-                    });
-                    
-                    updateIndicators();
-                    
-                    const startAuto=()=>{
-                        if(carousel.hasAttribute('data-auto')&&!interval){
-                            interval=setInterval(()=>{
-                                current=(current+1)%slides.length;
-                                showSlide(current);
-                            },5000);
-                        }
-                    };
-                    
-                    carousel.addEventListener('mouseenter',()=>{
-                        if(interval){clearInterval(interval);interval=null;}
-                    });
-                    
-                    carousel.addEventListener('mouseleave',startAuto);
-                    
-                    carousel.querySelectorAll('[data-indicator]').forEach((ind,i)=>{
-                        ind.addEventListener('click',()=>{
-                            current=i;
-                            showSlide(current);
-                        });
-                    });
-                    
-                    startAuto();
-                }
-            });
-            
-            // Initialize counters for stats sections if they exist
-            document.querySelectorAll('[data-counter]').forEach(counter=>{
-                const target=parseInt(counter.getAttribute('data-counter')||'0',10);
-                const duration=1500; // Animation duration in ms
-                const step=Math.ceil(target/50); // How much to increment per step
-                let current=0;
-                
-                const updateCounter=()=>{
-                    current+=step;
-                    if(current>target)current=target;
-                    
-                    counter.textContent=current.toString().replace(/B(?=(d{3})+(?!d))/g,',');
-                    
-                    if(current<target){
-                        requestAnimationFrame(updateCounter);
-                    }
-                };
-                
-                // Start counting when element is in view
-                const observer=new IntersectionObserver(entries=>{
-                    entries.forEach(entry=>{
-                        if(entry.isIntersecting){
-                            updateCounter();
-                            observer.unobserve(entry.target);
-                        }
-                    });
-                },{threshold:0.5});
-                
-                observer.observe(counter);
-            });
-        });
-    </script>
+  </main>
+  
+  <script>
+      document.addEventListener('DOMContentLoaded',function(){
+          // Animation system
+          const observer=new IntersectionObserver(entries=>{
+              entries.forEach((entry,i)=>{
+                  if(entry.isIntersecting){
+                      setTimeout(()=>{
+                          entry.target.classList.add('visible');
+                          // Handle staggered children if using that animation style
+                          if(entry.target.getAttribute('data-animate')==='stagger'){
+                              Array.from(entry.target.children).forEach((child,childIndex)=>{
+                                  child.style.setProperty('--child-index',childIndex);
+                              });
+                          }
+                      },i*100);
+                      observer.unobserve(entry.target);
+                  }
+              });
+          },{threshold:0.15,rootMargin:'0px 0px -100px 0px'});
+          
+          document.querySelectorAll('[data-animate]').forEach(el=>observer.observe(el));
+          
+          // Fixed navigation
+          const nav=document.querySelector('nav');
+          if(nav){
+              const handleScroll=()=>{
+                  nav.classList[window.scrollY>100?'add':'remove']('nav-fixed');
+              };
+              window.addEventListener('scroll',handleScroll,{passive:true});
+              handleScroll();
+          }
+          
+          // Smooth scroll
+          document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+              anchor.addEventListener('click',function(e){
+                  e.preventDefault();
+                  const targetId=this.getAttribute('href');
+                  if(targetId==='#')return;
+                  const target=document.querySelector(targetId);
+                  if(target){
+                      const targetPosition=target.getBoundingClientRect().top+window.pageYOffset-(nav?nav.offsetHeight:0)-20;
+                      window.scrollTo({top:targetPosition,behavior:'smooth'});
+                  }
+              });
+          });
+          
+          // Scroll progress indicator
+          const updateScrollProgress = () => {
+              const height=Math.max(
+                  document.body.scrollHeight,
+                  document.body.offsetHeight,
+                  document.documentElement.clientHeight,
+                  document.documentElement.scrollHeight,
+                  document.documentElement.offsetHeight
+              )-window.innerHeight;
+              
+              document.documentElement.style.setProperty('--scroll-progress',(window.scrollY/height*100)+'%');
+          };
+          
+          window.addEventListener('scroll', updateScrollProgress, {passive:true});
+          window.addEventListener('resize', updateScrollProgress, {passive:true});
+          updateScrollProgress();
+          
+          // Mobile menu with enhanced accessibility
+          const menuToggle=document.getElementById('mobile-menu-toggle');
+          const mobileMenu=document.getElementById('mobile-menu');
+          if(menuToggle&&mobileMenu){
+              menuToggle.addEventListener('click',()=>{
+                  const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+                  menuToggle.setAttribute('aria-expanded', (!isExpanded).toString());
+                  mobileMenu.classList.toggle('hidden');
+                  document.body.classList.toggle('overflow-hidden');
+              });
+              
+              // Close on click outside
+              document.addEventListener('click',e=>{
+                  if(mobileMenu&&!mobileMenu.classList.contains('hidden')&&
+                      menuToggle&&!menuToggle.contains(e.target)&&!mobileMenu.contains(e.target)){
+                      mobileMenu.classList.add('hidden');
+                      document.body.classList.remove('overflow-hidden');
+                      menuToggle.setAttribute('aria-expanded', 'false');
+                  }
+              });
+              
+              // Close on escape key
+              document.addEventListener('keydown', e => {
+                  if(e.key === 'Escape' && mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                      mobileMenu.classList.add('hidden');
+                      document.body.classList.remove('overflow-hidden');
+                      menuToggle.setAttribute('aria-expanded', 'false');
+                  }
+              });
+          }
+          
+          // Accordions
+          document.querySelectorAll('[data-accordion-target]').forEach(btn=>{
+              btn.addEventListener('click',()=>{
+                  const target=document.querySelector(btn.getAttribute('data-accordion-target'));
+                  if(target){
+                      const isExpanded=btn.getAttribute('aria-expanded')==='true';
+                      target.classList.toggle('hidden');
+                      btn.setAttribute('aria-expanded',isExpanded?'false':'true');
+                      const icon=btn.querySelector('.accordion-icon');
+                      if(icon)icon.classList.toggle('rotate-180');
+                  }
+              });
+          });
+          
+          // Form validation
+          document.querySelectorAll('form').forEach(form=>{
+              form.addEventListener('submit',function(e){
+                  let valid=true;
+                  const requiredFields=form.querySelectorAll('[required]');
+                  
+                  requiredFields.forEach(field=>{
+                      if(!field.value.trim()){
+                          valid=false;
+                          field.classList.add('border-red-500');
+                          
+                          // Add error message if not already present
+                          let errorMsg=field.parentNode.querySelector('.error-message');
+                          if(!errorMsg){
+                              errorMsg=document.createElement('p');
+                              errorMsg.className='text-red-500 text-sm mt-1 error-message';
+                              errorMsg.textContent='This field is required';
+                              field.parentNode.appendChild(errorMsg);
+                          }
+                      }else{
+                          field.classList.remove('border-red-500');
+                          const errorMsg=field.parentNode.querySelector('.error-message');
+                          if(errorMsg)errorMsg.remove();
+                      }
+                  });
+                  
+                  if(!valid){
+                      e.preventDefault();
+                  }
+              });
+          });
+          
+          // Tabs functionality if present
+          document.querySelectorAll('[data-tabs]').forEach(tabGroup=>{
+              const tabs=tabGroup.querySelectorAll('[data-tab]');
+              const tabContents=document.querySelectorAll('[data-tab-content]');
+              
+              tabs.forEach(tab=>{
+                  tab.addEventListener('click',()=>{
+                      const target=tab.getAttribute('data-tab');
+                      
+                      // Update active tab state
+                      tabs.forEach(t=>{
+                          t.classList.remove('active-tab','text-primary-600','border-primary-600');
+                          t.setAttribute('aria-selected', 'false');
+                      });
+                      tab.classList.add('active-tab','text-primary-600','border-primary-600');
+                      tab.setAttribute('aria-selected', 'true');
+                      
+                      // Show correct content
+                      tabContents.forEach(content=>{
+                          if(content.getAttribute('data-tab-content')===target){
+                              content.classList.remove('hidden');
+                          }else{
+                              content.classList.add('hidden');
+                          }
+                      });
+                  });
+              });
+          });
+          
+          // Carousels
+          document.querySelectorAll('[data-carousel]').forEach(carousel=>{
+              const slides=carousel.querySelectorAll('[data-slide]');
+              const prevBtn=carousel.querySelector('[data-carousel-prev]');
+              const nextBtn=carousel.querySelector('[data-carousel-next]');
+              
+              if(slides.length>0&&prevBtn&&nextBtn){
+                  let current=0,interval=null;
+                  
+                  slides[0].classList.remove('hidden');
+                  
+                  const updateIndicators=()=>{
+                      carousel.querySelectorAll('[data-indicator]').forEach((ind,i)=>{
+                          ind.classList[i===current?'add':'remove']('bg-primary-600');
+                          ind.classList[i!==current?'add':'remove']('bg-gray-300');
+                      });
+                  };
+                  
+                  const showSlide=idx=>{
+                      slides.forEach(s=>s.classList.add('hidden'));
+                      slides[idx].classList.remove('hidden');
+                      updateIndicators();
+                  };
+                  
+                  nextBtn.addEventListener('click',()=>{
+                      current=(current+1)%slides.length;
+                      showSlide(current);
+                  });
+                  
+                  prevBtn.addEventListener('click',()=>{
+                      current=(current-1+slides.length)%slides.length;
+                      showSlide(current);
+                  });
+                  
+                  updateIndicators();
+                  
+                  const startAuto=()=>{
+                      if(carousel.hasAttribute('data-auto')&&!interval){
+                          interval=setInterval(()=>{
+                              current=(current+1)%slides.length;
+                              showSlide(current);
+                          },5000);
+                      }
+                  };
+                  
+                  carousel.addEventListener('mouseenter',()=>{
+                      if(interval){clearInterval(interval);interval=null;}
+                  });
+                  
+                  carousel.addEventListener('mouseleave',startAuto);
+                  
+                  carousel.querySelectorAll('[data-indicator]').forEach((ind,i)=>{
+                      ind.addEventListener('click',()=>{
+                          current=i;
+                          showSlide(current);
+                      });
+                  });
+                  
+                  startAuto();
+              }
+          });
+          
+          // Initialize counters for stats sections if they exist
+          document.querySelectorAll('[data-counter]').forEach(counter=>{
+              const target=parseInt(counter.getAttribute('data-counter')||'0',10);
+              const duration=1500; // Animation duration in ms
+              const step=Math.ceil(target/50); // How much to increment per step
+              let current=0;
+              
+              const updateCounter=()=>{
+                  current+=step;
+                  if(current>target)current=target;
+                  
+                  counter.textContent=current.toString().replace(/\B(?=(\d{3})+(?!\d))/g,',');
+                  
+                  if(current<target){
+                      requestAnimationFrame(updateCounter);
+                  }
+              };
+              
+              // Start counting when element is in view
+              const observer=new IntersectionObserver(entries=>{
+                  entries.forEach(entry=>{
+                      if(entry.isIntersecting){
+                          updateCounter();
+                          observer.unobserve(entry.target);
+                      }
+                  });
+              },{threshold:0.5});
+              
+              observer.observe(counter);
+          });
+      });
+  </script>
 </body>
 </html>
